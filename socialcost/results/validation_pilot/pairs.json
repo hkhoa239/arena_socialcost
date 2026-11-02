@@ -1,0 +1,5254 @@
+[
+ {
+  "pair_id": "P0010",
+  "family": "conversation",
+  "subtype": "static",
+  "split": "train",
+  "world": "socialcost_office",
+  "on": "000019",
+  "off": "000020",
+  "design_observability": "visual_temporal",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "participant_0",
+      "participant_1",
+      "participant_2",
+      "participant_3"
+     ],
+     "stationary_person_slots": 401,
+     "matched_person_slots": 401,
+     "eligible_person_slots": 401,
+     "robot_contact_slot": {
+      "participant_0": 72,
+      "participant_1": 91,
+      "participant_2": 113
+     },
+     "pos_max_m": 0.0,
+     "heading_max_deg": 0.0,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_conversation_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "participant_0",
+    "participant_1",
+    "participant_2",
+    "participant_3"
+   ],
+   "stationary_person_slots": 401,
+   "matched_person_slots": 401,
+   "eligible_person_slots": 401,
+   "robot_contact_slot": {
+    "participant_0": 72,
+    "participant_1": 91,
+    "participant_2": 113
+   },
+   "pos_max_m": 0.0,
+   "heading_max_deg": 0.0,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 0.08864564803215753,
+   "robot_pos_mean_m": 0.06211649440154837,
+   "robot_heading_p95_deg": 3.076770188728689
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "conversation",
+   "cue": "participant >= 30 % visible",
+   "samples_active": 500,
+   "samples_cue_visible": 268,
+   "cue_visible_fraction": 0.536
+  },
+  "visual": {
+   "rgb_absdiff_mean": 13.31919889640808,
+   "rgb_person_roi_absdiff_mean": 31.893876263219067,
+   "depth_person_roi_absdiff_mean_m": 0.9441880348783273,
+   "samples_with_person_in_view": 117
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 19.685939,
+    "l2_mean": 50.597783670831724,
+    "cells_changed_mean": 8897.944,
+    "cells_changed_max": 11100.0,
+    "region_l1_mean": 87.76328562349913
+   },
+   "social_cost_membership": {
+    "l1_mean": 19.685939,
+    "l2_mean": 50.597783670831724,
+    "cells_changed_mean": 8897.944,
+    "cells_changed_max": 11100.0,
+    "region_l1_mean": 87.76328562349913
+   },
+   "social_cost_extended": {
+    "l1_mean": 19.685939,
+    "l2_mean": 50.597783670831724,
+    "cells_changed_mean": 8897.944,
+    "cells_changed_max": 11100.0,
+    "region_l1_mean": 87.76328562349913
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0011",
+  "family": "conversation",
+  "subtype": "static",
+  "split": "test_b",
+  "world": "reception",
+  "on": "000021",
+  "off": "000022",
+  "design_observability": "visual_temporal",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "participant_0",
+      "participant_1",
+      "participant_2"
+     ],
+     "stationary_person_slots": 339,
+     "matched_person_slots": 339,
+     "eligible_person_slots": 339,
+     "robot_contact_slot": {
+      "participant_0": 89
+     },
+     "pos_max_m": 0.0,
+     "heading_max_deg": 0.0,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_conversation_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "participant_0",
+    "participant_1",
+    "participant_2"
+   ],
+   "stationary_person_slots": 339,
+   "matched_person_slots": 339,
+   "eligible_person_slots": 339,
+   "robot_contact_slot": {
+    "participant_0": 89
+   },
+   "pos_max_m": 0.0,
+   "heading_max_deg": 0.0,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 0.1414623477511567,
+   "robot_pos_mean_m": 0.1092796445517986,
+   "robot_heading_p95_deg": 4.801088108967741
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "conversation",
+   "cue": "participant >= 30 % visible",
+   "samples_active": 375,
+   "samples_cue_visible": 182,
+   "cue_visible_fraction": 0.485
+  },
+  "visual": {
+   "rgb_absdiff_mean": 7.692730665206909,
+   "rgb_person_roi_absdiff_mean": 33.009336863503314,
+   "depth_person_roi_absdiff_mean_m": 2.3576353353182458,
+   "samples_with_person_in_view": 99
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 15.7816754,
+    "l2_mean": 44.993991461711204,
+    "cells_changed_mean": 7660.32,
+    "cells_changed_max": 9147.0,
+    "region_l1_mean": 81.99607892303345
+   },
+   "social_cost_membership": {
+    "l1_mean": 15.7816754,
+    "l2_mean": 44.993991461711204,
+    "cells_changed_mean": 7660.32,
+    "cells_changed_max": 9147.0,
+    "region_l1_mean": 81.99607892303345
+   },
+   "social_cost_extended": {
+    "l1_mean": 15.7816754,
+    "l2_mean": 44.993991461711204,
+    "cells_changed_mean": 7660.32,
+    "cells_changed_max": 9147.0,
+    "region_l1_mean": 81.99607892303345
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0023",
+  "family": "conversation",
+  "subtype": "lifecycle",
+  "split": "test_a",
+  "world": "hospital_1",
+  "on": "000045",
+  "off": "000046",
+  "design_observability": "visual_temporal",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "dynamic_pair_divergence_recorded",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "participant_0",
+      "participant_1"
+     ],
+     "stationary_person_slots": 233,
+     "matched_person_slots": 26,
+     "eligible_person_slots": 233,
+     "robot_contact_slot": {
+      "participant_0": 113,
+      "participant_1": 120
+     },
+     "pos_max_m": 0.0,
+     "heading_max_deg": 12.703,
+     "matched_fraction_of_stationary": 0.112,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_conversation_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "participant_0",
+    "participant_1"
+   ],
+   "stationary_person_slots": 233,
+   "matched_person_slots": 26,
+   "eligible_person_slots": 233,
+   "robot_contact_slot": {
+    "participant_0": 113,
+    "participant_1": 120
+   },
+   "pos_max_m": 0.0,
+   "heading_max_deg": 12.703,
+   "matched_fraction_of_stationary": 0.112,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": false,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 0.06258027108556738,
+   "robot_pos_mean_m": 0.04251127624366956,
+   "robot_heading_p95_deg": 2.2979860885343784
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "conversation",
+   "cue": "participant >= 30 % visible",
+   "samples_active": 250,
+   "samples_cue_visible": 192,
+   "cue_visible_fraction": 0.768
+  },
+  "visual": {
+   "rgb_absdiff_mean": 8.52763845062256,
+   "rgb_person_roi_absdiff_mean": 21.23624134451393,
+   "depth_person_roi_absdiff_mean_m": 1.163455110194722,
+   "samples_with_person_in_view": 123
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 1.2794138000000002,
+    "l2_mean": 8.12199774046768,
+    "cells_changed_mean": 1685.096,
+    "cells_changed_max": 5147.0,
+    "region_l1_mean": 18.790477321495604
+   },
+   "social_cost_membership": {
+    "l1_mean": 1.2794138000000002,
+    "l2_mean": 8.12199774046768,
+    "cells_changed_mean": 1685.096,
+    "cells_changed_max": 5147.0,
+    "region_l1_mean": 18.790477321495604
+   },
+   "social_cost_extended": {
+    "l1_mean": 1.2794138000000002,
+    "l2_mean": 8.12199774046768,
+    "cells_changed_mean": 1685.096,
+    "cells_changed_max": 5147.0,
+    "region_l1_mean": 18.790477321495604
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0024",
+  "family": "conversation",
+  "subtype": "static",
+  "split": "test_c",
+  "world": "socialcost_office",
+  "on": "000047",
+  "off": "000048",
+  "design_observability": "visual_temporal",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "participant_0",
+      "participant_1"
+     ],
+     "stationary_person_slots": 113,
+     "matched_person_slots": 113,
+     "eligible_person_slots": 113,
+     "robot_contact_slot": {
+      "participant_0": 57,
+      "participant_1": 56
+     },
+     "pos_max_m": 0.0,
+     "heading_max_deg": 0.003,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_conversation_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "participant_0",
+    "participant_1"
+   ],
+   "stationary_person_slots": 113,
+   "matched_person_slots": 113,
+   "eligible_person_slots": 113,
+   "robot_contact_slot": {
+    "participant_0": 57,
+    "participant_1": 56
+   },
+   "pos_max_m": 0.0,
+   "heading_max_deg": 0.003,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 1.6088797989617645,
+   "robot_pos_mean_m": 0.7735367711697776,
+   "robot_heading_p95_deg": 75.02079322258496
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "conversation",
+   "cue": "participant >= 30 % visible",
+   "samples_active": 250,
+   "samples_cue_visible": 84,
+   "cue_visible_fraction": 0.336
+  },
+  "visual": {
+   "rgb_absdiff_mean": 26.097730825424193,
+   "rgb_person_roi_absdiff_mean": 36.8122987029373,
+   "depth_person_roi_absdiff_mean_m": 0.8060541370362845,
+   "samples_with_person_in_view": 93
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 11.526271999999997,
+    "l2_mean": 35.187723018638245,
+    "cells_changed_mean": 6822.576,
+    "cells_changed_max": 7434.0,
+    "region_l1_mean": 66.48460530249935
+   },
+   "social_cost_membership": {
+    "l1_mean": 11.526271999999997,
+    "l2_mean": 35.187723018638245,
+    "cells_changed_mean": 6822.576,
+    "cells_changed_max": 7434.0,
+    "region_l1_mean": 66.48460530249935
+   },
+   "social_cost_extended": {
+    "l1_mean": 11.526271999999997,
+    "l2_mean": 35.187723018638245,
+    "cells_changed_mean": 6822.576,
+    "cells_changed_max": 7434.0,
+    "region_l1_mean": 66.48460530249935
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0032",
+  "family": "conversation",
+  "subtype": "lifecycle",
+  "split": "train",
+  "world": "hospital_1",
+  "on": "000063",
+  "off": "000064",
+  "design_observability": "visual_temporal",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "dynamic_pair_divergence_recorded",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "participant_0",
+      "participant_1"
+     ],
+     "stationary_person_slots": 216,
+     "matched_person_slots": 48,
+     "eligible_person_slots": 216,
+     "robot_contact_slot": {
+      "participant_1": 91
+     },
+     "pos_max_m": 0.0,
+     "heading_max_deg": 20.833,
+     "matched_fraction_of_stationary": 0.222,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_conversation_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "participant_0",
+    "participant_1"
+   ],
+   "stationary_person_slots": 216,
+   "matched_person_slots": 48,
+   "eligible_person_slots": 216,
+   "robot_contact_slot": {
+    "participant_1": 91
+   },
+   "pos_max_m": 0.0,
+   "heading_max_deg": 20.833,
+   "matched_fraction_of_stationary": 0.222,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": false,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 0.14731492436178575,
+   "robot_pos_mean_m": 0.11101783860457974,
+   "robot_heading_p95_deg": 3.6465414921358756
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "conversation",
+   "cue": "participant >= 30 % visible",
+   "samples_active": 250,
+   "samples_cue_visible": 127,
+   "cue_visible_fraction": 0.508
+  },
+  "visual": {
+   "rgb_absdiff_mean": 12.17215657043457,
+   "rgb_person_roi_absdiff_mean": 42.05601246654987,
+   "depth_person_roi_absdiff_mean_m": 2.195221818673114,
+   "samples_with_person_in_view": 96
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 3.1930957999999996,
+    "l2_mean": 13.771520579563314,
+    "cells_changed_mean": 3083.864,
+    "cells_changed_max": 7438.0,
+    "region_l1_mean": 25.594972038847157
+   },
+   "social_cost_membership": {
+    "l1_mean": 3.1930957999999996,
+    "l2_mean": 13.771520579563314,
+    "cells_changed_mean": 3083.864,
+    "cells_changed_max": 7438.0,
+    "region_l1_mean": 25.594972038847157
+   },
+   "social_cost_extended": {
+    "l1_mean": 3.1930957999999996,
+    "l2_mean": 13.771520579563314,
+    "cells_changed_mean": 3083.864,
+    "cells_changed_max": 7438.0,
+    "region_l1_mean": 25.594972038847157
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0033",
+  "family": "conversation",
+  "subtype": "approach_and_stop",
+  "split": "val",
+  "world": "airport",
+  "on": "000065",
+  "off": "000066",
+  "design_observability": "visual_temporal",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "dynamic_pair_divergence_recorded",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "participant_0",
+      "participant_1"
+     ],
+     "stationary_person_slots": 250,
+     "matched_person_slots": 0,
+     "eligible_person_slots": 250,
+     "robot_contact_slot": {},
+     "pos_max_m": 0.0169,
+     "heading_max_deg": 21.894,
+     "matched_fraction_of_stationary": 0.0,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_conversation_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "participant_0",
+    "participant_1"
+   ],
+   "stationary_person_slots": 250,
+   "matched_person_slots": 0,
+   "eligible_person_slots": 250,
+   "robot_contact_slot": {},
+   "pos_max_m": 0.0169,
+   "heading_max_deg": 21.894,
+   "matched_fraction_of_stationary": 0.0,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": false,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 0.09905847151856753,
+   "robot_pos_mean_m": 0.08471856293010384,
+   "robot_heading_p95_deg": 1.151769534985704
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "conversation",
+   "cue": "participant >= 30 % visible",
+   "samples_active": 250,
+   "samples_cue_visible": 140,
+   "cue_visible_fraction": 0.56
+  },
+  "visual": {
+   "rgb_absdiff_mean": 4.933276849746704,
+   "rgb_person_roi_absdiff_mean": 23.421724915504456,
+   "depth_person_roi_absdiff_mean_m": 1.6320127040228767,
+   "samples_with_person_in_view": 92
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 7.4819996,
+    "l2_mean": 24.21828406541571,
+    "cells_changed_mean": 5877.96,
+    "cells_changed_max": 7260.0,
+    "region_l1_mean": 50.61484069275023
+   },
+   "social_cost_membership": {
+    "l1_mean": 7.4819996,
+    "l2_mean": 24.21828406541571,
+    "cells_changed_mean": 5877.96,
+    "cells_changed_max": 7260.0,
+    "region_l1_mean": 50.61484069275023
+   },
+   "social_cost_extended": {
+    "l1_mean": 7.4819996,
+    "l2_mean": 24.21828406541571,
+    "cells_changed_mean": 5877.96,
+    "cells_changed_max": 7260.0,
+    "region_l1_mean": 50.61484069275023
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0039",
+  "family": "conversation",
+  "subtype": "approach_and_stop",
+  "split": "train",
+  "world": "airport",
+  "on": "000077",
+  "off": "000078",
+  "design_observability": "visual_temporal",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "dynamic_pair_divergence_recorded",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "participant_0",
+      "participant_1"
+     ],
+     "stationary_person_slots": 246,
+     "matched_person_slots": 0,
+     "eligible_person_slots": 246,
+     "robot_contact_slot": {
+      "participant_1": 121
+     },
+     "pos_max_m": 0.3535,
+     "heading_max_deg": 134.186,
+     "matched_fraction_of_stationary": 0.0,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_conversation_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "participant_0",
+    "participant_1"
+   ],
+   "stationary_person_slots": 246,
+   "matched_person_slots": 0,
+   "eligible_person_slots": 246,
+   "robot_contact_slot": {
+    "participant_1": 121
+   },
+   "pos_max_m": 0.3535,
+   "heading_max_deg": 134.186,
+   "matched_fraction_of_stationary": 0.0,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": false,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 2.077567291323025,
+   "robot_pos_mean_m": 1.9765870439996192,
+   "robot_heading_p95_deg": 30.701798498073817
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "conversation",
+   "cue": "participant >= 30 % visible",
+   "samples_active": 250,
+   "samples_cue_visible": 205,
+   "cue_visible_fraction": 0.82
+  },
+  "visual": {
+   "rgb_absdiff_mean": 19.222746520996093,
+   "rgb_person_roi_absdiff_mean": 32.784703338623046,
+   "depth_person_roi_absdiff_mean_m": 7.1833968887329105,
+   "samples_with_person_in_view": 125
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 10.4675582,
+    "l2_mean": 32.69640761279294,
+    "cells_changed_mean": 4779.136,
+    "cells_changed_max": 9035.0,
+    "region_l1_mean": 73.08974327020773
+   },
+   "social_cost_membership": {
+    "l1_mean": 10.4675582,
+    "l2_mean": 32.69640761279294,
+    "cells_changed_mean": 4779.136,
+    "cells_changed_max": 9035.0,
+    "region_l1_mean": 73.08974327020773
+   },
+   "social_cost_extended": {
+    "l1_mean": 10.4675582,
+    "l2_mean": 32.69640761279294,
+    "cells_changed_mean": 4779.136,
+    "cells_changed_max": 9035.0,
+    "region_l1_mean": 73.08974327020773
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0040",
+  "family": "conversation",
+  "subtype": "static",
+  "split": "train",
+  "world": "hospital_1",
+  "on": "000079",
+  "off": "000080",
+  "design_observability": "visual_temporal",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "participant_0",
+      "participant_1",
+      "participant_2",
+      "participant_3"
+     ],
+     "stationary_person_slots": 432,
+     "matched_person_slots": 432,
+     "eligible_person_slots": 432,
+     "robot_contact_slot": {
+      "participant_1": 57
+     },
+     "pos_max_m": 0.0001,
+     "heading_max_deg": 0.0,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_conversation_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "participant_0",
+    "participant_1",
+    "participant_2",
+    "participant_3"
+   ],
+   "stationary_person_slots": 432,
+   "matched_person_slots": 432,
+   "eligible_person_slots": 432,
+   "robot_contact_slot": {
+    "participant_1": 57
+   },
+   "pos_max_m": 0.0001,
+   "heading_max_deg": 0.0,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 0.15293341981957265,
+   "robot_pos_mean_m": 0.0838735684895674,
+   "robot_heading_p95_deg": 5.992010243547584
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "conversation",
+   "cue": "participant >= 30 % visible",
+   "samples_active": 500,
+   "samples_cue_visible": 80,
+   "cue_visible_fraction": 0.16
+  },
+  "visual": {
+   "rgb_absdiff_mean": 16.580018253326415,
+   "rgb_person_roi_absdiff_mean": 36.50185529887676,
+   "depth_person_roi_absdiff_mean_m": 2.0783793898299336,
+   "samples_with_person_in_view": 64
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 23.8173596,
+    "l2_mean": 56.7352185862909,
+    "cells_changed_mean": 10737.176,
+    "cells_changed_max": 11131.0,
+    "region_l1_mean": 88.94415140468357
+   },
+   "social_cost_membership": {
+    "l1_mean": 23.8173596,
+    "l2_mean": 56.7352185862909,
+    "cells_changed_mean": 10737.176,
+    "cells_changed_max": 11131.0,
+    "region_l1_mean": 88.94415140468357
+   },
+   "social_cost_extended": {
+    "l1_mean": 23.8173596,
+    "l2_mean": 56.7352185862909,
+    "cells_changed_mean": 10737.176,
+    "cells_changed_max": 11131.0,
+    "region_l1_mean": 88.94415140468357
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0045",
+  "family": "conversation",
+  "subtype": "static",
+  "split": "train",
+  "world": "airport",
+  "on": "000089",
+  "off": "000090",
+  "design_observability": "visual_temporal",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "participant_0",
+      "participant_1"
+     ],
+     "stationary_person_slots": 203,
+     "matched_person_slots": 203,
+     "eligible_person_slots": 203,
+     "robot_contact_slot": {
+      "participant_0": 90,
+      "participant_1": 113
+     },
+     "pos_max_m": 0.0,
+     "heading_max_deg": 0.001,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_conversation_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "participant_0",
+    "participant_1"
+   ],
+   "stationary_person_slots": 203,
+   "matched_person_slots": 203,
+   "eligible_person_slots": 203,
+   "robot_contact_slot": {
+    "participant_0": 90,
+    "participant_1": 113
+   },
+   "pos_max_m": 0.0,
+   "heading_max_deg": 0.001,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 1.9032505383126797,
+   "robot_pos_mean_m": 1.6754068140311396,
+   "robot_heading_p95_deg": 23.076794205222242
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "conversation",
+   "cue": "participant >= 30 % visible",
+   "samples_active": 250,
+   "samples_cue_visible": 98,
+   "cue_visible_fraction": 0.392
+  },
+  "visual": {
+   "rgb_absdiff_mean": 28.565041328430176,
+   "rgb_person_roi_absdiff_mean": 39.28519804500839,
+   "depth_person_roi_absdiff_mean_m": 3.3174995884154606,
+   "samples_with_person_in_view": 103
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 15.161508000000001,
+    "l2_mean": 45.43779479853856,
+    "cells_changed_mean": 6928.384,
+    "cells_changed_max": 8440.0,
+    "region_l1_mean": 85.41225818703019
+   },
+   "social_cost_membership": {
+    "l1_mean": 15.161508000000001,
+    "l2_mean": 45.43779479853856,
+    "cells_changed_mean": 6928.384,
+    "cells_changed_max": 8440.0,
+    "region_l1_mean": 85.41225818703019
+   },
+   "social_cost_extended": {
+    "l1_mean": 15.161508000000001,
+    "l2_mean": 45.43779479853856,
+    "cells_changed_mean": 6928.384,
+    "cells_changed_max": 8440.0,
+    "region_l1_mean": 85.41225818703019
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0051",
+  "family": "conversation",
+  "subtype": "static",
+  "split": "train",
+  "world": "airport",
+  "on": "000101",
+  "off": "000102",
+  "design_observability": "visual_temporal",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "participant_0",
+      "participant_1"
+     ],
+     "stationary_person_slots": 188,
+     "matched_person_slots": 188,
+     "eligible_person_slots": 188,
+     "robot_contact_slot": {
+      "participant_1": 63
+     },
+     "pos_max_m": 0.0,
+     "heading_max_deg": 0.001,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_conversation_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "participant_0",
+    "participant_1"
+   ],
+   "stationary_person_slots": 188,
+   "matched_person_slots": 188,
+   "eligible_person_slots": 188,
+   "robot_contact_slot": {
+    "participant_1": 63
+   },
+   "pos_max_m": 0.0,
+   "heading_max_deg": 0.001,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 1.622792402280807,
+   "robot_pos_mean_m": 1.6059307301731653,
+   "robot_heading_p95_deg": 1.8301738859196695
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "conversation",
+   "cue": "participant >= 30 % visible",
+   "samples_active": 250,
+   "samples_cue_visible": 89,
+   "cue_visible_fraction": 0.356
+  },
+  "visual": {
+   "rgb_absdiff_mean": 19.23177066040039,
+   "rgb_person_roi_absdiff_mean": 46.667708987281436,
+   "depth_person_roi_absdiff_mean_m": 3.3974827546921986,
+   "samples_with_person_in_view": 63
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 14.0239788,
+    "l2_mean": 43.705173247376656,
+    "cells_changed_mean": 6880.616,
+    "cells_changed_max": 7366.0,
+    "region_l1_mean": 81.66589566122337
+   },
+   "social_cost_membership": {
+    "l1_mean": 14.0239788,
+    "l2_mean": 43.705173247376656,
+    "cells_changed_mean": 6880.616,
+    "cells_changed_max": 7366.0,
+    "region_l1_mean": 81.66589566122337
+   },
+   "social_cost_extended": {
+    "l1_mean": 14.0239788,
+    "l2_mean": 43.705173247376656,
+    "cells_changed_mean": 6880.616,
+    "cells_changed_max": 7366.0,
+    "region_l1_mean": 81.66589566122337
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0057",
+  "family": "conversation",
+  "subtype": "static",
+  "split": "train",
+  "world": "socialcost_office",
+  "on": "000113",
+  "off": "000114",
+  "design_observability": "visual_temporal",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "participant_0",
+      "participant_1"
+     ],
+     "stationary_person_slots": 250,
+     "matched_person_slots": 250,
+     "eligible_person_slots": 250,
+     "robot_contact_slot": {},
+     "pos_max_m": 0.0,
+     "heading_max_deg": 0.002,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_conversation_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "participant_0",
+    "participant_1"
+   ],
+   "stationary_person_slots": 250,
+   "matched_person_slots": 250,
+   "eligible_person_slots": 250,
+   "robot_contact_slot": {},
+   "pos_max_m": 0.0,
+   "heading_max_deg": 0.002,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": true,
+  "robot": {
+   "robot_pos_max_m": 0.01826580045338471,
+   "robot_pos_mean_m": 0.005496251673603672,
+   "robot_heading_p95_deg": 1.0152864422293486
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "conversation",
+   "cue": "participant >= 30 % visible",
+   "samples_active": 250,
+   "samples_cue_visible": 36,
+   "cue_visible_fraction": 0.144
+  },
+  "visual": {
+   "rgb_absdiff_mean": 3.4127767992019655,
+   "rgb_person_roi_absdiff_mean": 7.980464921862471,
+   "depth_person_roi_absdiff_mean_m": 0.12089955052201107,
+   "samples_with_person_in_view": 102
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 6.2807146,
+    "l2_mean": 21.08884810460928,
+    "cells_changed_mean": 5142.312,
+    "cells_changed_max": 6878.0,
+    "region_l1_mean": 46.663538209685115
+   },
+   "social_cost_membership": {
+    "l1_mean": 6.2807146,
+    "l2_mean": 21.08884810460928,
+    "cells_changed_mean": 5142.312,
+    "cells_changed_max": 6878.0,
+    "region_l1_mean": 46.663538209685115
+   },
+   "social_cost_extended": {
+    "l1_mean": 6.2807146,
+    "l2_mean": 21.08884810460928,
+    "cells_changed_mean": 5142.312,
+    "cells_changed_max": 6878.0,
+    "region_l1_mean": 46.663538209685115
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0058",
+  "family": "conversation",
+  "subtype": "approach_and_stop",
+  "split": "train",
+  "world": "socialcost_office",
+  "on": "000115",
+  "off": "000116",
+  "design_observability": "visual_temporal",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "dynamic_pair_divergence_recorded",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "participant_0",
+      "participant_1"
+     ],
+     "stationary_person_slots": 204,
+     "matched_person_slots": 1,
+     "eligible_person_slots": 204,
+     "robot_contact_slot": {
+      "participant_0": 101,
+      "participant_1": 103
+     },
+     "pos_max_m": 0.0226,
+     "heading_max_deg": 107.817,
+     "matched_fraction_of_stationary": 0.005,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_conversation_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "participant_0",
+    "participant_1"
+   ],
+   "stationary_person_slots": 204,
+   "matched_person_slots": 1,
+   "eligible_person_slots": 204,
+   "robot_contact_slot": {
+    "participant_0": 101,
+    "participant_1": 103
+   },
+   "pos_max_m": 0.0226,
+   "heading_max_deg": 107.817,
+   "matched_fraction_of_stationary": 0.005,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": false,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 0.6834490265975154,
+   "robot_pos_mean_m": 0.10890163544286317,
+   "robot_heading_p95_deg": 8.323830001753416
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "conversation",
+   "cue": "participant >= 30 % visible",
+   "samples_active": 250,
+   "samples_cue_visible": 190,
+   "cue_visible_fraction": 0.76
+  },
+  "visual": {
+   "rgb_absdiff_mean": 19.90999823188782,
+   "rgb_person_roi_absdiff_mean": 48.93961975938183,
+   "depth_person_roi_absdiff_mean_m": 1.5712661972995532,
+   "samples_with_person_in_view": 118
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 5.9888236,
+    "l2_mean": 20.615704863216873,
+    "cells_changed_mean": 4924.6,
+    "cells_changed_max": 6823.0,
+    "region_l1_mean": 44.57611913278325
+   },
+   "social_cost_membership": {
+    "l1_mean": 5.9888236,
+    "l2_mean": 20.615704863216873,
+    "cells_changed_mean": 4924.6,
+    "cells_changed_max": 6823.0,
+    "region_l1_mean": 44.57611913278325
+   },
+   "social_cost_extended": {
+    "l1_mean": 5.9888236,
+    "l2_mean": 20.615704863216873,
+    "cells_changed_mean": 4924.6,
+    "cells_changed_max": 6823.0,
+    "region_l1_mean": 44.57611913278325
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0065",
+  "family": "stop_gesture",
+  "subtype": "frontal/active_from_start",
+  "split": "test_c",
+  "world": "airport",
+  "on": "000129",
+  "off": "000130",
+  "design_observability": "visual",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "primary_0"
+     ],
+     "stationary_person_slots": 95,
+     "matched_person_slots": 95,
+     "eligible_person_slots": 95,
+     "robot_contact_slot": {
+      "primary_0": 95
+     },
+     "pos_max_m": 0.0,
+     "heading_max_deg": 0.0,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {
+      "bystander_2": 0.033,
+      "bystander_1": 0.0
+     }
+    }
+   },
+   {
+    "check": "on_has_gesture_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "primary_0"
+   ],
+   "stationary_person_slots": 95,
+   "matched_person_slots": 95,
+   "eligible_person_slots": 95,
+   "robot_contact_slot": {
+    "primary_0": 95
+   },
+   "pos_max_m": 0.0,
+   "heading_max_deg": 0.0,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {
+    "bystander_2": 0.033,
+    "bystander_1": 0.0
+   }
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 2.9209921746515564,
+   "robot_pos_mean_m": 2.8363561239562776,
+   "robot_heading_p95_deg": 18.261151546121997
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "stop_gesture",
+   "cue": "raised hand point visible (depth-consistent)",
+   "samples_active": 125,
+   "samples_cue_visible": 58,
+   "cue_visible_fraction": 0.464
+  },
+  "visual": {
+   "rgb_absdiff_mean": 20.41193657684326,
+   "rgb_person_roi_absdiff_mean": 30.669737854003905,
+   "depth_person_roi_absdiff_mean_m": 3.84828910446167,
+   "samples_with_person_in_view": 125
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 10.1580602,
+    "l2_mean": 32.69268396524687,
+    "cells_changed_mean": 4022.408,
+    "cells_changed_max": 5914.0,
+    "region_l1_mean": 101.08889164200339
+   },
+   "social_cost_membership": {
+    "l1_mean": 10.1580602,
+    "l2_mean": 32.69268396524687,
+    "cells_changed_mean": 4022.408,
+    "cells_changed_max": 5914.0,
+    "region_l1_mean": 101.08889164200339
+   },
+   "social_cost_extended": {
+    "l1_mean": 12.8533926,
+    "l2_mean": 39.14807458045731,
+    "cells_changed_mean": 5408.016,
+    "cells_changed_max": 6995.0,
+    "region_l1_mean": 94.17455400760045
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0067",
+  "family": "stop_gesture",
+  "subtype": "oblique_30/active_from_start",
+  "split": "train",
+  "world": "hospital_1",
+  "on": "000133",
+  "off": "000134",
+  "design_observability": "visual",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "primary_0"
+     ],
+     "stationary_person_slots": 120,
+     "matched_person_slots": 120,
+     "eligible_person_slots": 120,
+     "robot_contact_slot": {
+      "primary_0": 120
+     },
+     "pos_max_m": 0.0,
+     "heading_max_deg": 0.0,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {
+      "bystander_3": 0.035,
+      "bystander_2": 0.231,
+      "bystander_1": 0.0
+     }
+    }
+   },
+   {
+    "check": "on_has_gesture_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "primary_0"
+   ],
+   "stationary_person_slots": 120,
+   "matched_person_slots": 120,
+   "eligible_person_slots": 120,
+   "robot_contact_slot": {
+    "primary_0": 120
+   },
+   "pos_max_m": 0.0,
+   "heading_max_deg": 0.0,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {
+    "bystander_3": 0.035,
+    "bystander_2": 0.231,
+    "bystander_1": 0.0
+   }
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 2.9021892469809574,
+   "robot_pos_mean_m": 2.829758429079319,
+   "robot_heading_p95_deg": 7.056084511371558
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "stop_gesture",
+   "cue": "raised hand point visible (depth-consistent)",
+   "samples_active": 125,
+   "samples_cue_visible": 125,
+   "cue_visible_fraction": 1.0
+  },
+  "visual": {
+   "rgb_absdiff_mean": 33.300737770080566,
+   "rgb_person_roi_absdiff_mean": 66.03690399169922,
+   "depth_person_roi_absdiff_mean_m": 2.4607019338607787,
+   "samples_with_person_in_view": 125
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 11.430512799999999,
+    "l2_mean": 34.15458128189906,
+    "cells_changed_mean": 4267.512,
+    "cells_changed_max": 7550.0,
+    "region_l1_mean": 107.11707222448655
+   },
+   "social_cost_membership": {
+    "l1_mean": 11.430512799999999,
+    "l2_mean": 34.15458128189906,
+    "cells_changed_mean": 4267.512,
+    "cells_changed_max": 7550.0,
+    "region_l1_mean": 107.11707222448655
+   },
+   "social_cost_extended": {
+    "l1_mean": 13.125973400000001,
+    "l2_mean": 37.873393600534605,
+    "cells_changed_mean": 4799.672,
+    "cells_changed_max": 8806.0,
+    "region_l1_mean": 107.80672205374516
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0070",
+  "family": "stop_gesture",
+  "subtype": "oblique_60/pulse",
+  "split": "val",
+  "world": "socialcost_office",
+  "on": "000139",
+  "off": "000140",
+  "design_observability": "visual",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "primary_0"
+     ],
+     "stationary_person_slots": 125,
+     "matched_person_slots": 125,
+     "eligible_person_slots": 125,
+     "robot_contact_slot": {},
+     "pos_max_m": 0.0,
+     "heading_max_deg": 0.0,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {
+      "bystander_2": 0.065,
+      "bystander_1": 0.033
+     }
+    }
+   },
+   {
+    "check": "on_has_gesture_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "primary_0"
+   ],
+   "stationary_person_slots": 125,
+   "matched_person_slots": 125,
+   "eligible_person_slots": 125,
+   "robot_contact_slot": {},
+   "pos_max_m": 0.0,
+   "heading_max_deg": 0.0,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {
+    "bystander_2": 0.065,
+    "bystander_1": 0.033
+   }
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": true,
+  "robot": {
+   "robot_pos_max_m": 3.28196363950728,
+   "robot_pos_mean_m": 3.082754501694051,
+   "robot_heading_p95_deg": 40.98685360564237
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "stop_gesture",
+   "cue": "raised hand point visible (depth-consistent)",
+   "samples_active": 27,
+   "samples_cue_visible": 21,
+   "cue_visible_fraction": 0.778
+  },
+  "visual": {
+   "rgb_absdiff_mean": 49.86936250305176,
+   "rgb_person_roi_absdiff_mean": 67.66229119873047,
+   "depth_person_roi_absdiff_mean_m": 6.782315319061279,
+   "samples_with_person_in_view": 125
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 9.887136199999997,
+    "l2_mean": 32.005969479816144,
+    "cells_changed_mean": 3736.856,
+    "cells_changed_max": 5801.0,
+    "region_l1_mean": 106.07539763790574
+   },
+   "social_cost_membership": {
+    "l1_mean": 9.887136199999997,
+    "l2_mean": 32.005969479816144,
+    "cells_changed_mean": 3736.856,
+    "cells_changed_max": 5801.0,
+    "region_l1_mean": 106.07539763790574
+   },
+   "social_cost_extended": {
+    "l1_mean": 9.9103474,
+    "l2_mean": 32.02656466370932,
+    "cells_changed_mean": 3771.784,
+    "cells_changed_max": 5801.0,
+    "region_l1_mean": 105.24295754678104
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0071",
+  "family": "stop_gesture",
+  "subtype": "frontal/activates_on_approach",
+  "split": "train",
+  "world": "airport",
+  "on": "000141",
+  "off": "000142",
+  "design_observability": "visual",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "primary_0"
+     ],
+     "stationary_person_slots": 125,
+     "matched_person_slots": 125,
+     "eligible_person_slots": 125,
+     "robot_contact_slot": {},
+     "pos_max_m": 0.0,
+     "heading_max_deg": 0.0,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_gesture_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "primary_0"
+   ],
+   "stationary_person_slots": 125,
+   "matched_person_slots": 125,
+   "eligible_person_slots": 125,
+   "robot_contact_slot": {},
+   "pos_max_m": 0.0,
+   "heading_max_deg": 0.0,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": true,
+  "robot": {
+   "robot_pos_max_m": 1.2447899895927104,
+   "robot_pos_mean_m": 0.5946428722908571,
+   "robot_heading_p95_deg": 17.717386153105245
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "stop_gesture",
+   "cue": "raised hand point visible (depth-consistent)",
+   "samples_active": 67,
+   "samples_cue_visible": 35,
+   "cue_visible_fraction": 0.522
+  },
+  "visual": {
+   "rgb_absdiff_mean": 18.05893176651001,
+   "rgb_person_roi_absdiff_mean": 43.62288746643066,
+   "depth_person_roi_absdiff_mean_m": 4.509401375770569,
+   "samples_with_person_in_view": 125
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 2.7459862000000004,
+    "l2_mean": 13.330266671134035,
+    "cells_changed_mean": 1188.312,
+    "cells_changed_max": 2405.0,
+    "region_l1_mean": 86.02580605264853
+   },
+   "social_cost_membership": {
+    "l1_mean": 2.7459862000000004,
+    "l2_mean": 13.330266671134035,
+    "cells_changed_mean": 1188.312,
+    "cells_changed_max": 2405.0,
+    "region_l1_mean": 86.02580605264853
+   },
+   "social_cost_extended": {
+    "l1_mean": 5.5618414000000005,
+    "l2_mean": 21.6139141817897,
+    "cells_changed_mean": 2204.4,
+    "cells_changed_max": 4304.0,
+    "region_l1_mean": 93.92839673023725
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0074",
+  "family": "stop_gesture",
+  "subtype": "oblique_60/active_from_start",
+  "split": "train",
+  "world": "airport",
+  "on": "000147",
+  "off": "000148",
+  "design_observability": "visual",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "primary_0"
+     ],
+     "stationary_person_slots": 125,
+     "matched_person_slots": 125,
+     "eligible_person_slots": 125,
+     "robot_contact_slot": {},
+     "pos_max_m": 0.0,
+     "heading_max_deg": 0.0,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_gesture_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "primary_0"
+   ],
+   "stationary_person_slots": 125,
+   "matched_person_slots": 125,
+   "eligible_person_slots": 125,
+   "robot_contact_slot": {},
+   "pos_max_m": 0.0,
+   "heading_max_deg": 0.0,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": true,
+  "robot": {
+   "robot_pos_max_m": 0.03773259563665908,
+   "robot_pos_mean_m": 0.023226338806342145,
+   "robot_heading_p95_deg": 0.5314763144291625
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "stop_gesture",
+   "cue": "raised hand point visible (depth-consistent)",
+   "samples_active": 125,
+   "samples_cue_visible": 45,
+   "cue_visible_fraction": 0.36
+  },
+  "visual": {
+   "rgb_absdiff_mean": 2.9028346347808838,
+   "rgb_person_roi_absdiff_mean": 8.889285986170623,
+   "depth_person_roi_absdiff_mean_m": 0.31793504407290707,
+   "samples_with_person_in_view": 66
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 0.10285099999999998,
+    "l2_mean": 2.807762832735969,
+    "cells_changed_mean": 513.584,
+    "cells_changed_max": 723.0,
+    "region_l1_mean": 3.3302958165499743
+   },
+   "social_cost_membership": {
+    "l1_mean": 0.10285099999999998,
+    "l2_mean": 2.807762832735969,
+    "cells_changed_mean": 513.584,
+    "cells_changed_max": 723.0,
+    "region_l1_mean": 3.3302958165499743
+   },
+   "social_cost_extended": {
+    "l1_mean": 5.5481666,
+    "l2_mean": 27.71525411772852,
+    "cells_changed_mean": 2766.352,
+    "cells_changed_max": 2920.0,
+    "region_l1_mean": 70.42044084449668
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0076",
+  "family": "stop_gesture",
+  "subtype": "oblique_30/active_then_deactivates",
+  "split": "train",
+  "world": "hospital_1",
+  "on": "000151",
+  "off": "000152",
+  "design_observability": "visual",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "primary_0"
+     ],
+     "stationary_person_slots": 125,
+     "matched_person_slots": 125,
+     "eligible_person_slots": 125,
+     "robot_contact_slot": {},
+     "pos_max_m": 0.0,
+     "heading_max_deg": 0.0,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {
+      "bystander_3": 0.0,
+      "bystander_2": 0.0,
+      "bystander_1": 0.0
+     }
+    }
+   },
+   {
+    "check": "on_has_gesture_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "primary_0"
+   ],
+   "stationary_person_slots": 125,
+   "matched_person_slots": 125,
+   "eligible_person_slots": 125,
+   "robot_contact_slot": {},
+   "pos_max_m": 0.0,
+   "heading_max_deg": 0.0,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {
+    "bystander_3": 0.0,
+    "bystander_2": 0.0,
+    "bystander_1": 0.0
+   }
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": true,
+  "robot": {
+   "robot_pos_max_m": 0.08302402559594212,
+   "robot_pos_mean_m": 0.06337093760923813,
+   "robot_heading_p95_deg": 2.5974108368895052
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "stop_gesture",
+   "cue": "raised hand point visible (depth-consistent)",
+   "samples_active": 28,
+   "samples_cue_visible": 25,
+   "cue_visible_fraction": 0.893
+  },
+  "visual": {
+   "rgb_absdiff_mean": 12.110185386657715,
+   "rgb_person_roi_absdiff_mean": 27.574352346420287,
+   "depth_person_roi_absdiff_mean_m": 0.6968586428761482,
+   "samples_with_person_in_view": 125
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 1.1212237999999999,
+    "l2_mean": 9.409131339085036,
+    "cells_changed_mean": 2665.624,
+    "cells_changed_max": 3584.0,
+    "region_l1_mean": 10.494905828045349
+   },
+   "social_cost_membership": {
+    "l1_mean": 1.1212237999999999,
+    "l2_mean": 9.409131339085036,
+    "cells_changed_mean": 2665.624,
+    "cells_changed_max": 3584.0,
+    "region_l1_mean": 10.494905828045349
+   },
+   "social_cost_extended": {
+    "l1_mean": 2.1505018,
+    "l2_mean": 13.920933843265543,
+    "cells_changed_mean": 2979.008,
+    "cells_changed_max": 3584.0,
+    "region_l1_mean": 20.504484966124377
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0084",
+  "family": "stop_gesture",
+  "subtype": "oblique_30/active_from_start",
+  "split": "train",
+  "world": "airport",
+  "on": "000167",
+  "off": "000168",
+  "design_observability": "visual",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "primary_0"
+     ],
+     "stationary_person_slots": 125,
+     "matched_person_slots": 125,
+     "eligible_person_slots": 125,
+     "robot_contact_slot": {},
+     "pos_max_m": 0.0,
+     "heading_max_deg": 0.0,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {
+      "bystander_2": 0.0,
+      "bystander_1": 0.0
+     }
+    }
+   },
+   {
+    "check": "on_has_gesture_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "primary_0"
+   ],
+   "stationary_person_slots": 125,
+   "matched_person_slots": 125,
+   "eligible_person_slots": 125,
+   "robot_contact_slot": {},
+   "pos_max_m": 0.0,
+   "heading_max_deg": 0.0,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {
+    "bystander_2": 0.0,
+    "bystander_1": 0.0
+   }
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": true,
+  "robot": {
+   "robot_pos_max_m": 0.16772265491303442,
+   "robot_pos_mean_m": 0.15308047430943567,
+   "robot_heading_p95_deg": 1.6358652097376305
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "stop_gesture",
+   "cue": "raised hand point visible (depth-consistent)",
+   "samples_active": 125,
+   "samples_cue_visible": 83,
+   "cue_visible_fraction": 0.664
+  },
+  "visual": {
+   "rgb_absdiff_mean": 7.732337505340576,
+   "rgb_person_roi_absdiff_mean": 25.38468865966797,
+   "depth_person_roi_absdiff_mean_m": 2.4906699464321136,
+   "samples_with_person_in_view": 125
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 1.4539566,
+    "l2_mean": 10.92537906952221,
+    "cells_changed_mean": 2360.936,
+    "cells_changed_max": 3263.0,
+    "region_l1_mean": 22.67405173605269
+   },
+   "social_cost_membership": {
+    "l1_mean": 1.4539566,
+    "l2_mean": 10.92537906952221,
+    "cells_changed_mean": 2360.936,
+    "cells_changed_max": 3263.0,
+    "region_l1_mean": 22.67405173605269
+   },
+   "social_cost_extended": {
+    "l1_mean": 4.4350992,
+    "l2_mean": 21.35225545587156,
+    "cells_changed_mean": 3464.768,
+    "cells_changed_max": 4658.0,
+    "region_l1_mean": 42.51763024664252
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0098",
+  "family": "stop_gesture",
+  "subtype": "frontal/pulse",
+  "split": "test_a",
+  "world": "hospital_1",
+  "on": "000195",
+  "off": "000196",
+  "design_observability": "visual",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "primary_0"
+     ],
+     "stationary_person_slots": 110,
+     "matched_person_slots": 110,
+     "eligible_person_slots": 110,
+     "robot_contact_slot": {
+      "primary_0": 110
+     },
+     "pos_max_m": 0.0,
+     "heading_max_deg": 0.0,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {
+      "bystander_1": 0.0
+     }
+    }
+   },
+   {
+    "check": "on_has_gesture_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "primary_0"
+   ],
+   "stationary_person_slots": 110,
+   "matched_person_slots": 110,
+   "eligible_person_slots": 110,
+   "robot_contact_slot": {
+    "primary_0": 110
+   },
+   "pos_max_m": 0.0,
+   "heading_max_deg": 0.0,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {
+    "bystander_1": 0.0
+   }
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 0.13004469899439752,
+   "robot_pos_mean_m": 0.10462235846574097,
+   "robot_heading_p95_deg": 4.572410959759558
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "stop_gesture",
+   "cue": "raised hand point visible (depth-consistent)",
+   "samples_active": 39,
+   "samples_cue_visible": 36,
+   "cue_visible_fraction": 0.923
+  },
+  "visual": {
+   "rgb_absdiff_mean": 10.804487878799439,
+   "rgb_person_roi_absdiff_mean": 36.498820552538184,
+   "depth_person_roi_absdiff_mean_m": 2.201335677953341,
+   "samples_with_person_in_view": 116
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 0.43343240000000005,
+    "l2_mean": 5.383257202691857,
+    "cells_changed_mean": 690.36,
+    "cells_changed_max": 1219.0,
+    "region_l1_mean": 20.938683488877196
+   },
+   "social_cost_membership": {
+    "l1_mean": 0.43343240000000005,
+    "l2_mean": 5.383257202691857,
+    "cells_changed_mean": 690.36,
+    "cells_changed_max": 1219.0,
+    "region_l1_mean": 20.938683488877196
+   },
+   "social_cost_extended": {
+    "l1_mean": 2.1552432,
+    "l2_mean": 12.11142760739082,
+    "cells_changed_mean": 1338.272,
+    "cells_changed_max": 3261.0,
+    "region_l1_mean": 41.370418255243294
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0108",
+  "family": "stop_gesture",
+  "subtype": "oblique_60/active_from_start",
+  "split": "test_b",
+  "world": "reception",
+  "on": "000215",
+  "off": "000216",
+  "design_observability": "visual",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "primary_0"
+     ],
+     "stationary_person_slots": 125,
+     "matched_person_slots": 125,
+     "eligible_person_slots": 125,
+     "robot_contact_slot": {},
+     "pos_max_m": 0.0,
+     "heading_max_deg": 0.0,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {
+      "bystander_2": 0.134,
+      "bystander_1": 0.0
+     }
+    }
+   },
+   {
+    "check": "on_has_gesture_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "primary_0"
+   ],
+   "stationary_person_slots": 125,
+   "matched_person_slots": 125,
+   "eligible_person_slots": 125,
+   "robot_contact_slot": {},
+   "pos_max_m": 0.0,
+   "heading_max_deg": 0.0,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {
+    "bystander_2": 0.134,
+    "bystander_1": 0.0
+   }
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": true,
+  "robot": {
+   "robot_pos_max_m": 1.5532120667187455,
+   "robot_pos_mean_m": 0.47758020918467675,
+   "robot_heading_p95_deg": 2.3254201538912063
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "stop_gesture",
+   "cue": "raised hand point visible (depth-consistent)",
+   "samples_active": 125,
+   "samples_cue_visible": 39,
+   "cue_visible_fraction": 0.312
+  },
+  "visual": {
+   "rgb_absdiff_mean": 4.354075383663178,
+   "rgb_person_roi_absdiff_mean": 19.09627660886565,
+   "depth_person_roi_absdiff_mean_m": 1.0382471781696623,
+   "samples_with_person_in_view": 67
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 3.869313,
+    "l2_mean": 15.65641269761773,
+    "cells_changed_mean": 2793.776,
+    "cells_changed_max": 5887.0,
+    "region_l1_mean": 32.83470966731979
+   },
+   "social_cost_membership": {
+    "l1_mean": 3.869313,
+    "l2_mean": 15.65641269761773,
+    "cells_changed_mean": 2793.776,
+    "cells_changed_max": 5887.0,
+    "region_l1_mean": 32.83470966731979
+   },
+   "social_cost_extended": {
+    "l1_mean": 8.0640054,
+    "l2_mean": 30.65523884447014,
+    "cells_changed_mean": 4404.504,
+    "cells_changed_max": 7349.0,
+    "region_l1_mean": 59.961155419579455
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0109",
+  "family": "stop_gesture",
+  "subtype": "frontal/activates_on_approach",
+  "split": "train",
+  "world": "hospital_1",
+  "on": "000217",
+  "off": "000218",
+  "design_observability": "visual",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "primary_0"
+     ],
+     "stationary_person_slots": 109,
+     "matched_person_slots": 109,
+     "eligible_person_slots": 109,
+     "robot_contact_slot": {
+      "primary_0": 109
+     },
+     "pos_max_m": 0.0,
+     "heading_max_deg": 0.0,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {
+      "bystander_3": 0.266,
+      "bystander_2": 0.0,
+      "bystander_1": 0.067
+     }
+    }
+   },
+   {
+    "check": "on_has_gesture_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "primary_0"
+   ],
+   "stationary_person_slots": 109,
+   "matched_person_slots": 109,
+   "eligible_person_slots": 109,
+   "robot_contact_slot": {
+    "primary_0": 109
+   },
+   "pos_max_m": 0.0,
+   "heading_max_deg": 0.0,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {
+    "bystander_3": 0.266,
+    "bystander_2": 0.0,
+    "bystander_1": 0.067
+   }
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 1.542383661328358,
+   "robot_pos_mean_m": 1.4894222318924744,
+   "robot_heading_p95_deg": 8.338334994353037
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "stop_gesture",
+   "cue": "raised hand point visible (depth-consistent)",
+   "samples_active": 96,
+   "samples_cue_visible": 46,
+   "cue_visible_fraction": 0.479
+  },
+  "visual": {
+   "rgb_absdiff_mean": 37.18743872070313,
+   "rgb_person_roi_absdiff_mean": 59.07510968017578,
+   "depth_person_roi_absdiff_mean_m": 3.7606269149780274,
+   "samples_with_person_in_view": 125
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 9.8432964,
+    "l2_mean": 31.87050591771583,
+    "cells_changed_mean": 4293.376,
+    "cells_changed_max": 6317.0,
+    "region_l1_mean": 92.51030644982566
+   },
+   "social_cost_membership": {
+    "l1_mean": 9.8432964,
+    "l2_mean": 31.87050591771583,
+    "cells_changed_mean": 4293.376,
+    "cells_changed_max": 6317.0,
+    "region_l1_mean": 92.51030644982566
+   },
+   "social_cost_extended": {
+    "l1_mean": 11.1087436,
+    "l2_mean": 35.761786819977395,
+    "cells_changed_mean": 4885.232,
+    "cells_changed_max": 6963.0,
+    "region_l1_mean": 91.79200436034574
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0115",
+  "family": "wheelchair",
+  "subtype": "slow_forward_same",
+  "split": "train",
+  "world": "hospital_1",
+  "on": "000229",
+  "off": "000230",
+  "design_observability": "visual_appearance",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "wheelchair_variant_of_same_identity",
+    "ok": true,
+    "detail": [
+     "casual_female_caucasian_middleage_wheelchair",
+     "casual_female_caucasian_middleage"
+    ]
+   },
+   {
+    "check": "same_other_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "dynamic_pair_divergence_recorded",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "primary_0"
+     ],
+     "stationary_person_slots": 20,
+     "matched_person_slots": 0,
+     "eligible_person_slots": 125,
+     "robot_contact_slot": {},
+     "pos_max_m": 0.0815,
+     "heading_max_deg": 1.215,
+     "matched_fraction_of_stationary": 0.0,
+     "bystander_traj_max_m": {
+      "bystander_2": 0.0,
+      "bystander_1": 0.0
+     }
+    }
+   },
+   {
+    "check": "on_wheelchair_body_off_walking_twin",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "primary_0"
+   ],
+   "stationary_person_slots": 20,
+   "matched_person_slots": 0,
+   "eligible_person_slots": 125,
+   "robot_contact_slot": {},
+   "pos_max_m": 0.0815,
+   "heading_max_deg": 1.215,
+   "matched_fraction_of_stationary": 0.0,
+   "bystander_traj_max_m": {
+    "bystander_2": 0.0,
+    "bystander_1": 0.0
+   }
+  },
+  "controlled_static_design": false,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 1.5372321048236544,
+   "robot_pos_mean_m": 1.5183111109497416,
+   "robot_heading_p95_deg": 1.8500125974262187
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "wheelchair",
+   "cue": "primary >= 30 % visible",
+   "samples_active": 125,
+   "samples_cue_visible": 122,
+   "cue_visible_fraction": 0.976
+  },
+  "visual": {
+   "rgb_absdiff_mean": 25.925970542907717,
+   "rgb_person_roi_absdiff_mean": 58.51898764038086,
+   "depth_person_roi_absdiff_mean_m": 3.9865250091552733,
+   "samples_with_person_in_view": 125
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 4.6891314,
+    "l2_mean": 17.83272646686003,
+    "cells_changed_mean": 1868.512,
+    "cells_changed_max": 4659.0,
+    "region_l1_mean": 101.23642407760151
+   },
+   "social_cost_membership": {
+    "l1_mean": 4.6891314,
+    "l2_mean": 17.83272646686003,
+    "cells_changed_mean": 1868.512,
+    "cells_changed_max": 4659.0,
+    "region_l1_mean": 101.23642407760151
+   },
+   "social_cost_extended": {
+    "l1_mean": 4.6891314,
+    "l2_mean": 17.83272646686003,
+    "cells_changed_mean": 1868.512,
+    "cells_changed_max": 4659.0,
+    "region_l1_mean": 101.23642407760151
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0121",
+  "family": "wheelchair",
+  "subtype": "slow_forward_same",
+  "split": "train",
+  "world": "airport",
+  "on": "000241",
+  "off": "000242",
+  "design_observability": "visual_appearance",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "wheelchair_variant_of_same_identity",
+    "ok": true,
+    "detail": [
+     "casual_female_caucasian_middleage_wheelchair",
+     "casual_female_caucasian_middleage"
+    ]
+   },
+   {
+    "check": "same_other_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "dynamic_pair_divergence_recorded",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "primary_0"
+     ],
+     "stationary_person_slots": 25,
+     "matched_person_slots": 5,
+     "eligible_person_slots": 125,
+     "robot_contact_slot": {},
+     "pos_max_m": 0.0254,
+     "heading_max_deg": 0.25,
+     "matched_fraction_of_stationary": 0.2,
+     "bystander_traj_max_m": {
+      "bystander_2": 0.0,
+      "bystander_1": 0.348
+     }
+    }
+   },
+   {
+    "check": "on_wheelchair_body_off_walking_twin",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "primary_0"
+   ],
+   "stationary_person_slots": 25,
+   "matched_person_slots": 5,
+   "eligible_person_slots": 125,
+   "robot_contact_slot": {},
+   "pos_max_m": 0.0254,
+   "heading_max_deg": 0.25,
+   "matched_fraction_of_stationary": 0.2,
+   "bystander_traj_max_m": {
+    "bystander_2": 0.0,
+    "bystander_1": 0.348
+   }
+  },
+  "controlled_static_design": false,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 1.8353515323556373,
+   "robot_pos_mean_m": 1.4613438778917776,
+   "robot_heading_p95_deg": 89.98640195686788
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "wheelchair",
+   "cue": "primary >= 30 % visible",
+   "samples_active": 125,
+   "samples_cue_visible": 91,
+   "cue_visible_fraction": 0.728
+  },
+  "visual": {
+   "rgb_absdiff_mean": 24.611564155578613,
+   "rgb_person_roi_absdiff_mean": 50.01191923522949,
+   "depth_person_roi_absdiff_mean_m": 4.773417667388916,
+   "samples_with_person_in_view": 125
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 11.839970000000001,
+    "l2_mean": 35.015062436410865,
+    "cells_changed_mean": 4814.504,
+    "cells_changed_max": 7442.0,
+    "region_l1_mean": 96.2329636590737
+   },
+   "social_cost_membership": {
+    "l1_mean": 11.839970000000001,
+    "l2_mean": 35.015062436410865,
+    "cells_changed_mean": 4814.504,
+    "cells_changed_max": 7442.0,
+    "region_l1_mean": 96.2329636590737
+   },
+   "social_cost_extended": {
+    "l1_mean": 13.093434199999997,
+    "l2_mean": 36.56950318003506,
+    "cells_changed_mean": 5300.2,
+    "cells_changed_max": 8938.0,
+    "region_l1_mean": 96.40109691232782
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0137",
+  "family": "wheelchair",
+  "subtype": "crossing",
+  "split": "test_c",
+  "world": "hospital_1",
+  "on": "000273",
+  "off": "000274",
+  "design_observability": "visual_appearance",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "wheelchair_variant_of_same_identity",
+    "ok": true,
+    "detail": [
+     "casual_male_asian_middleage_wheelchair",
+     "casual_male_asian_middleage"
+    ]
+   },
+   {
+    "check": "same_other_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "dynamic_pair_divergence_recorded",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "primary_0"
+     ],
+     "stationary_person_slots": 99,
+     "matched_person_slots": 0,
+     "eligible_person_slots": 125,
+     "robot_contact_slot": {},
+     "pos_max_m": 0.1183,
+     "heading_max_deg": 5.393,
+     "matched_fraction_of_stationary": 0.0,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_wheelchair_body_off_walking_twin",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "primary_0"
+   ],
+   "stationary_person_slots": 99,
+   "matched_person_slots": 0,
+   "eligible_person_slots": 125,
+   "robot_contact_slot": {},
+   "pos_max_m": 0.1183,
+   "heading_max_deg": 5.393,
+   "matched_fraction_of_stationary": 0.0,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": false,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 0.1785173280715431,
+   "robot_pos_mean_m": 0.15521487698487474,
+   "robot_heading_p95_deg": 2.03991236929163
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "wheelchair",
+   "cue": "primary >= 30 % visible",
+   "samples_active": 125,
+   "samples_cue_visible": 99,
+   "cue_visible_fraction": 0.792
+  },
+  "visual": {
+   "rgb_absdiff_mean": 9.934104192733765,
+   "rgb_person_roi_absdiff_mean": 53.57362728625272,
+   "depth_person_roi_absdiff_mean_m": 1.7861369523854382,
+   "samples_with_person_in_view": 113
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 0.6504448000000003,
+    "l2_mean": 7.02069958616793,
+    "cells_changed_mean": 793.584,
+    "cells_changed_max": 1247.0,
+    "region_l1_mean": 28.530034747018604
+   },
+   "social_cost_membership": {
+    "l1_mean": 0.6504448000000003,
+    "l2_mean": 7.02069958616793,
+    "cells_changed_mean": 793.584,
+    "cells_changed_max": 1247.0,
+    "region_l1_mean": 28.530034747018604
+   },
+   "social_cost_extended": {
+    "l1_mean": 2.7727508,
+    "l2_mean": 15.512799788404198,
+    "cells_changed_mean": 1686.56,
+    "cells_changed_max": 2505.0,
+    "region_l1_mean": 59.6328664548841
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0138",
+  "family": "wheelchair",
+  "subtype": "stationary",
+  "split": "train",
+  "world": "socialcost_office",
+  "on": "000275",
+  "off": "000276",
+  "design_observability": "visual_appearance",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "wheelchair_variant_of_same_identity",
+    "ok": true,
+    "detail": [
+     "casual_female_caucasian_middleage_wheelchair",
+     "casual_female_caucasian_middleage"
+    ]
+   },
+   {
+    "check": "same_other_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "primary_0"
+     ],
+     "stationary_person_slots": 125,
+     "matched_person_slots": 125,
+     "eligible_person_slots": 125,
+     "robot_contact_slot": {},
+     "pos_max_m": 0.0,
+     "heading_max_deg": 0.0,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {
+      "bystander_3": 0.0,
+      "bystander_2": 1.106,
+      "bystander_1": 2.197
+     }
+    }
+   },
+   {
+    "check": "on_wheelchair_body_off_walking_twin",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "primary_0"
+   ],
+   "stationary_person_slots": 125,
+   "matched_person_slots": 125,
+   "eligible_person_slots": 125,
+   "robot_contact_slot": {},
+   "pos_max_m": 0.0,
+   "heading_max_deg": 0.0,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {
+    "bystander_3": 0.0,
+    "bystander_2": 1.106,
+    "bystander_1": 2.197
+   }
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": true,
+  "robot": {
+   "robot_pos_max_m": 1.6067975889585502,
+   "robot_pos_mean_m": 1.5762657420049646,
+   "robot_heading_p95_deg": 10.968251772029712
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "wheelchair",
+   "cue": "primary >= 30 % visible",
+   "samples_active": 125,
+   "samples_cue_visible": 91,
+   "cue_visible_fraction": 0.728
+  },
+  "visual": {
+   "rgb_absdiff_mean": 36.48700268554688,
+   "rgb_person_roi_absdiff_mean": 73.20572674560547,
+   "depth_person_roi_absdiff_mean_m": 4.5129183025360105,
+   "samples_with_person_in_view": 125
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 4.8306462,
+    "l2_mean": 19.19286504169778,
+    "cells_changed_mean": 2347.416,
+    "cells_changed_max": 6711.0,
+    "region_l1_mean": 88.5739852429695
+   },
+   "social_cost_membership": {
+    "l1_mean": 4.8306462,
+    "l2_mean": 19.19286504169778,
+    "cells_changed_mean": 2347.416,
+    "cells_changed_max": 6711.0,
+    "region_l1_mean": 88.5739852429695
+   },
+   "social_cost_extended": {
+    "l1_mean": 5.4818796,
+    "l2_mean": 20.45984536226326,
+    "cells_changed_mean": 2641.68,
+    "cells_changed_max": 7345.0,
+    "region_l1_mean": 88.90969759481143
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0141",
+  "family": "wheelchair",
+  "subtype": "slow_forward_opposite",
+  "split": "train",
+  "world": "hospital_1",
+  "on": "000281",
+  "off": "000282",
+  "design_observability": "visual_appearance",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "wheelchair_variant_of_same_identity",
+    "ok": true,
+    "detail": [
+     "casual_female_caucasian_middleage_wheelchair",
+     "casual_female_caucasian_middleage"
+    ]
+   },
+   {
+    "check": "same_other_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "dynamic_pair_divergence_recorded",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "primary_0"
+     ],
+     "stationary_person_slots": 0,
+     "matched_person_slots": 0,
+     "eligible_person_slots": 125,
+     "robot_contact_slot": {},
+     "pos_max_m": 0.0,
+     "heading_max_deg": 0.0,
+     "matched_fraction_of_stationary": null,
+     "bystander_traj_max_m": {
+      "bystander_3": 0.0,
+      "bystander_2": 0.0,
+      "bystander_1": 0.0
+     }
+    }
+   },
+   {
+    "check": "on_wheelchair_body_off_walking_twin",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "primary_0"
+   ],
+   "stationary_person_slots": 0,
+   "matched_person_slots": 0,
+   "eligible_person_slots": 125,
+   "robot_contact_slot": {},
+   "pos_max_m": 0.0,
+   "heading_max_deg": 0.0,
+   "matched_fraction_of_stationary": null,
+   "bystander_traj_max_m": {
+    "bystander_3": 0.0,
+    "bystander_2": 0.0,
+    "bystander_1": 0.0
+   }
+  },
+  "controlled_static_design": false,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 2.121952319946201,
+   "robot_pos_mean_m": 2.0499279252470672,
+   "robot_heading_p95_deg": 19.263462267570283
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "wheelchair",
+   "cue": "primary >= 30 % visible",
+   "samples_active": 125,
+   "samples_cue_visible": 44,
+   "cue_visible_fraction": 0.352
+  },
+  "visual": {
+   "rgb_absdiff_mean": 40.794150421142575,
+   "rgb_person_roi_absdiff_mean": 67.12316162109374,
+   "depth_person_roi_absdiff_mean_m": 2.586108973026276,
+   "samples_with_person_in_view": 125
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 10.9377402,
+    "l2_mean": 32.3732140628172,
+    "cells_changed_mean": 4424.32,
+    "cells_changed_max": 7199.0,
+    "region_l1_mean": 99.3071544195574
+   },
+   "social_cost_membership": {
+    "l1_mean": 10.9377402,
+    "l2_mean": 32.3732140628172,
+    "cells_changed_mean": 4424.32,
+    "cells_changed_max": 7199.0,
+    "region_l1_mean": 99.3071544195574
+   },
+   "social_cost_extended": {
+    "l1_mean": 12.247171400000001,
+    "l2_mean": 34.31253138383079,
+    "cells_changed_mean": 5081.616,
+    "cells_changed_max": 8304.0,
+    "region_l1_mean": 96.80506134542938
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0146",
+  "family": "wheelchair",
+  "subtype": "turning",
+  "split": "val",
+  "world": "hospital_1",
+  "on": "000291",
+  "off": "000292",
+  "design_observability": "visual_appearance",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "wheelchair_variant_of_same_identity",
+    "ok": true,
+    "detail": [
+     "casual_female_caucasian_middleage_wheelchair",
+     "casual_female_caucasian_middleage"
+    ]
+   },
+   {
+    "check": "same_other_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "dynamic_pair_divergence_recorded",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "primary_0"
+     ],
+     "stationary_person_slots": 41,
+     "matched_person_slots": 0,
+     "eligible_person_slots": 125,
+     "robot_contact_slot": {},
+     "pos_max_m": 1.8255,
+     "heading_max_deg": 176.26,
+     "matched_fraction_of_stationary": 0.0,
+     "bystander_traj_max_m": {
+      "bystander_1": 0.011
+     }
+    }
+   },
+   {
+    "check": "on_wheelchair_body_off_walking_twin",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "primary_0"
+   ],
+   "stationary_person_slots": 41,
+   "matched_person_slots": 0,
+   "eligible_person_slots": 125,
+   "robot_contact_slot": {},
+   "pos_max_m": 1.8255,
+   "heading_max_deg": 176.26,
+   "matched_fraction_of_stationary": 0.0,
+   "bystander_traj_max_m": {
+    "bystander_1": 0.011
+   }
+  },
+  "controlled_static_design": false,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 0.03163039485443584,
+   "robot_pos_mean_m": 0.019215432970871013,
+   "robot_heading_p95_deg": 1.9387138237772257
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "wheelchair",
+   "cue": "primary >= 30 % visible",
+   "samples_active": 125,
+   "samples_cue_visible": 111,
+   "cue_visible_fraction": 0.888
+  },
+  "visual": {
+   "rgb_absdiff_mean": 7.117401828765869,
+   "rgb_person_roi_absdiff_mean": 48.26241139221192,
+   "depth_person_roi_absdiff_mean_m": 2.1961512677669526,
+   "samples_with_person_in_view": 125
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 1.5396488,
+    "l2_mean": 8.588080462746515,
+    "cells_changed_mean": 829.36,
+    "cells_changed_max": 2636.0,
+    "region_l1_mean": 73.71714546231757
+   },
+   "social_cost_membership": {
+    "l1_mean": 1.5396488,
+    "l2_mean": 8.588080462746515,
+    "cells_changed_mean": 829.36,
+    "cells_changed_max": 2636.0,
+    "region_l1_mean": 73.71714546231757
+   },
+   "social_cost_extended": {
+    "l1_mean": 2.4210848,
+    "l2_mean": 11.56317893697294,
+    "cells_changed_mean": 1224.336,
+    "cells_changed_max": 3477.0,
+    "region_l1_mean": 81.68805387330077
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0149",
+  "family": "wheelchair",
+  "subtype": "slow_forward_opposite",
+  "split": "train",
+  "world": "airport",
+  "on": "000297",
+  "off": "000298",
+  "design_observability": "visual_appearance",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "wheelchair_variant_of_same_identity",
+    "ok": true,
+    "detail": [
+     "casual_female_caucasian_middleage_wheelchair",
+     "casual_female_caucasian_middleage"
+    ]
+   },
+   {
+    "check": "same_other_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "dynamic_pair_divergence_recorded",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "primary_0"
+     ],
+     "stationary_person_slots": 4,
+     "matched_person_slots": 4,
+     "eligible_person_slots": 58,
+     "robot_contact_slot": {
+      "primary_0": 58
+     },
+     "pos_max_m": 0.0,
+     "heading_max_deg": 0.0,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {
+      "bystander_1": 0.028
+     }
+    }
+   },
+   {
+    "check": "on_wheelchair_body_off_walking_twin",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "primary_0"
+   ],
+   "stationary_person_slots": 4,
+   "matched_person_slots": 4,
+   "eligible_person_slots": 58,
+   "robot_contact_slot": {
+    "primary_0": 58
+   },
+   "pos_max_m": 0.0,
+   "heading_max_deg": 0.0,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {
+    "bystander_1": 0.028
+   }
+  },
+  "controlled_static_design": false,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 0.326490298997054,
+   "robot_pos_mean_m": 0.1563685606304405,
+   "robot_heading_p95_deg": 7.263179313187433
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "wheelchair",
+   "cue": "primary >= 30 % visible",
+   "samples_active": 125,
+   "samples_cue_visible": 52,
+   "cue_visible_fraction": 0.416
+  },
+  "visual": {
+   "rgb_absdiff_mean": 12.31744895362854,
+   "rgb_person_roi_absdiff_mean": 39.56599301528931,
+   "depth_person_roi_absdiff_mean_m": 3.7316025933027266,
+   "samples_with_person_in_view": 125
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 0.9782378000000002,
+    "l2_mean": 8.190334741526136,
+    "cells_changed_mean": 1233.856,
+    "cells_changed_max": 3231.0,
+    "region_l1_mean": 28.669521378276848
+   },
+   "social_cost_membership": {
+    "l1_mean": 0.9782378000000002,
+    "l2_mean": 8.190334741526136,
+    "cells_changed_mean": 1233.856,
+    "cells_changed_max": 3231.0,
+    "region_l1_mean": 28.669521378276848
+   },
+   "social_cost_extended": {
+    "l1_mean": 2.4550531999999987,
+    "l2_mean": 13.387957460081719,
+    "cells_changed_mean": 1861.408,
+    "cells_changed_max": 4080.0,
+    "region_l1_mean": 43.82688621865582
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0150",
+  "family": "wheelchair",
+  "subtype": "boundary_wait",
+  "split": "test_a",
+  "world": "hospital_1",
+  "on": "000299",
+  "off": "000300",
+  "design_observability": "visual_appearance",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "wheelchair_variant_of_same_identity",
+    "ok": true,
+    "detail": [
+     "casual_female_caucasian_middleage_wheelchair",
+     "casual_female_caucasian_middleage"
+    ]
+   },
+   {
+    "check": "same_other_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "primary_0"
+     ],
+     "stationary_person_slots": 125,
+     "matched_person_slots": 125,
+     "eligible_person_slots": 125,
+     "robot_contact_slot": {},
+     "pos_max_m": 0.0,
+     "heading_max_deg": 0.0,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {
+      "bystander_3": 0.0,
+      "bystander_2": 0.268,
+      "bystander_1": 0.0
+     }
+    }
+   },
+   {
+    "check": "on_wheelchair_body_off_walking_twin",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "primary_0"
+   ],
+   "stationary_person_slots": 125,
+   "matched_person_slots": 125,
+   "eligible_person_slots": 125,
+   "robot_contact_slot": {},
+   "pos_max_m": 0.0,
+   "heading_max_deg": 0.0,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {
+    "bystander_3": 0.0,
+    "bystander_2": 0.268,
+    "bystander_1": 0.0
+   }
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": true,
+  "robot": {
+   "robot_pos_max_m": 0.07277469426209075,
+   "robot_pos_mean_m": 0.06019074894270655,
+   "robot_heading_p95_deg": 1.3780214437884304
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "wheelchair",
+   "cue": "primary >= 30 % visible",
+   "samples_active": 125,
+   "samples_cue_visible": 71,
+   "cue_visible_fraction": 0.568
+  },
+  "visual": {
+   "rgb_absdiff_mean": 9.025961303710938,
+   "rgb_person_roi_absdiff_mean": 24.78485407868052,
+   "depth_person_roi_absdiff_mean_m": 0.7016455679526173,
+   "samples_with_person_in_view": 123
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 1.1362979999999998,
+    "l2_mean": 9.583772472844366,
+    "cells_changed_mean": 2728.376,
+    "cells_changed_max": 3691.0,
+    "region_l1_mean": 10.291106383914894
+   },
+   "social_cost_membership": {
+    "l1_mean": 1.1362979999999998,
+    "l2_mean": 9.583772472844366,
+    "cells_changed_mean": 2728.376,
+    "cells_changed_max": 3691.0,
+    "region_l1_mean": 10.291106383914894
+   },
+   "social_cost_extended": {
+    "l1_mean": 3.8330228000000006,
+    "l2_mean": 18.875748520241874,
+    "cells_changed_mean": 3930.824,
+    "cells_changed_max": 5071.0,
+    "region_l1_mean": 27.60785522277885
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0154",
+  "family": "wheelchair",
+  "subtype": "slow_forward_opposite",
+  "split": "test_b",
+  "world": "reception",
+  "on": "000307",
+  "off": "000308",
+  "design_observability": "visual_appearance",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "wheelchair_variant_of_same_identity",
+    "ok": true,
+    "detail": [
+     "casual_female_caucasian_middleage_wheelchair",
+     "casual_female_caucasian_middleage"
+    ]
+   },
+   {
+    "check": "same_other_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "dynamic_pair_divergence_recorded",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "primary_0"
+     ],
+     "stationary_person_slots": 15,
+     "matched_person_slots": 0,
+     "eligible_person_slots": 125,
+     "robot_contact_slot": {},
+     "pos_max_m": 0.1467,
+     "heading_max_deg": 53.318,
+     "matched_fraction_of_stationary": 0.0,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_wheelchair_body_off_walking_twin",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "primary_0"
+   ],
+   "stationary_person_slots": 15,
+   "matched_person_slots": 0,
+   "eligible_person_slots": 125,
+   "robot_contact_slot": {},
+   "pos_max_m": 0.1467,
+   "heading_max_deg": 53.318,
+   "matched_fraction_of_stationary": 0.0,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": false,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 0.057033335366637745,
+   "robot_pos_mean_m": 0.037106993228288136,
+   "robot_heading_p95_deg": 0.36548407979189623
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "wheelchair",
+   "cue": "primary >= 30 % visible",
+   "samples_active": 125,
+   "samples_cue_visible": 38,
+   "cue_visible_fraction": 0.304
+  },
+  "visual": {
+   "rgb_absdiff_mean": 2.1038356642723084,
+   "rgb_person_roi_absdiff_mean": 40.877307074410574,
+   "depth_person_roi_absdiff_mean_m": 4.143916008018312,
+   "samples_with_person_in_view": 42
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 0.0812206,
+    "l2_mean": 1.866201201992237,
+    "cells_changed_mean": 315.912,
+    "cells_changed_max": 846.0,
+    "region_l1_mean": 6.7857780395855976
+   },
+   "social_cost_membership": {
+    "l1_mean": 0.0812206,
+    "l2_mean": 1.866201201992237,
+    "cells_changed_mean": 315.912,
+    "cells_changed_max": 846.0,
+    "region_l1_mean": 6.7857780395855976
+   },
+   "social_cost_extended": {
+    "l1_mean": 2.0256004,
+    "l2_mean": 10.845684582016387,
+    "cells_changed_mean": 1202.912,
+    "cells_changed_max": 2514.0,
+    "region_l1_mean": 64.36669823171994
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0156",
+  "family": "wheelchair",
+  "subtype": "crossing",
+  "split": "train",
+  "world": "hospital_1",
+  "on": "000311",
+  "off": "000312",
+  "design_observability": "visual_appearance",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "wheelchair_variant_of_same_identity",
+    "ok": true,
+    "detail": [
+     "casual_female_caucasian_middleage_wheelchair",
+     "casual_female_caucasian_middleage"
+    ]
+   },
+   {
+    "check": "same_other_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "dynamic_pair_divergence_recorded",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "primary_0"
+     ],
+     "stationary_person_slots": 95,
+     "matched_person_slots": 67,
+     "eligible_person_slots": 125,
+     "robot_contact_slot": {},
+     "pos_max_m": 0.1384,
+     "heading_max_deg": 0.784,
+     "matched_fraction_of_stationary": 0.705,
+     "bystander_traj_max_m": {
+      "bystander_3": 0.549,
+      "bystander_2": 0.0,
+      "bystander_1": 0.0
+     }
+    }
+   },
+   {
+    "check": "on_wheelchair_body_off_walking_twin",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "primary_0"
+   ],
+   "stationary_person_slots": 95,
+   "matched_person_slots": 67,
+   "eligible_person_slots": 125,
+   "robot_contact_slot": {},
+   "pos_max_m": 0.1384,
+   "heading_max_deg": 0.784,
+   "matched_fraction_of_stationary": 0.705,
+   "bystander_traj_max_m": {
+    "bystander_3": 0.549,
+    "bystander_2": 0.0,
+    "bystander_1": 0.0
+   }
+  },
+  "controlled_static_design": false,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 3.230467230909723,
+   "robot_pos_mean_m": 3.1541910783897236,
+   "robot_heading_p95_deg": 3.829537608494808
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "wheelchair",
+   "cue": "primary >= 30 % visible",
+   "samples_active": 125,
+   "samples_cue_visible": 74,
+   "cue_visible_fraction": 0.592
+  },
+  "visual": {
+   "rgb_absdiff_mean": 35.469457092285154,
+   "rgb_person_roi_absdiff_mean": 52.32126837158203,
+   "depth_person_roi_absdiff_mean_m": 2.388000985145569,
+   "samples_with_person_in_view": 125
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 9.1872304,
+    "l2_mean": 31.063443989007283,
+    "cells_changed_mean": 3535.016,
+    "cells_changed_max": 5950.0,
+    "region_l1_mean": 104.74435488052401
+   },
+   "social_cost_membership": {
+    "l1_mean": 9.1872304,
+    "l2_mean": 31.063443989007283,
+    "cells_changed_mean": 3535.016,
+    "cells_changed_max": 5950.0,
+    "region_l1_mean": 104.74435488052401
+   },
+   "social_cost_extended": {
+    "l1_mean": 12.755672800000001,
+    "l2_mean": 36.669746198289076,
+    "cells_changed_mean": 4864.032,
+    "cells_changed_max": 7519.0,
+    "region_l1_mean": 105.40028896896466
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0165",
+  "family": "queue",
+  "subtype": "sparse/parallel/advancing",
+  "split": "train",
+  "world": "socialcost_office",
+  "on": "000329",
+  "off": "000330",
+  "design_observability": "hidden_state",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "dynamic_pair_divergence_recorded",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "member_0",
+      "member_1",
+      "member_2",
+      "member_3",
+      "member_4",
+      "member_5",
+      "member_6",
+      "member_7"
+     ],
+     "stationary_person_slots": 665,
+     "matched_person_slots": 33,
+     "eligible_person_slots": 991,
+     "robot_contact_slot": {
+      "member_1": 116
+     },
+     "pos_max_m": 4.1508,
+     "heading_max_deg": 100.416,
+     "matched_fraction_of_stationary": 0.05,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_queue_membership_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "member_0",
+    "member_1",
+    "member_2",
+    "member_3",
+    "member_4",
+    "member_5",
+    "member_6",
+    "member_7"
+   ],
+   "stationary_person_slots": 665,
+   "matched_person_slots": 33,
+   "eligible_person_slots": 991,
+   "robot_contact_slot": {
+    "member_1": 116
+   },
+   "pos_max_m": 4.1508,
+   "heading_max_deg": 100.416,
+   "matched_fraction_of_stationary": 0.05,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": false,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 0.24769814832662632,
+   "robot_pos_mean_m": 0.19277668262016803,
+   "robot_heading_p95_deg": 6.109064729562078
+  },
+  "observability_class": "hidden_state",
+  "cue": {
+   "family": "queue",
+   "cue": "n/a",
+   "samples_active": 0,
+   "samples_cue_visible": 0,
+   "cue_visible_fraction": null
+  },
+  "visual": {
+   "rgb_absdiff_mean": 15.49817004585266,
+   "rgb_person_roi_absdiff_mean": 39.72758930206299,
+   "depth_person_roi_absdiff_mean_m": 1.0112702350616456,
+   "samples_with_person_in_view": 125
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 2.9063502000000003,
+    "l2_mean": 15.910273740248567,
+    "cells_changed_mean": 2827.592,
+    "cells_changed_max": 4829.0,
+    "region_l1_mean": 35.777822029085705
+   },
+   "social_cost_membership": {
+    "l1_mean": 13.1097114,
+    "l2_mean": 36.689262690669395,
+    "cells_changed_mean": 7191.616,
+    "cells_changed_max": 13507.0,
+    "region_l1_mean": 68.05618108507383
+   },
+   "social_cost_extended": {
+    "l1_mean": 13.1097114,
+    "l2_mean": 36.689262690669395,
+    "cells_changed_mean": 7191.616,
+    "cells_changed_max": 13507.0,
+    "region_l1_mean": 68.05618108507383
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0166",
+  "family": "queue",
+  "subtype": "dense/perpendicular/static",
+  "split": "train",
+  "world": "hospital_1",
+  "on": "000331",
+  "off": "000332",
+  "design_observability": "hidden_state",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "member_0",
+      "member_1",
+      "member_2",
+      "member_3",
+      "member_4",
+      "member_5"
+     ],
+     "stationary_person_slots": 745,
+     "matched_person_slots": 745,
+     "eligible_person_slots": 745,
+     "robot_contact_slot": {
+      "member_0": 123,
+      "member_1": 122
+     },
+     "pos_max_m": 0.0001,
+     "heading_max_deg": 0.001,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_queue_membership_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "member_0",
+    "member_1",
+    "member_2",
+    "member_3",
+    "member_4",
+    "member_5"
+   ],
+   "stationary_person_slots": 745,
+   "matched_person_slots": 745,
+   "eligible_person_slots": 745,
+   "robot_contact_slot": {
+    "member_0": 123,
+    "member_1": 122
+   },
+   "pos_max_m": 0.0001,
+   "heading_max_deg": 0.001,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 0.03949343882793286,
+   "robot_pos_mean_m": 0.023876228394725113,
+   "robot_heading_p95_deg": 2.416152783995184
+  },
+  "observability_class": "hidden_state",
+  "cue": {
+   "family": "queue",
+   "cue": "n/a",
+   "samples_active": 0,
+   "samples_cue_visible": 0,
+   "cue_visible_fraction": null
+  },
+  "visual": {
+   "rgb_absdiff_mean": 9.94436134147644,
+   "rgb_person_roi_absdiff_mean": 22.330321910858153,
+   "depth_person_roi_absdiff_mean_m": 0.8195113745927811,
+   "samples_with_person_in_view": 125
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 0.43016039999999994,
+    "l2_mean": 4.856772777221355,
+    "cells_changed_mean": 1252.712,
+    "cells_changed_max": 2761.0,
+    "region_l1_mean": 7.690787717451242
+   },
+   "social_cost_membership": {
+    "l1_mean": 10.431034800000003,
+    "l2_mean": 26.745025710674994,
+    "cells_changed_mean": 6680.8,
+    "cells_changed_max": 11279.0,
+    "region_l1_mean": 55.53142797265282
+   },
+   "social_cost_extended": {
+    "l1_mean": 10.431034800000003,
+    "l2_mean": 26.745025710674994,
+    "cells_changed_mean": 6680.8,
+    "cells_changed_max": 11279.0,
+    "region_l1_mean": 55.53142797265282
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0168",
+  "family": "queue",
+  "subtype": "normal/oblique/static",
+  "split": "test_a",
+  "world": "socialcost_office",
+  "on": "000335",
+  "off": "000336",
+  "design_observability": "hidden_state",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "member_0",
+      "member_1",
+      "member_2",
+      "member_3",
+      "member_4",
+      "member_5",
+      "member_6",
+      "member_7"
+     ],
+     "stationary_person_slots": 1000,
+     "matched_person_slots": 1000,
+     "eligible_person_slots": 1000,
+     "robot_contact_slot": {},
+     "pos_max_m": 0.0001,
+     "heading_max_deg": 0.0,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_queue_membership_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "member_0",
+    "member_1",
+    "member_2",
+    "member_3",
+    "member_4",
+    "member_5",
+    "member_6",
+    "member_7"
+   ],
+   "stationary_person_slots": 1000,
+   "matched_person_slots": 1000,
+   "eligible_person_slots": 1000,
+   "robot_contact_slot": {},
+   "pos_max_m": 0.0001,
+   "heading_max_deg": 0.0,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": true,
+  "robot": {
+   "robot_pos_max_m": 1.610325450293289,
+   "robot_pos_mean_m": 1.5869107378829597,
+   "robot_heading_p95_deg": 2.2611352054452993
+  },
+  "observability_class": "hidden_state",
+  "cue": {
+   "family": "queue",
+   "cue": "n/a",
+   "samples_active": 0,
+   "samples_cue_visible": 0,
+   "cue_visible_fraction": null
+  },
+  "visual": {
+   "rgb_absdiff_mean": 29.68601445007324,
+   "rgb_person_roi_absdiff_mean": 78.94839315061216,
+   "depth_person_roi_absdiff_mean_m": 1.7000111760916534,
+   "samples_with_person_in_view": 54
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 12.8977464,
+    "l2_mean": 37.085528364051456,
+    "cells_changed_mean": 6262.512,
+    "cells_changed_max": 6883.0,
+    "region_l1_mean": 80.76169964845818
+   },
+   "social_cost_membership": {
+    "l1_mean": 24.726548,
+    "l2_mean": 61.05423705574858,
+    "cells_changed_mean": 9735.696,
+    "cells_changed_max": 10619.0,
+    "region_l1_mean": 101.47792222706644
+   },
+   "social_cost_extended": {
+    "l1_mean": 24.726548,
+    "l2_mean": 61.05423705574858,
+    "cells_changed_mean": 9735.696,
+    "cells_changed_max": 10619.0,
+    "region_l1_mean": 101.47792222706644
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0172",
+  "family": "queue",
+  "subtype": "dense/perpendicular/static",
+  "split": "train",
+  "world": "socialcost_office",
+  "on": "000343",
+  "off": "000344",
+  "design_observability": "hidden_state",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "member_0",
+      "member_1",
+      "member_2",
+      "member_3"
+     ],
+     "stationary_person_slots": 417,
+     "matched_person_slots": 417,
+     "eligible_person_slots": 417,
+     "robot_contact_slot": {
+      "member_2": 85,
+      "member_1": 82
+     },
+     "pos_max_m": 0.0,
+     "heading_max_deg": 0.0,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_queue_membership_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "member_0",
+    "member_1",
+    "member_2",
+    "member_3"
+   ],
+   "stationary_person_slots": 417,
+   "matched_person_slots": 417,
+   "eligible_person_slots": 417,
+   "robot_contact_slot": {
+    "member_2": 85,
+    "member_1": 82
+   },
+   "pos_max_m": 0.0,
+   "heading_max_deg": 0.0,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 0.025651715445610734,
+   "robot_pos_mean_m": 0.013211158994497242,
+   "robot_heading_p95_deg": 1.3834934644899772
+  },
+  "observability_class": "hidden_state",
+  "cue": {
+   "family": "queue",
+   "cue": "n/a",
+   "samples_active": 0,
+   "samples_cue_visible": 0,
+   "cue_visible_fraction": null
+  },
+  "visual": {
+   "rgb_absdiff_mean": 4.724225805282593,
+   "rgb_person_roi_absdiff_mean": 9.65396784067154,
+   "depth_person_roi_absdiff_mean_m": 0.22986077927984297,
+   "samples_with_person_in_view": 100
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 0.1715662,
+    "l2_mean": 3.5228429140778412,
+    "cells_changed_mean": 886.392,
+    "cells_changed_max": 1399.0,
+    "region_l1_mean": 2.4774804557355927
+   },
+   "social_cost_membership": {
+    "l1_mean": 12.105994999999998,
+    "l2_mean": 33.108189258624634,
+    "cells_changed_mean": 7966.096,
+    "cells_changed_max": 9225.0,
+    "region_l1_mean": 60.4183420418077
+   },
+   "social_cost_extended": {
+    "l1_mean": 12.105994999999998,
+    "l2_mean": 33.108189258624634,
+    "cells_changed_mean": 7966.096,
+    "cells_changed_max": 9225.0,
+    "region_l1_mean": 60.4183420418077
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0173",
+  "family": "queue",
+  "subtype": "normal/perpendicular/advancing",
+  "split": "test_c",
+  "world": "hospital_1",
+  "on": "000345",
+  "off": "000346",
+  "design_observability": "hidden_state",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "dynamic_pair_divergence_recorded",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "member_0",
+      "member_1",
+      "member_2",
+      "member_3",
+      "member_4",
+      "member_5",
+      "member_6",
+      "member_7"
+     ],
+     "stationary_person_slots": 686,
+     "matched_person_slots": 42,
+     "eligible_person_slots": 875,
+     "robot_contact_slot": {
+      "member_0": 71,
+      "member_3": 113,
+      "member_1": 69,
+      "member_2": 122
+     },
+     "pos_max_m": 2.8335,
+     "heading_max_deg": 178.741,
+     "matched_fraction_of_stationary": 0.061,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_queue_membership_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "member_0",
+    "member_1",
+    "member_2",
+    "member_3",
+    "member_4",
+    "member_5",
+    "member_6",
+    "member_7"
+   ],
+   "stationary_person_slots": 686,
+   "matched_person_slots": 42,
+   "eligible_person_slots": 875,
+   "robot_contact_slot": {
+    "member_0": 71,
+    "member_3": 113,
+    "member_1": 69,
+    "member_2": 122
+   },
+   "pos_max_m": 2.8335,
+   "heading_max_deg": 178.741,
+   "matched_fraction_of_stationary": 0.061,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": false,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 2.9603877574510378,
+   "robot_pos_mean_m": 2.304998679040809,
+   "robot_heading_p95_deg": 33.98874894152103
+  },
+  "observability_class": "hidden_state",
+  "cue": {
+   "family": "queue",
+   "cue": "n/a",
+   "samples_active": 0,
+   "samples_cue_visible": 0,
+   "cue_visible_fraction": null
+  },
+  "visual": {
+   "rgb_absdiff_mean": 45.434720886230465,
+   "rgb_person_roi_absdiff_mean": 62.72550973510742,
+   "depth_person_roi_absdiff_mean_m": 2.565154974937439,
+   "samples_with_person_in_view": 125
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 23.146214200000006,
+    "l2_mean": 49.69331072503641,
+    "cells_changed_mean": 8708.032,
+    "cells_changed_max": 11207.0,
+    "region_l1_mean": 105.93931171239072
+   },
+   "social_cost_membership": {
+    "l1_mean": 36.820092599999995,
+    "l2_mean": 73.98800374448251,
+    "cells_changed_mean": 12250.52,
+    "cells_changed_max": 18107.0,
+    "region_l1_mean": 118.02531540096308
+   },
+   "social_cost_extended": {
+    "l1_mean": 36.820092599999995,
+    "l2_mean": 73.98800374448251,
+    "cells_changed_mean": 12250.52,
+    "cells_changed_max": 18107.0,
+    "region_l1_mean": 118.02531540096308
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0181",
+  "family": "queue",
+  "subtype": "normal/perpendicular/advancing",
+  "split": "train",
+  "world": "airport",
+  "on": "000361",
+  "off": "000362",
+  "design_observability": "hidden_state",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "dynamic_pair_divergence_recorded",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "member_0",
+      "member_1",
+      "member_2",
+      "member_3",
+      "member_4"
+     ],
+     "stationary_person_slots": 295,
+     "matched_person_slots": 0,
+     "eligible_person_slots": 434,
+     "robot_contact_slot": {
+      "member_0": 80,
+      "member_3": 75,
+      "member_1": 76,
+      "member_2": 78
+     },
+     "pos_max_m": 3.0114,
+     "heading_max_deg": 117.751,
+     "matched_fraction_of_stationary": 0.0,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_queue_membership_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "member_0",
+    "member_1",
+    "member_2",
+    "member_3",
+    "member_4"
+   ],
+   "stationary_person_slots": 295,
+   "matched_person_slots": 0,
+   "eligible_person_slots": 434,
+   "robot_contact_slot": {
+    "member_0": 80,
+    "member_3": 75,
+    "member_1": 76,
+    "member_2": 78
+   },
+   "pos_max_m": 3.0114,
+   "heading_max_deg": 117.751,
+   "matched_fraction_of_stationary": 0.0,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": false,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 2.2653455682414676,
+   "robot_pos_mean_m": 0.8502423280531969,
+   "robot_heading_p95_deg": 37.466339495561996
+  },
+  "observability_class": "hidden_state",
+  "cue": {
+   "family": "queue",
+   "cue": "n/a",
+   "samples_active": 0,
+   "samples_cue_visible": 0,
+   "cue_visible_fraction": null
+  },
+  "visual": {
+   "rgb_absdiff_mean": 29.17845983505249,
+   "rgb_person_roi_absdiff_mean": 43.53991625489307,
+   "depth_person_roi_absdiff_mean_m": 5.095526403990112,
+   "samples_with_person_in_view": 119
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 10.067806000000001,
+    "l2_mean": 31.62911695323829,
+    "cells_changed_mean": 5158.44,
+    "cells_changed_max": 8484.0,
+    "region_l1_mean": 66.52737971557157
+   },
+   "social_cost_membership": {
+    "l1_mean": 20.243714600000004,
+    "l2_mean": 50.46422008249812,
+    "cells_changed_mean": 9568.864,
+    "cells_changed_max": 14357.0,
+    "region_l1_mean": 82.79118503762511
+   },
+   "social_cost_extended": {
+    "l1_mean": 20.243714600000004,
+    "l2_mean": 50.46422008249812,
+    "cells_changed_mean": 9568.864,
+    "cells_changed_max": 14357.0,
+    "region_l1_mean": 82.79118503762511
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0182",
+  "family": "queue",
+  "subtype": "dense/perpendicular/advancing",
+  "split": "train",
+  "world": "socialcost_office",
+  "on": "000363",
+  "off": "000364",
+  "design_observability": "hidden_state",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "dynamic_pair_divergence_recorded",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "member_0",
+      "member_1",
+      "member_2",
+      "member_3",
+      "member_4",
+      "member_5"
+     ],
+     "stationary_person_slots": 372,
+     "matched_person_slots": 4,
+     "eligible_person_slots": 620,
+     "robot_contact_slot": {
+      "member_0": 79,
+      "member_3": 89,
+      "member_2": 77
+     },
+     "pos_max_m": 2.9881,
+     "heading_max_deg": 37.746,
+     "matched_fraction_of_stationary": 0.011,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_queue_membership_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "member_0",
+    "member_1",
+    "member_2",
+    "member_3",
+    "member_4",
+    "member_5"
+   ],
+   "stationary_person_slots": 372,
+   "matched_person_slots": 4,
+   "eligible_person_slots": 620,
+   "robot_contact_slot": {
+    "member_0": 79,
+    "member_3": 89,
+    "member_2": 77
+   },
+   "pos_max_m": 2.9881,
+   "heading_max_deg": 37.746,
+   "matched_fraction_of_stationary": 0.011,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": false,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 0.127939689974915,
+   "robot_pos_mean_m": 0.06491298544839744,
+   "robot_heading_p95_deg": 8.910347853297427
+  },
+  "observability_class": "hidden_state",
+  "cue": {
+   "family": "queue",
+   "cue": "n/a",
+   "samples_active": 0,
+   "samples_cue_visible": 0,
+   "cue_visible_fraction": null
+  },
+  "visual": {
+   "rgb_absdiff_mean": 21.361397829055786,
+   "rgb_person_roi_absdiff_mean": 57.05556401146783,
+   "depth_person_roi_absdiff_mean_m": 1.9434579484992558,
+   "samples_with_person_in_view": 90
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 2.9868981999999997,
+    "l2_mean": 16.422875885800647,
+    "cells_changed_mean": 2756.0,
+    "cells_changed_max": 4036.0,
+    "region_l1_mean": 28.46154496711591
+   },
+   "social_cost_membership": {
+    "l1_mean": 13.241892800000002,
+    "l2_mean": 36.341377950410134,
+    "cells_changed_mean": 8171.616,
+    "cells_changed_max": 10264.0,
+    "region_l1_mean": 63.933621610021184
+   },
+   "social_cost_extended": {
+    "l1_mean": 13.241892800000002,
+    "l2_mean": 36.341377950410134,
+    "cells_changed_mean": 8171.616,
+    "cells_changed_max": 10264.0,
+    "region_l1_mean": 63.933621610021184
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0191",
+  "family": "queue",
+  "subtype": "dense/perpendicular/advancing",
+  "split": "val",
+  "world": "socialcost_office",
+  "on": "000381",
+  "off": "000382",
+  "design_observability": "hidden_state",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "dynamic_pair_divergence_recorded",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "member_0",
+      "member_1",
+      "member_2",
+      "member_3",
+      "member_4",
+      "member_5",
+      "member_6",
+      "member_7"
+     ],
+     "stationary_person_slots": 544,
+     "matched_person_slots": 0,
+     "eligible_person_slots": 969,
+     "robot_contact_slot": {
+      "member_0": 94
+     },
+     "pos_max_m": 4.7628,
+     "heading_max_deg": 127.886,
+     "matched_fraction_of_stationary": 0.0,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_queue_membership_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "member_0",
+    "member_1",
+    "member_2",
+    "member_3",
+    "member_4",
+    "member_5",
+    "member_6",
+    "member_7"
+   ],
+   "stationary_person_slots": 544,
+   "matched_person_slots": 0,
+   "eligible_person_slots": 969,
+   "robot_contact_slot": {
+    "member_0": 94
+   },
+   "pos_max_m": 4.7628,
+   "heading_max_deg": 127.886,
+   "matched_fraction_of_stationary": 0.0,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": false,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 2.834325350439771,
+   "robot_pos_mean_m": 2.780851393719854,
+   "robot_heading_p95_deg": 28.25614920318525
+  },
+  "observability_class": "hidden_state",
+  "cue": {
+   "family": "queue",
+   "cue": "n/a",
+   "samples_active": 0,
+   "samples_cue_visible": 0,
+   "cue_visible_fraction": null
+  },
+  "visual": {
+   "rgb_absdiff_mean": 53.48530328369141,
+   "rgb_person_roi_absdiff_mean": 69.6640206604004,
+   "depth_person_roi_absdiff_mean_m": 3.089291129112244,
+   "samples_with_person_in_view": 125
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 14.6554862,
+    "l2_mean": 37.43847127027162,
+    "cells_changed_mean": 5470.928,
+    "cells_changed_max": 9161.0,
+    "region_l1_mean": 106.69289794789242
+   },
+   "social_cost_membership": {
+    "l1_mean": 21.583148999999995,
+    "l2_mean": 50.905189106906874,
+    "cells_changed_mean": 7637.056,
+    "cells_changed_max": 13801.0,
+    "region_l1_mean": 109.38655631841269
+   },
+   "social_cost_extended": {
+    "l1_mean": 21.583148999999995,
+    "l2_mean": 50.905189106906874,
+    "cells_changed_mean": 7637.056,
+    "cells_changed_max": 13801.0,
+    "region_l1_mean": 109.38655631841269
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0199",
+  "family": "queue",
+  "subtype": "dense/oblique/static",
+  "split": "train",
+  "world": "socialcost_office",
+  "on": "000397",
+  "off": "000398",
+  "design_observability": "hidden_state",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "member_0",
+      "member_1",
+      "member_2",
+      "member_3",
+      "member_4",
+      "member_5",
+      "member_6",
+      "member_7"
+     ],
+     "stationary_person_slots": 996,
+     "matched_person_slots": 996,
+     "eligible_person_slots": 996,
+     "robot_contact_slot": {
+      "member_0": 121
+     },
+     "pos_max_m": 0.0001,
+     "heading_max_deg": 0.0,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_queue_membership_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "member_0",
+    "member_1",
+    "member_2",
+    "member_3",
+    "member_4",
+    "member_5",
+    "member_6",
+    "member_7"
+   ],
+   "stationary_person_slots": 996,
+   "matched_person_slots": 996,
+   "eligible_person_slots": 996,
+   "robot_contact_slot": {
+    "member_0": 121
+   },
+   "pos_max_m": 0.0001,
+   "heading_max_deg": 0.0,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 0.05612096704976951,
+   "robot_pos_mean_m": 0.04275219012074319,
+   "robot_heading_p95_deg": 1.1352540404231215
+  },
+  "observability_class": "hidden_state",
+  "cue": {
+   "family": "queue",
+   "cue": "n/a",
+   "samples_active": 0,
+   "samples_cue_visible": 0,
+   "cue_visible_fraction": null
+  },
+  "visual": {
+   "rgb_absdiff_mean": 6.3893085308074955,
+   "rgb_person_roi_absdiff_mean": 17.485595041275026,
+   "depth_person_roi_absdiff_mean_m": 0.5885928170084953,
+   "samples_with_person_in_view": 125
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 0.2738234,
+    "l2_mean": 3.6052545889352583,
+    "cells_changed_mean": 819.288,
+    "cells_changed_max": 2750.0,
+    "region_l1_mean": 9.150144889782242
+   },
+   "social_cost_membership": {
+    "l1_mean": 7.2666458,
+    "l2_mean": 21.337915868087446,
+    "cells_changed_mean": 4459.272,
+    "cells_changed_max": 10615.0,
+    "region_l1_mean": 53.593491572725775
+   },
+   "social_cost_extended": {
+    "l1_mean": 7.2666458,
+    "l2_mean": 21.337915868087446,
+    "cells_changed_mean": 4459.272,
+    "cells_changed_max": 10615.0,
+    "region_l1_mean": 53.593491572725775
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0206",
+  "family": "queue",
+  "subtype": "sparse/perpendicular/static",
+  "split": "test_b",
+  "world": "reception",
+  "on": "000411",
+  "off": "000412",
+  "design_observability": "hidden_state",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "member_0",
+      "member_1",
+      "member_2",
+      "member_3",
+      "member_4",
+      "member_5",
+      "member_6",
+      "member_7"
+     ],
+     "stationary_person_slots": 950,
+     "matched_person_slots": 950,
+     "eligible_person_slots": 950,
+     "robot_contact_slot": {
+      "member_1": 75
+     },
+     "pos_max_m": 0.0,
+     "heading_max_deg": 0.0,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_queue_membership_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "member_0",
+    "member_1",
+    "member_2",
+    "member_3",
+    "member_4",
+    "member_5",
+    "member_6",
+    "member_7"
+   ],
+   "stationary_person_slots": 950,
+   "matched_person_slots": 950,
+   "eligible_person_slots": 950,
+   "robot_contact_slot": {
+    "member_1": 75
+   },
+   "pos_max_m": 0.0,
+   "heading_max_deg": 0.0,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 0.011104681039630384,
+   "robot_pos_mean_m": 0.0023555269778200126,
+   "robot_heading_p95_deg": 0.7377611315368757
+  },
+  "observability_class": "hidden_state",
+  "cue": {
+   "family": "queue",
+   "cue": "n/a",
+   "samples_active": 0,
+   "samples_cue_visible": 0,
+   "cue_visible_fraction": null
+  },
+  "visual": {
+   "rgb_absdiff_mean": 2.088662594795227,
+   "rgb_person_roi_absdiff_mean": 7.621860449454363,
+   "depth_person_roi_absdiff_mean_m": 0.29669366510980205,
+   "samples_with_person_in_view": 85
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 0.1705768,
+    "l2_mean": 2.9745740092736557,
+    "cells_changed_mean": 949.888,
+    "cells_changed_max": 3028.0,
+    "region_l1_mean": 1.406651443103763
+   },
+   "social_cost_membership": {
+    "l1_mean": 23.187180600000005,
+    "l2_mean": 49.36544578840397,
+    "cells_changed_mean": 12654.72,
+    "cells_changed_max": 14084.0,
+    "region_l1_mean": 73.49670959494524
+   },
+   "social_cost_extended": {
+    "l1_mean": 23.187180600000005,
+    "l2_mean": 49.36544578840397,
+    "cells_changed_mean": 12654.72,
+    "cells_changed_max": 14084.0,
+    "region_l1_mean": 73.49670959494524
+   }
+  },
+  "ok": true
+ }
+]

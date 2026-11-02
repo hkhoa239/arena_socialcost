@@ -1,0 +1,1464 @@
+{
+ "definition": "designed = manifest visibility_category; achieved = designed when its event is observed for the target (exit: seen then outside FOV; re-entry: seen, outside, seen again; static occlusion: >= 3 occluded samples; dynamic occlusion: >= 2), otherwise the strongest event observed (fov_reentry > fov_exit > occlusion > visible_throughout, or never_visible)",
+ "per_designed_category": {
+  "fov_reentry": {
+   "not_met": 6,
+   "met": 14
+  },
+  "fov_exit": {
+   "met": 16,
+   "not_met": 4
+  },
+  "dynamic_occlusion": {
+   "met": 18,
+   "not_met": 2
+  },
+  "static_occlusion": {
+   "met": 19,
+   "not_met": 1
+  }
+ },
+ "achieved_counts": {
+  "fov_exit": 23,
+  "dynamic_occlusion": 18,
+  "fov_reentry": 14,
+  "static_occlusion": 19,
+  "never_visible": 3,
+  "visible_throughout": 2,
+  "occlusion": 1
+ },
+ "episodes": {
+  "000481": {
+   "designed": "fov_reentry",
+   "achieved": "fov_exit",
+   "design_met": false,
+   "split": "train",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 37,
+   "reentry_sample": null,
+   "occluded_samples": 16,
+   "fully_occluded_samples": 0,
+   "states": {
+    "partially_occluded": 16,
+    "visible": 21,
+    "outside_fov": 88
+   }
+  },
+  "000482": {
+   "designed": "fov_reentry",
+   "achieved": "fov_exit",
+   "design_met": false,
+   "split": "test_c",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 49,
+   "reentry_sample": null,
+   "occluded_samples": 8,
+   "fully_occluded_samples": 0,
+   "states": {
+    "partially_occluded": 8,
+    "visible": 41,
+    "outside_fov": 76
+   }
+  },
+  "000483": {
+   "designed": "fov_exit",
+   "achieved": "fov_exit",
+   "design_met": true,
+   "split": "train",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 53,
+   "reentry_sample": null,
+   "occluded_samples": 24,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 29,
+    "partially_occluded": 24,
+    "outside_fov": 72
+   }
+  },
+  "000484": {
+   "designed": "dynamic_occlusion",
+   "achieved": "dynamic_occlusion",
+   "design_met": true,
+   "split": "test_a",
+   "world": "B",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": null,
+   "reentry_sample": null,
+   "occluded_samples": 11,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 114,
+    "partially_occluded": 11
+   }
+  },
+  "000485": {
+   "designed": "fov_exit",
+   "achieved": "fov_exit",
+   "design_met": true,
+   "split": "train",
+   "world": "B",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 41,
+   "reentry_sample": 42,
+   "occluded_samples": 21,
+   "fully_occluded_samples": 1,
+   "states": {
+    "partially_occluded": 20,
+    "fully_occluded": 1,
+    "visible": 21,
+    "outside_fov": 83
+   }
+  },
+  "000486": {
+   "designed": "fov_reentry",
+   "achieved": "fov_reentry",
+   "design_met": true,
+   "split": "train",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 38,
+   "reentry_sample": 81,
+   "occluded_samples": 29,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 36,
+    "partially_occluded": 29,
+    "outside_fov": 60
+   }
+  },
+  "000487": {
+   "designed": "fov_exit",
+   "achieved": "fov_exit",
+   "design_met": true,
+   "split": "train",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 65,
+   "reentry_sample": null,
+   "occluded_samples": 8,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 57,
+    "partially_occluded": 8,
+    "outside_fov": 60
+   }
+  },
+  "000488": {
+   "designed": "dynamic_occlusion",
+   "achieved": "dynamic_occlusion",
+   "design_met": true,
+   "split": "val",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": 64,
+   "exit_sample": 65,
+   "reentry_sample": 77,
+   "occluded_samples": 78,
+   "fully_occluded_samples": 64,
+   "states": {
+    "fully_occluded": 64,
+    "partially_occluded": 14,
+    "outside_fov": 28,
+    "visible": 19
+   }
+  },
+  "000489": {
+   "designed": "dynamic_occlusion",
+   "achieved": "dynamic_occlusion",
+   "design_met": true,
+   "split": "train",
+   "world": "B",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": null,
+   "reentry_sample": null,
+   "occluded_samples": 20,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 105,
+    "partially_occluded": 20
+   }
+  },
+  "000490": {
+   "designed": "fov_reentry",
+   "achieved": "fov_exit",
+   "design_met": false,
+   "split": "train",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 39,
+   "reentry_sample": null,
+   "occluded_samples": 9,
+   "fully_occluded_samples": 1,
+   "states": {
+    "visible": 30,
+    "partially_occluded": 8,
+    "fully_occluded": 1,
+    "outside_fov": 86
+   }
+  },
+  "000491": {
+   "designed": "fov_reentry",
+   "achieved": "fov_reentry",
+   "design_met": true,
+   "split": "test_b",
+   "world": "D",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 39,
+   "reentry_sample": 85,
+   "occluded_samples": 36,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 24,
+    "partially_occluded": 36,
+    "outside_fov": 65
+   }
+  },
+  "000492": {
+   "designed": "dynamic_occlusion",
+   "achieved": "dynamic_occlusion",
+   "design_met": true,
+   "split": "train",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": null,
+   "reentry_sample": null,
+   "occluded_samples": 23,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 102,
+    "partially_occluded": 23
+   }
+  },
+  "000493": {
+   "designed": "fov_reentry",
+   "achieved": "fov_exit",
+   "design_met": false,
+   "split": "train",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 41,
+   "reentry_sample": null,
+   "occluded_samples": 7,
+   "fully_occluded_samples": 2,
+   "states": {
+    "visible": 34,
+    "partially_occluded": 5,
+    "fully_occluded": 2,
+    "outside_fov": 84
+   }
+  },
+  "000494": {
+   "designed": "fov_reentry",
+   "achieved": "fov_reentry",
+   "design_met": true,
+   "split": "train",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 35,
+   "reentry_sample": 88,
+   "occluded_samples": 48,
+   "fully_occluded_samples": 1,
+   "states": {
+    "partially_occluded": 47,
+    "visible": 7,
+    "fully_occluded": 1,
+    "outside_fov": 70
+   }
+  },
+  "000495": {
+   "designed": "fov_reentry",
+   "achieved": "fov_reentry",
+   "design_met": true,
+   "split": "val",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 50,
+   "reentry_sample": 71,
+   "occluded_samples": 34,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 59,
+    "partially_occluded": 34,
+    "outside_fov": 32
+   }
+  },
+  "000496": {
+   "designed": "fov_reentry",
+   "achieved": "fov_reentry",
+   "design_met": true,
+   "split": "train",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 78,
+   "reentry_sample": 79,
+   "occluded_samples": 56,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 27,
+    "partially_occluded": 56,
+    "outside_fov": 42
+   }
+  },
+  "000497": {
+   "designed": "static_occlusion",
+   "achieved": "static_occlusion",
+   "design_met": true,
+   "split": "train",
+   "world": "B",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 88,
+   "reentry_sample": null,
+   "occluded_samples": 87,
+   "fully_occluded_samples": 0,
+   "states": {
+    "partially_occluded": 87,
+    "visible": 1,
+    "outside_fov": 37
+   }
+  },
+  "000498": {
+   "designed": "fov_exit",
+   "achieved": "fov_exit",
+   "design_met": true,
+   "split": "test_c",
+   "world": "B",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 54,
+   "reentry_sample": null,
+   "occluded_samples": 17,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 37,
+    "partially_occluded": 17,
+    "outside_fov": 71
+   }
+  },
+  "000499": {
+   "designed": "fov_reentry",
+   "achieved": "fov_exit",
+   "design_met": false,
+   "split": "train",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 32,
+   "reentry_sample": null,
+   "occluded_samples": 1,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 31,
+    "partially_occluded": 1,
+    "outside_fov": 93
+   }
+  },
+  "000500": {
+   "designed": "fov_reentry",
+   "achieved": "fov_reentry",
+   "design_met": true,
+   "split": "train",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 37,
+   "reentry_sample": 76,
+   "occluded_samples": 37,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 34,
+    "partially_occluded": 37,
+    "outside_fov": 54
+   }
+  },
+  "000501": {
+   "designed": "dynamic_occlusion",
+   "achieved": "dynamic_occlusion",
+   "design_met": true,
+   "split": "val",
+   "world": "B",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 121,
+   "reentry_sample": null,
+   "occluded_samples": 6,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 115,
+    "partially_occluded": 6,
+    "outside_fov": 4
+   }
+  },
+  "000502": {
+   "designed": "static_occlusion",
+   "achieved": "fov_exit",
+   "design_met": false,
+   "split": "train",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 107,
+   "reentry_sample": null,
+   "occluded_samples": 1,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 106,
+    "partially_occluded": 1,
+    "outside_fov": 18
+   }
+  },
+  "000503": {
+   "designed": "fov_reentry",
+   "achieved": "fov_reentry",
+   "design_met": true,
+   "split": "test_b",
+   "world": "D",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 39,
+   "reentry_sample": 81,
+   "occluded_samples": 43,
+   "fully_occluded_samples": 0,
+   "states": {
+    "partially_occluded": 43,
+    "visible": 29,
+    "outside_fov": 53
+   }
+  },
+  "000504": {
+   "designed": "fov_exit",
+   "achieved": "fov_exit",
+   "design_met": true,
+   "split": "train",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 24,
+   "reentry_sample": 38,
+   "occluded_samples": 29,
+   "fully_occluded_samples": 3,
+   "states": {
+    "partially_occluded": 26,
+    "visible": 35,
+    "fully_occluded": 3,
+    "outside_fov": 61
+   }
+  },
+  "000505": {
+   "designed": "static_occlusion",
+   "achieved": "static_occlusion",
+   "design_met": true,
+   "split": "train",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": null,
+   "exit_sample": null,
+   "reentry_sample": null,
+   "occluded_samples": 47,
+   "fully_occluded_samples": 47,
+   "states": {
+    "fully_occluded": 47,
+    "outside_fov": 78
+   }
+  },
+  "000506": {
+   "designed": "dynamic_occlusion",
+   "achieved": "dynamic_occlusion",
+   "design_met": true,
+   "split": "train",
+   "world": "B",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": null,
+   "reentry_sample": null,
+   "occluded_samples": 16,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 109,
+    "partially_occluded": 16
+   }
+  },
+  "000507": {
+   "designed": "static_occlusion",
+   "achieved": "static_occlusion",
+   "design_met": true,
+   "split": "test_c",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": null,
+   "reentry_sample": null,
+   "occluded_samples": 96,
+   "fully_occluded_samples": 0,
+   "states": {
+    "partially_occluded": 96,
+    "visible": 29
+   }
+  },
+  "000508": {
+   "designed": "fov_reentry",
+   "achieved": "fov_reentry",
+   "design_met": true,
+   "split": "train",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 89,
+   "reentry_sample": 101,
+   "occluded_samples": 76,
+   "fully_occluded_samples": 1,
+   "states": {
+    "partially_occluded": 75,
+    "visible": 34,
+    "fully_occluded": 1,
+    "outside_fov": 15
+   }
+  },
+  "000509": {
+   "designed": "fov_reentry",
+   "achieved": "fov_reentry",
+   "design_met": true,
+   "split": "train",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 36,
+   "reentry_sample": 74,
+   "occluded_samples": 41,
+   "fully_occluded_samples": 1,
+   "states": {
+    "visible": 31,
+    "partially_occluded": 40,
+    "fully_occluded": 1,
+    "outside_fov": 53
+   }
+  },
+  "000510": {
+   "designed": "fov_reentry",
+   "achieved": "fov_reentry",
+   "design_met": true,
+   "split": "test_b",
+   "world": "D",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 36,
+   "reentry_sample": 73,
+   "occluded_samples": 31,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 39,
+    "partially_occluded": 31,
+    "outside_fov": 55
+   }
+  },
+  "000511": {
+   "designed": "fov_reentry",
+   "achieved": "fov_reentry",
+   "design_met": true,
+   "split": "test_c",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 43,
+   "reentry_sample": 83,
+   "occluded_samples": 29,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 39,
+    "partially_occluded": 29,
+    "outside_fov": 57
+   }
+  },
+  "000512": {
+   "designed": "fov_reentry",
+   "achieved": "fov_reentry",
+   "design_met": true,
+   "split": "test_a",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 40,
+   "reentry_sample": 98,
+   "occluded_samples": 31,
+   "fully_occluded_samples": 5,
+   "states": {
+    "visible": 24,
+    "partially_occluded": 26,
+    "fully_occluded": 5,
+    "outside_fov": 70
+   }
+  },
+  "000513": {
+   "designed": "static_occlusion",
+   "achieved": "static_occlusion",
+   "design_met": true,
+   "split": "train",
+   "world": "B",
+   "target": "target_0",
+   "first_seen": 40,
+   "exit_sample": null,
+   "reentry_sample": null,
+   "occluded_samples": 68,
+   "fully_occluded_samples": 40,
+   "states": {
+    "fully_occluded": 40,
+    "partially_occluded": 28,
+    "visible": 57
+   }
+  },
+  "000514": {
+   "designed": "fov_reentry",
+   "achieved": "fov_exit",
+   "design_met": false,
+   "split": "test_b",
+   "world": "D",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 35,
+   "reentry_sample": null,
+   "occluded_samples": 4,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 31,
+    "partially_occluded": 4,
+    "outside_fov": 90
+   }
+  },
+  "000515": {
+   "designed": "fov_reentry",
+   "achieved": "fov_reentry",
+   "design_met": true,
+   "split": "test_c",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 39,
+   "reentry_sample": 74,
+   "occluded_samples": 36,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 42,
+    "partially_occluded": 36,
+    "outside_fov": 47
+   }
+  },
+  "000516": {
+   "designed": "fov_reentry",
+   "achieved": "fov_reentry",
+   "design_met": true,
+   "split": "train",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 32,
+   "reentry_sample": 78,
+   "occluded_samples": 29,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 30,
+    "partially_occluded": 29,
+    "outside_fov": 66
+   }
+  },
+  "000517": {
+   "designed": "dynamic_occlusion",
+   "achieved": "dynamic_occlusion",
+   "design_met": true,
+   "split": "train",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 106,
+   "reentry_sample": null,
+   "occluded_samples": 24,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 82,
+    "partially_occluded": 24,
+    "outside_fov": 19
+   }
+  },
+  "000518": {
+   "designed": "dynamic_occlusion",
+   "achieved": "dynamic_occlusion",
+   "design_met": true,
+   "split": "train",
+   "world": "B",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 116,
+   "reentry_sample": null,
+   "occluded_samples": 34,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 82,
+    "partially_occluded": 34,
+    "outside_fov": 9
+   }
+  },
+  "000519": {
+   "designed": "fov_exit",
+   "achieved": "never_visible",
+   "design_met": false,
+   "split": "test_c",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": null,
+   "exit_sample": null,
+   "reentry_sample": null,
+   "occluded_samples": 0,
+   "fully_occluded_samples": 0,
+   "states": {
+    "outside_fov": 125
+   }
+  },
+  "000520": {
+   "designed": "dynamic_occlusion",
+   "achieved": "visible_throughout",
+   "design_met": false,
+   "split": "test_b",
+   "world": "D",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": null,
+   "reentry_sample": null,
+   "occluded_samples": 0,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 125
+   }
+  },
+  "000521": {
+   "designed": "fov_exit",
+   "achieved": "fov_exit",
+   "design_met": true,
+   "split": "train",
+   "world": "B",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 30,
+   "reentry_sample": 37,
+   "occluded_samples": 10,
+   "fully_occluded_samples": 7,
+   "states": {
+    "visible": 108,
+    "partially_occluded": 3,
+    "fully_occluded": 7,
+    "outside_fov": 7
+   }
+  },
+  "000522": {
+   "designed": "fov_exit",
+   "achieved": "fov_exit",
+   "design_met": true,
+   "split": "train",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 49,
+   "reentry_sample": null,
+   "occluded_samples": 25,
+   "fully_occluded_samples": 0,
+   "states": {
+    "partially_occluded": 25,
+    "visible": 24,
+    "outside_fov": 76
+   }
+  },
+  "000523": {
+   "designed": "dynamic_occlusion",
+   "achieved": "visible_throughout",
+   "design_met": false,
+   "split": "train",
+   "world": "B",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": null,
+   "reentry_sample": null,
+   "occluded_samples": 0,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 125
+   }
+  },
+  "000524": {
+   "designed": "dynamic_occlusion",
+   "achieved": "dynamic_occlusion",
+   "design_met": true,
+   "split": "val",
+   "world": "B",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 111,
+   "reentry_sample": null,
+   "occluded_samples": 49,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 62,
+    "partially_occluded": 49,
+    "outside_fov": 14
+   }
+  },
+  "000525": {
+   "designed": "fov_exit",
+   "achieved": "fov_exit",
+   "design_met": true,
+   "split": "train",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 93,
+   "reentry_sample": null,
+   "occluded_samples": 12,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 81,
+    "partially_occluded": 12,
+    "outside_fov": 32
+   }
+  },
+  "000526": {
+   "designed": "static_occlusion",
+   "achieved": "static_occlusion",
+   "design_met": true,
+   "split": "test_b",
+   "world": "D",
+   "target": "target_0",
+   "first_seen": null,
+   "exit_sample": null,
+   "reentry_sample": null,
+   "occluded_samples": 47,
+   "fully_occluded_samples": 47,
+   "states": {
+    "fully_occluded": 47,
+    "outside_fov": 78
+   }
+  },
+  "000527": {
+   "designed": "dynamic_occlusion",
+   "achieved": "dynamic_occlusion",
+   "design_met": true,
+   "split": "train",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": 70,
+   "exit_sample": 71,
+   "reentry_sample": 87,
+   "occluded_samples": 79,
+   "fully_occluded_samples": 62,
+   "states": {
+    "outside_fov": 46,
+    "fully_occluded": 62,
+    "partially_occluded": 17
+   }
+  },
+  "000528": {
+   "designed": "static_occlusion",
+   "achieved": "static_occlusion",
+   "design_met": true,
+   "split": "train",
+   "world": "B",
+   "target": "target_0",
+   "first_seen": null,
+   "exit_sample": null,
+   "reentry_sample": null,
+   "occluded_samples": 110,
+   "fully_occluded_samples": 110,
+   "states": {
+    "fully_occluded": 110,
+    "outside_fov": 15
+   }
+  },
+  "000529": {
+   "designed": "fov_exit",
+   "achieved": "occlusion",
+   "design_met": false,
+   "split": "train",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": null,
+   "reentry_sample": null,
+   "occluded_samples": 21,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 104,
+    "partially_occluded": 21
+   }
+  },
+  "000530": {
+   "designed": "fov_exit",
+   "achieved": "fov_exit",
+   "design_met": true,
+   "split": "train",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 71,
+   "reentry_sample": 82,
+   "occluded_samples": 15,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 88,
+    "outside_fov": 22,
+    "partially_occluded": 15
+   }
+  },
+  "000531": {
+   "designed": "dynamic_occlusion",
+   "achieved": "dynamic_occlusion",
+   "design_met": true,
+   "split": "test_b",
+   "world": "D",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": null,
+   "reentry_sample": null,
+   "occluded_samples": 16,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 109,
+    "partially_occluded": 16
+   }
+  },
+  "000532": {
+   "designed": "static_occlusion",
+   "achieved": "static_occlusion",
+   "design_met": true,
+   "split": "test_b",
+   "world": "D",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 66,
+   "reentry_sample": null,
+   "occluded_samples": 66,
+   "fully_occluded_samples": 7,
+   "states": {
+    "partially_occluded": 59,
+    "fully_occluded": 7,
+    "outside_fov": 59
+   }
+  },
+  "000533": {
+   "designed": "fov_exit",
+   "achieved": "fov_exit",
+   "design_met": true,
+   "split": "train",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 98,
+   "reentry_sample": null,
+   "occluded_samples": 14,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 84,
+    "partially_occluded": 14,
+    "outside_fov": 27
+   }
+  },
+  "000534": {
+   "designed": "dynamic_occlusion",
+   "achieved": "dynamic_occlusion",
+   "design_met": true,
+   "split": "test_a",
+   "world": "B",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": null,
+   "reentry_sample": null,
+   "occluded_samples": 57,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 68,
+    "partially_occluded": 57
+   }
+  },
+  "000535": {
+   "designed": "dynamic_occlusion",
+   "achieved": "dynamic_occlusion",
+   "design_met": true,
+   "split": "test_c",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 96,
+   "reentry_sample": null,
+   "occluded_samples": 15,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 81,
+    "partially_occluded": 15,
+    "outside_fov": 29
+   }
+  },
+  "000536": {
+   "designed": "static_occlusion",
+   "achieved": "static_occlusion",
+   "design_met": true,
+   "split": "train",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 92,
+   "reentry_sample": null,
+   "occluded_samples": 11,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 81,
+    "partially_occluded": 11,
+    "outside_fov": 33
+   }
+  },
+  "000537": {
+   "designed": "static_occlusion",
+   "achieved": "static_occlusion",
+   "design_met": true,
+   "split": "train",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 62,
+   "reentry_sample": null,
+   "occluded_samples": 14,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 48,
+    "partially_occluded": 14,
+    "outside_fov": 63
+   }
+  },
+  "000538": {
+   "designed": "static_occlusion",
+   "achieved": "static_occlusion",
+   "design_met": true,
+   "split": "val",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 63,
+   "exit_sample": 86,
+   "reentry_sample": null,
+   "occluded_samples": 82,
+   "fully_occluded_samples": 59,
+   "states": {
+    "fully_occluded": 59,
+    "outside_fov": 43,
+    "partially_occluded": 23
+   }
+  },
+  "000539": {
+   "designed": "static_occlusion",
+   "achieved": "static_occlusion",
+   "design_met": true,
+   "split": "val",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 101,
+   "reentry_sample": null,
+   "occluded_samples": 101,
+   "fully_occluded_samples": 81,
+   "states": {
+    "partially_occluded": 20,
+    "fully_occluded": 81,
+    "outside_fov": 24
+   }
+  },
+  "000540": {
+   "designed": "static_occlusion",
+   "achieved": "static_occlusion",
+   "design_met": true,
+   "split": "train",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": null,
+   "reentry_sample": null,
+   "occluded_samples": 125,
+   "fully_occluded_samples": 95,
+   "states": {
+    "partially_occluded": 30,
+    "fully_occluded": 95
+   }
+  },
+  "000541": {
+   "designed": "fov_exit",
+   "achieved": "fov_exit",
+   "design_met": true,
+   "split": "val",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 59,
+   "reentry_sample": null,
+   "occluded_samples": 45,
+   "fully_occluded_samples": 0,
+   "states": {
+    "partially_occluded": 45,
+    "visible": 14,
+    "outside_fov": 66
+   }
+  },
+  "000542": {
+   "designed": "dynamic_occlusion",
+   "achieved": "dynamic_occlusion",
+   "design_met": true,
+   "split": "train",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 114,
+   "reentry_sample": null,
+   "occluded_samples": 19,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 95,
+    "partially_occluded": 19,
+    "outside_fov": 11
+   }
+  },
+  "000543": {
+   "designed": "static_occlusion",
+   "achieved": "static_occlusion",
+   "design_met": true,
+   "split": "train",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 89,
+   "reentry_sample": null,
+   "occluded_samples": 76,
+   "fully_occluded_samples": 0,
+   "states": {
+    "partially_occluded": 76,
+    "visible": 13,
+    "outside_fov": 36
+   }
+  },
+  "000544": {
+   "designed": "fov_exit",
+   "achieved": "fov_exit",
+   "design_met": true,
+   "split": "train",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 113,
+   "reentry_sample": null,
+   "occluded_samples": 14,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 99,
+    "partially_occluded": 14,
+    "outside_fov": 12
+   }
+  },
+  "000545": {
+   "designed": "dynamic_occlusion",
+   "achieved": "dynamic_occlusion",
+   "design_met": true,
+   "split": "train",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 53,
+   "reentry_sample": 73,
+   "occluded_samples": 85,
+   "fully_occluded_samples": 0,
+   "states": {
+    "partially_occluded": 85,
+    "outside_fov": 39,
+    "visible": 1
+   }
+  },
+  "000546": {
+   "designed": "dynamic_occlusion",
+   "achieved": "dynamic_occlusion",
+   "design_met": true,
+   "split": "train",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 83,
+   "reentry_sample": 95,
+   "occluded_samples": 36,
+   "fully_occluded_samples": 4,
+   "states": {
+    "visible": 77,
+    "partially_occluded": 32,
+    "fully_occluded": 4,
+    "outside_fov": 12
+   }
+  },
+  "000547": {
+   "designed": "static_occlusion",
+   "achieved": "static_occlusion",
+   "design_met": true,
+   "split": "test_a",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 75,
+   "reentry_sample": null,
+   "occluded_samples": 75,
+   "fully_occluded_samples": 0,
+   "states": {
+    "partially_occluded": 75,
+    "outside_fov": 50
+   }
+  },
+  "000548": {
+   "designed": "static_occlusion",
+   "achieved": "static_occlusion",
+   "design_met": true,
+   "split": "test_a",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 105,
+   "reentry_sample": null,
+   "occluded_samples": 94,
+   "fully_occluded_samples": 36,
+   "states": {
+    "partially_occluded": 58,
+    "fully_occluded": 36,
+    "visible": 11,
+    "outside_fov": 20
+   }
+  },
+  "000549": {
+   "designed": "dynamic_occlusion",
+   "achieved": "dynamic_occlusion",
+   "design_met": true,
+   "split": "train",
+   "world": "B",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 86,
+   "reentry_sample": 105,
+   "occluded_samples": 7,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 99,
+    "partially_occluded": 7,
+    "outside_fov": 19
+   }
+  },
+  "000550": {
+   "designed": "static_occlusion",
+   "achieved": "static_occlusion",
+   "design_met": true,
+   "split": "train",
+   "world": "B",
+   "target": "target_0",
+   "first_seen": 37,
+   "exit_sample": 114,
+   "reentry_sample": null,
+   "occluded_samples": 81,
+   "fully_occluded_samples": 37,
+   "states": {
+    "fully_occluded": 37,
+    "partially_occluded": 44,
+    "visible": 33,
+    "outside_fov": 11
+   }
+  },
+  "000551": {
+   "designed": "static_occlusion",
+   "achieved": "static_occlusion",
+   "design_met": true,
+   "split": "train",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 78,
+   "reentry_sample": null,
+   "occluded_samples": 12,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 66,
+    "partially_occluded": 12,
+    "outside_fov": 47
+   }
+  },
+  "000552": {
+   "designed": "fov_exit",
+   "achieved": "fov_exit",
+   "design_met": true,
+   "split": "train",
+   "world": "B",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 61,
+   "reentry_sample": null,
+   "occluded_samples": 30,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 31,
+    "partially_occluded": 30,
+    "outside_fov": 64
+   }
+  },
+  "000553": {
+   "designed": "fov_exit",
+   "achieved": "fov_exit",
+   "design_met": true,
+   "split": "train",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 58,
+   "reentry_sample": null,
+   "occluded_samples": 13,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 45,
+    "partially_occluded": 13,
+    "outside_fov": 67
+   }
+  },
+  "000554": {
+   "designed": "fov_exit",
+   "achieved": "never_visible",
+   "design_met": false,
+   "split": "test_a",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": null,
+   "exit_sample": null,
+   "reentry_sample": null,
+   "occluded_samples": 0,
+   "fully_occluded_samples": 0,
+   "states": {
+    "outside_fov": 125
+   }
+  },
+  "000555": {
+   "designed": "fov_exit",
+   "achieved": "fov_exit",
+   "design_met": true,
+   "split": "val",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 3,
+   "reentry_sample": 6,
+   "occluded_samples": 33,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 2,
+    "partially_occluded": 33,
+    "outside_fov": 90
+   }
+  },
+  "000556": {
+   "designed": "dynamic_occlusion",
+   "achieved": "dynamic_occlusion",
+   "design_met": true,
+   "split": "test_a",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 99,
+   "reentry_sample": null,
+   "occluded_samples": 79,
+   "fully_occluded_samples": 0,
+   "states": {
+    "partially_occluded": 79,
+    "visible": 20,
+    "outside_fov": 26
+   }
+  },
+  "000557": {
+   "designed": "static_occlusion",
+   "achieved": "static_occlusion",
+   "design_met": true,
+   "split": "train",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 79,
+   "reentry_sample": null,
+   "occluded_samples": 79,
+   "fully_occluded_samples": 46,
+   "states": {
+    "partially_occluded": 33,
+    "fully_occluded": 46,
+    "outside_fov": 46
+   }
+  },
+  "000558": {
+   "designed": "static_occlusion",
+   "achieved": "static_occlusion",
+   "design_met": true,
+   "split": "test_a",
+   "world": "C",
+   "target": "target_0",
+   "first_seen": 16,
+   "exit_sample": 76,
+   "reentry_sample": null,
+   "occluded_samples": 74,
+   "fully_occluded_samples": 20,
+   "states": {
+    "fully_occluded": 20,
+    "partially_occluded": 54,
+    "visible": 2,
+    "outside_fov": 49
+   }
+  },
+  "000559": {
+   "designed": "fov_exit",
+   "achieved": "never_visible",
+   "design_met": false,
+   "split": "train",
+   "world": "A",
+   "target": "target_0",
+   "first_seen": null,
+   "exit_sample": null,
+   "reentry_sample": null,
+   "occluded_samples": 1,
+   "fully_occluded_samples": 1,
+   "states": {
+    "outside_fov": 124,
+    "fully_occluded": 1
+   }
+  },
+  "000560": {
+   "designed": "fov_exit",
+   "achieved": "fov_exit",
+   "design_met": true,
+   "split": "test_c",
+   "world": "B",
+   "target": "target_0",
+   "first_seen": 0,
+   "exit_sample": 51,
+   "reentry_sample": null,
+   "occluded_samples": 14,
+   "fully_occluded_samples": 0,
+   "states": {
+    "visible": 37,
+    "partially_occluded": 14,
+    "outside_fov": 74
+   }
+  }
+ }
+}

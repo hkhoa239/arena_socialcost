@@ -1,0 +1,3845 @@
+{
+ "table": [
+  {
+   "arm": "A5_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "",
+   "stage": "b_crossing",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": 3.9838481069357288,
+   "safety_violation": 0.0,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.0,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": 0.007802360895211542
+  },
+  {
+   "arm": "A5_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "",
+   "stage": "b_dense",
+   "episodes": 25,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": 0.7728841794978909,
+   "safety_violation": 0.05046666666666667,
+   "reverse_frac": 0.0,
+   "forward_speed": 1.8424874544143675e-05,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": -0.0010282467997420651
+  },
+  {
+   "arm": "A5_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "",
+   "stage": "b_empty",
+   "episodes": 25,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": NaN,
+   "safety_violation": 0.0,
+   "reverse_frac": 0.0,
+   "forward_speed": 1.6850748658180235e-05,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": 0.00011030558092331913
+  },
+  {
+   "arm": "A5_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "",
+   "stage": "b_headon",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": 0.08317346535708611,
+   "safety_violation": 0.23977777777777778,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.0,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": 0.007254844695197356
+  },
+  {
+   "arm": "A5_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "",
+   "stage": "b_moderate",
+   "episodes": 25,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": 1.6592603717085352,
+   "safety_violation": 0.0406,
+   "reverse_frac": 0.0,
+   "forward_speed": 2.6482426126797997e-05,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": 0.0014684496049131004
+  },
+  {
+   "arm": "A5_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "",
+   "stage": "b_static",
+   "episodes": 25,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": NaN,
+   "safety_violation": 0.0,
+   "reverse_frac": 0.0,
+   "forward_speed": 1.3499280810356143e-05,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": 6.485074086051975e-05
+  },
+  {
+   "arm": "A5_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "",
+   "stage": "b_stress",
+   "episodes": 25,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": 0.3409452315403385,
+   "safety_violation": 0.09333333333333332,
+   "reverse_frac": 0.0,
+   "forward_speed": 1.0718916853268941e-05,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": -0.0019080642084743377
+  },
+  {
+   "arm": "A5_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "val",
+   "stage": "b_dense",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": 0.9995669410500285,
+   "safety_violation": 0.0775,
+   "reverse_frac": 0.0,
+   "forward_speed": 2.5280646979808806e-05,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": 0.0025452686546304005
+  },
+  {
+   "arm": "A5_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "val",
+   "stage": "b_static",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": NaN,
+   "safety_violation": 0.0,
+   "reverse_frac": 0.0,
+   "forward_speed": 1.7494877179463704e-05,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": -0.0017732191951558792
+  },
+  {
+   "arm": "A5_FWD",
+   "seed": 5,
+   "ckpt": "t20000",
+   "mode": "val",
+   "stage": "b_dense",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": 1.038900014635001,
+   "safety_violation": 0.101,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.4990819389124711,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": 0.002283543785402617
+  },
+  {
+   "arm": "A5_FWD",
+   "seed": 5,
+   "ckpt": "t20000",
+   "mode": "val",
+   "stage": "b_static",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": NaN,
+   "safety_violation": 0.0,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.49450777453680833,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": 0.028264551242187057
+  },
+  {
+   "arm": "A5_FWD",
+   "seed": 5,
+   "ckpt": "t40000",
+   "mode": "val",
+   "stage": "b_dense",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.1,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.9,
+   "timeout": 0.0,
+   "ped_clearance": 1.2623102739715653,
+   "safety_violation": 0.17422950339983917,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.48814893384618063,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": -0.14191236638206767
+  },
+  {
+   "arm": "A5_FWD",
+   "seed": 5,
+   "ckpt": "t40000",
+   "mode": "val",
+   "stage": "b_static",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.2,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.7,
+   "timeout": 0.1,
+   "ped_clearance": NaN,
+   "safety_violation": 0.10010246201670173,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.4361778174848399,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": -0.1167018863267422
+  },
+  {
+   "arm": "A5_FWD",
+   "seed": 5,
+   "ckpt": "t60000",
+   "mode": "val",
+   "stage": "b_dense",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": 1.000852256670448,
+   "safety_violation": 0.0745,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.00131169759730498,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": -0.004000870942626722
+  },
+  {
+   "arm": "A5_FWD",
+   "seed": 5,
+   "ckpt": "t60000",
+   "mode": "val",
+   "stage": "b_static",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.2,
+   "timeout": 0.8,
+   "ped_clearance": NaN,
+   "safety_violation": 0.018853051164371918,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.13481081875377732,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": 0.025650677723822197
+  },
+  {
+   "arm": "A5_FWD",
+   "seed": 5,
+   "ckpt": "t80000",
+   "mode": "val",
+   "stage": "b_dense",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": 1.0023449821191182,
+   "safety_violation": 0.08066666666666668,
+   "reverse_frac": 0.0,
+   "forward_speed": 4.285896817843119e-07,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": -0.00017548952829291988
+  },
+  {
+   "arm": "A5_FWD",
+   "seed": 5,
+   "ckpt": "t80000",
+   "mode": "val",
+   "stage": "b_static",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": NaN,
+   "safety_violation": 0.0,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.00034211431940396625,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": -0.0016591698989442388
+  },
+  {
+   "arm": "ONLINE_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "",
+   "stage": "b_crossing",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": 0.28631243145027085,
+   "safety_violation": 0.0368888888888889,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.28007136544254085,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": 0.7653811418450983
+  },
+  {
+   "arm": "ONLINE_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "",
+   "stage": "b_dense",
+   "episodes": 25,
+   "cf_goal": 0.2,
+   "goal": 0.2,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 0.8,
+   "ped_clearance": 0.2602697913784431,
+   "safety_violation": 0.10742744758191397,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.15226648365547718,
+   "time_to_goal": 48.760000000000005,
+   "path_efficiency": 0.558169511155059,
+   "progress": 0.5003499993267213
+  },
+  {
+   "arm": "ONLINE_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "",
+   "stage": "b_empty",
+   "episodes": 25,
+   "cf_goal": 0.12,
+   "goal": 0.12,
+   "static_collision": 0.04,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 0.84,
+   "ped_clearance": NaN,
+   "safety_violation": 0.007317073170731707,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.21762445157851906,
+   "time_to_goal": 35.300000000000004,
+   "path_efficiency": 0.5437258192826514,
+   "progress": 0.5266458773100487
+  },
+  {
+   "arm": "ONLINE_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "",
+   "stage": "b_headon",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": 0.09182998025452671,
+   "safety_violation": 0.14377777777777778,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.22982941526505685,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": 0.6473545810121462
+  },
+  {
+   "arm": "ONLINE_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "",
+   "stage": "b_moderate",
+   "episodes": 25,
+   "cf_goal": 0.08,
+   "goal": 0.08,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.04,
+   "timeout": 0.88,
+   "ped_clearance": 1.1047780328924528,
+   "safety_violation": 0.051687431693989074,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.1932055641963086,
+   "time_to_goal": 36.6,
+   "path_efficiency": 0.6368644193630534,
+   "progress": 0.5181456488234211
+  },
+  {
+   "arm": "ONLINE_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "",
+   "stage": "b_static",
+   "episodes": 25,
+   "cf_goal": 0.12,
+   "goal": 0.12,
+   "static_collision": 0.08,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.08,
+   "timeout": 0.76,
+   "ped_clearance": NaN,
+   "safety_violation": 0.04831316043098216,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.2411267490659936,
+   "time_to_goal": 36.43333333333333,
+   "path_efficiency": 0.5488313318274218,
+   "progress": 0.5353076882902308
+  },
+  {
+   "arm": "ONLINE_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "",
+   "stage": "b_stress",
+   "episodes": 25,
+   "cf_goal": 0.2,
+   "goal": 0.2,
+   "static_collision": 0.08,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 0.72,
+   "ped_clearance": 0.12252504976356134,
+   "safety_violation": 0.20779630920062256,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.1357822072200794,
+   "time_to_goal": 44.0,
+   "path_efficiency": 0.6646396255437028,
+   "progress": 0.5191265066508413
+  },
+  {
+   "arm": "ONLINE_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "val",
+   "stage": "b_dense",
+   "episodes": 10,
+   "cf_goal": 0.1,
+   "goal": 0.1,
+   "static_collision": 0.1,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 0.8,
+   "ped_clearance": 0.401115716965846,
+   "safety_violation": 0.07820391563416249,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.15673762086763093,
+   "time_to_goal": 19.4,
+   "path_efficiency": 0.7515537965222653,
+   "progress": 0.41301161876318326
+  },
+  {
+   "arm": "ONLINE_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "val",
+   "stage": "b_static",
+   "episodes": 10,
+   "cf_goal": 0.1,
+   "goal": 0.1,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.1,
+   "timeout": 0.8,
+   "ped_clearance": NaN,
+   "safety_violation": 0.028727272727272723,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.22207262826327168,
+   "time_to_goal": 54.6,
+   "path_efficiency": 0.6386778646016871,
+   "progress": 0.5842056605757033
+  },
+  {
+   "arm": "ONLINE_FWD",
+   "seed": 5,
+   "ckpt": "t20000",
+   "mode": "val",
+   "stage": "b_dense",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.1,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.2,
+   "timeout": 0.7,
+   "ped_clearance": 0.8025795874797994,
+   "safety_violation": 0.2448486712586786,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.1014131583912035,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": -0.15098911387699096
+  },
+  {
+   "arm": "ONLINE_FWD",
+   "seed": 5,
+   "ckpt": "t20000",
+   "mode": "val",
+   "stage": "b_static",
+   "episodes": 10,
+   "cf_goal": 0.1,
+   "goal": 0.1,
+   "static_collision": 0.1,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 0.8,
+   "ped_clearance": NaN,
+   "safety_violation": 0.09113194444444443,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.15082726001435645,
+   "time_to_goal": 52.8,
+   "path_efficiency": 0.9200562697569694,
+   "progress": 0.28328325906780505
+  },
+  {
+   "arm": "ONLINE_FWD",
+   "seed": 5,
+   "ckpt": "t40000",
+   "mode": "val",
+   "stage": "b_dense",
+   "episodes": 10,
+   "cf_goal": 0.1,
+   "goal": 0.1,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.2,
+   "timeout": 0.7,
+   "ped_clearance": 0.37426925326565347,
+   "safety_violation": 0.18910108604845446,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.17480720238038397,
+   "time_to_goal": 25.2,
+   "path_efficiency": 0.42113560805484557,
+   "progress": 0.384444221252968
+  },
+  {
+   "arm": "ONLINE_FWD",
+   "seed": 5,
+   "ckpt": "t40000",
+   "mode": "val",
+   "stage": "b_static",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.1,
+   "timeout": 0.9,
+   "ped_clearance": NaN,
+   "safety_violation": 0.024888888888888887,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.1912008918184373,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": 0.3686324867290204
+  },
+  {
+   "arm": "ONLINE_FWD",
+   "seed": 5,
+   "ckpt": "t60000",
+   "mode": "val",
+   "stage": "b_dense",
+   "episodes": 10,
+   "cf_goal": 0.1,
+   "goal": 0.1,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 0.9,
+   "ped_clearance": 0.640023702720171,
+   "safety_violation": 0.0472085514834206,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.05137852151165302,
+   "time_to_goal": 38.2,
+   "path_efficiency": 0.5984527691301396,
+   "progress": 0.18175921318065744
+  },
+  {
+   "arm": "ONLINE_FWD",
+   "seed": 5,
+   "ckpt": "t60000",
+   "mode": "val",
+   "stage": "b_static",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": NaN,
+   "safety_violation": 0.007333333333333333,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.08961320642630259,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": 0.2358317408357517
+  },
+  {
+   "arm": "ONLINE_FWD",
+   "seed": 5,
+   "ckpt": "t80000",
+   "mode": "val",
+   "stage": "b_dense",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": 1.0825891535454046,
+   "safety_violation": 0.04433333333333333,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.011794606253504755,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": 0.04044604099290407
+  },
+  {
+   "arm": "ONLINE_FWD",
+   "seed": 5,
+   "ckpt": "t80000",
+   "mode": "val",
+   "stage": "b_static",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": NaN,
+   "safety_violation": 0.0,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.0046179704541961355,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": 0.026181833836428043
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "",
+   "stage": "b_crossing",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": 0.08777346646360022,
+   "safety_violation": 0.04711111111111112,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.13569778336750138,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": 0.4797993535962665
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "",
+   "stage": "b_dense",
+   "episodes": 25,
+   "cf_goal": 0.24,
+   "goal": 0.24,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.16,
+   "timeout": 0.6,
+   "ped_clearance": 0.5510357347167645,
+   "safety_violation": 0.1534940333079524,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.1664628897071295,
+   "time_to_goal": 37.46666666666667,
+   "path_efficiency": 0.7894690478845506,
+   "progress": 0.49999483577404363
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "",
+   "stage": "b_empty",
+   "episodes": 25,
+   "cf_goal": 0.16,
+   "goal": 0.16,
+   "static_collision": 0.04,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.12,
+   "timeout": 0.68,
+   "ped_clearance": NaN,
+   "safety_violation": 0.020402416809241014,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.18918303793713898,
+   "time_to_goal": 31.074999999999996,
+   "path_efficiency": 0.7905578551209207,
+   "progress": 0.5397931061525683
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "",
+   "stage": "b_headon",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": 0.08235148051077805,
+   "safety_violation": 0.04422222222222223,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.13330155191487736,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": 0.4880662862739554
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "",
+   "stage": "b_moderate",
+   "episodes": 25,
+   "cf_goal": 0.12,
+   "goal": 0.12,
+   "static_collision": 0.04,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.2,
+   "timeout": 0.64,
+   "ped_clearance": 1.2415527174282308,
+   "safety_violation": 0.06700070569932544,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.1697829984660966,
+   "time_to_goal": 33.800000000000004,
+   "path_efficiency": 0.7600092901475154,
+   "progress": 0.5625488338826335
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "",
+   "stage": "b_static",
+   "episodes": 25,
+   "cf_goal": 0.16,
+   "goal": 0.16,
+   "static_collision": 0.04,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.08,
+   "timeout": 0.72,
+   "ped_clearance": NaN,
+   "safety_violation": 0.03557231389424346,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.17500167406342113,
+   "time_to_goal": 29.1,
+   "path_efficiency": 0.8536554374835523,
+   "progress": 0.506436655065188
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "",
+   "stage": "b_stress",
+   "episodes": 25,
+   "cf_goal": 0.32,
+   "goal": 0.32,
+   "static_collision": 0.04,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.08,
+   "timeout": 0.56,
+   "ped_clearance": 0.3039841637197858,
+   "safety_violation": 0.21173532125514152,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.15686664679097162,
+   "time_to_goal": 41.575,
+   "path_efficiency": 0.8255578251217692,
+   "progress": 0.566488383154206
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "online",
+   "stage": "b_crossing",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": 0.08654009757351384,
+   "safety_violation": 0.04755555555555555,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.13587422304352126,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": 0.47972077403001706
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "online",
+   "stage": "b_dense",
+   "episodes": 25,
+   "cf_goal": 0.2,
+   "goal": 0.2,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.2,
+   "timeout": 0.6,
+   "ped_clearance": 0.6085539204377023,
+   "safety_violation": 0.14884862899652884,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.16641083089716274,
+   "time_to_goal": 40.839999999999996,
+   "path_efficiency": 0.7877422283434562,
+   "progress": 0.5020588425691728
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "online",
+   "stage": "b_headon",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": 0.08106555952389485,
+   "safety_violation": 0.04466666666666667,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.13328813865780828,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": 0.4875932522925558
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "online",
+   "stage": "b_moderate",
+   "episodes": 25,
+   "cf_goal": 0.12,
+   "goal": 0.12,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.24,
+   "timeout": 0.64,
+   "ped_clearance": 1.267536902856065,
+   "safety_violation": 0.07197384404528377,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.1696464900340214,
+   "time_to_goal": 33.833333333333336,
+   "path_efficiency": 0.7593086687963142,
+   "progress": 0.5632400634407765
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "online",
+   "stage": "b_stress",
+   "episodes": 25,
+   "cf_goal": 0.32,
+   "goal": 0.32,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.12,
+   "timeout": 0.56,
+   "ped_clearance": 0.30540368803784956,
+   "safety_violation": 0.19995943822850848,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.1567822074301533,
+   "time_to_goal": 41.5625,
+   "path_efficiency": 0.8272897613254939,
+   "progress": 0.5679694635361385
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "val",
+   "stage": "b_dense",
+   "episodes": 10,
+   "cf_goal": 0.1,
+   "goal": 0.1,
+   "static_collision": 0.1,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 0.8,
+   "ped_clearance": 0.3314169533874781,
+   "safety_violation": 0.1278378378378378,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.1592636916993702,
+   "time_to_goal": 14.6,
+   "path_efficiency": 0.6467657715949141,
+   "progress": 0.408891276588351
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "val",
+   "stage": "b_static",
+   "episodes": 10,
+   "cf_goal": 0.2,
+   "goal": 0.2,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.1,
+   "timeout": 0.7,
+   "ped_clearance": NaN,
+   "safety_violation": 0.07157407407407408,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.1833379226155781,
+   "time_to_goal": 42.1,
+   "path_efficiency": 0.7890659246325626,
+   "progress": 0.5905480804268421
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "zero",
+   "stage": "b_crossing",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": 0.15904797170340246,
+   "safety_violation": 0.04533333333333334,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.13823447449339762,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": 0.505949108432725
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "zero",
+   "stage": "b_dense",
+   "episodes": 25,
+   "cf_goal": 0.2,
+   "goal": 0.2,
+   "static_collision": 0.04,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.2,
+   "timeout": 0.56,
+   "ped_clearance": 0.5762727624367793,
+   "safety_violation": 0.1656074938167008,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.16974238216590087,
+   "time_to_goal": 39.32,
+   "path_efficiency": 0.7949417530884505,
+   "progress": 0.492242137092162
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "zero",
+   "stage": "b_headon",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": 0.08088190374164128,
+   "safety_violation": 0.044444444444444446,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.13386856200959946,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": 0.4946700452700858
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "zero",
+   "stage": "b_moderate",
+   "episodes": 25,
+   "cf_goal": 0.12,
+   "goal": 0.12,
+   "static_collision": 0.04,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.12,
+   "timeout": 0.72,
+   "ped_clearance": 1.2308650313835399,
+   "safety_violation": 0.08868067427783505,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.17182412381924908,
+   "time_to_goal": 33.53333333333333,
+   "path_efficiency": 0.751053230886829,
+   "progress": 0.5543888090637811
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t100000",
+   "mode": "zero",
+   "stage": "b_stress",
+   "episodes": 25,
+   "cf_goal": 0.32,
+   "goal": 0.32,
+   "static_collision": 0.08,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.04,
+   "timeout": 0.56,
+   "ped_clearance": 0.2905609227432357,
+   "safety_violation": 0.21510543783912783,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.16106083452401804,
+   "time_to_goal": 39.725,
+   "path_efficiency": 0.8310494372857182,
+   "progress": 0.5829546767479725
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t20000",
+   "mode": "val",
+   "stage": "b_dense",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.3,
+   "timeout": 0.7,
+   "ped_clearance": 0.8512199537000663,
+   "safety_violation": 0.11298170685161557,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.1819653453240182,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": 0.3147570279218447
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t20000",
+   "mode": "val",
+   "stage": "b_static",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.2,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.3,
+   "timeout": 0.5,
+   "ped_clearance": NaN,
+   "safety_violation": 0.0696211329087261,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.1967490610461041,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": 0.1627741501456476
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t40000",
+   "mode": "val",
+   "stage": "b_dense",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": 0.9874410491730007,
+   "safety_violation": 0.057166666666666664,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.11165777291357519,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": -0.026311998004735056
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t40000",
+   "mode": "val",
+   "stage": "b_static",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.0,
+   "timeout": 1.0,
+   "ped_clearance": NaN,
+   "safety_violation": 0.0,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.15443835501869518,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": 0.1025043301233638
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t60000",
+   "mode": "val",
+   "stage": "b_dense",
+   "episodes": 10,
+   "cf_goal": 0.1,
+   "goal": 0.1,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.2,
+   "timeout": 0.7,
+   "ped_clearance": 1.0824508238384953,
+   "safety_violation": 0.20827689873417726,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.15063162101854724,
+   "time_to_goal": 48.0,
+   "path_efficiency": 0.2319883401823933,
+   "progress": 0.19189869167902435
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t60000",
+   "mode": "val",
+   "stage": "b_static",
+   "episodes": 10,
+   "cf_goal": 0.0,
+   "goal": 0.0,
+   "static_collision": 0.1,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.6,
+   "timeout": 0.3,
+   "ped_clearance": NaN,
+   "safety_violation": 0.11579274517767839,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.1933162288583531,
+   "time_to_goal": NaN,
+   "path_efficiency": NaN,
+   "progress": -0.3490539734410629
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t80000",
+   "mode": "val",
+   "stage": "b_dense",
+   "episodes": 10,
+   "cf_goal": 0.1,
+   "goal": 0.1,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.4,
+   "timeout": 0.5,
+   "ped_clearance": 1.1455213627892074,
+   "safety_violation": 0.23840788335932533,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.19013400359089855,
+   "time_to_goal": 40.4,
+   "path_efficiency": 0.2326440020922431,
+   "progress": 0.3656939787521049
+  },
+  {
+   "arm": "RESIDUAL_FWD",
+   "seed": 5,
+   "ckpt": "t80000",
+   "mode": "val",
+   "stage": "b_static",
+   "episodes": 10,
+   "cf_goal": 0.1,
+   "goal": 0.1,
+   "static_collision": 0.0,
+   "ped_contact": 0.0,
+   "laser_bumper": 0.2,
+   "timeout": 0.7,
+   "ped_clearance": NaN,
+   "safety_violation": 0.04538583720877985,
+   "reverse_frac": 0.0,
+   "forward_speed": 0.21219049674296236,
+   "time_to_goal": 47.6,
+   "path_efficiency": 0.7194093792423434,
+   "progress": 0.5521560174589767
+  }
+ ],
+ "comparisons": [
+  {
+   "a": "ONLINE_FWD",
+   "b": "A5_FWD",
+   "ckpt": "t100000",
+   "stage": "b_crossing",
+   "seeds": [
+    5
+   ],
+   "per_seed": {
+    "5": {
+     "cf_goal": 0.0,
+     "goal": 0.0,
+     "static_collision": 0.0,
+     "ped_contact": 0.0,
+     "timeout": 0.0,
+     "ped_clearance": -3.697535675485458
+    }
+   },
+   "across_seed_std_cf_goal": null,
+   "cf_goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "static_collision": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "laser_bumper": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "timeout": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "ped_clearance": {
+    "delta": -3.697535675485458,
+    "ci95": [
+     -3.9304500857919087,
+     -3.4658029851207712
+    ],
+    "n": 10
+   },
+   "progress": {
+    "delta": 0.7575787809498868,
+    "ci95": [
+     0.7427693628476822,
+     0.773119411759823
+    ],
+    "n": 10
+   }
+  },
+  {
+   "a": "ONLINE_FWD",
+   "b": "A5_FWD",
+   "ckpt": "t100000",
+   "stage": "b_dense",
+   "seeds": [
+    5
+   ],
+   "per_seed": {
+    "5": {
+     "cf_goal": 0.2,
+     "goal": 0.2,
+     "static_collision": 0.0,
+     "ped_contact": 0.0,
+     "timeout": -0.19999999999999996,
+     "ped_clearance": -0.5126143881194478
+    }
+   },
+   "across_seed_std_cf_goal": null,
+   "cf_goal": {
+    "delta": 0.2,
+    "ci95": [
+     0.08,
+     0.36
+    ],
+    "n": 25
+   },
+   "goal": {
+    "delta": 0.2,
+    "ci95": [
+     0.08,
+     0.36
+    ],
+    "n": 25
+   },
+   "static_collision": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "laser_bumper": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "timeout": {
+    "delta": -0.2,
+    "ci95": [
+     -0.36,
+     -0.04
+    ],
+    "n": 25
+   },
+   "ped_clearance": {
+    "delta": -0.5126143881194479,
+    "ci95": [
+     -0.8405018011141335,
+     -0.21892851465500152
+    ],
+    "n": 25
+   },
+   "progress": {
+    "delta": 0.5013782461264633,
+    "ci95": [
+     0.42484620283423374,
+     0.5804155973987217
+    ],
+    "n": 25
+   }
+  },
+  {
+   "a": "ONLINE_FWD",
+   "b": "A5_FWD",
+   "ckpt": "t100000",
+   "stage": "b_empty",
+   "seeds": [
+    5
+   ],
+   "per_seed": {
+    "5": {
+     "cf_goal": 0.12,
+     "goal": 0.12,
+     "static_collision": 0.04,
+     "ped_contact": 0.0,
+     "timeout": -0.16000000000000003,
+     "ped_clearance": NaN
+    }
+   },
+   "across_seed_std_cf_goal": null,
+   "cf_goal": {
+    "delta": 0.12,
+    "ci95": [
+     0.0,
+     0.24099999999999452
+    ],
+    "n": 25
+   },
+   "goal": {
+    "delta": 0.12,
+    "ci95": [
+     0.0,
+     0.24
+    ],
+    "n": 25
+   },
+   "static_collision": {
+    "delta": 0.04,
+    "ci95": [
+     0.0,
+     0.12
+    ],
+    "n": 25
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "laser_bumper": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "timeout": {
+    "delta": -0.16,
+    "ci95": [
+     -0.32,
+     -0.04
+    ],
+    "n": 25
+   },
+   "ped_clearance": null,
+   "progress": {
+    "delta": 0.5265355717291255,
+    "ci95": [
+     0.4522179993014157,
+     0.6086175025554187
+    ],
+    "n": 25
+   }
+  },
+  {
+   "a": "ONLINE_FWD",
+   "b": "A5_FWD",
+   "ckpt": "t100000",
+   "stage": "b_headon",
+   "seeds": [
+    5
+   ],
+   "per_seed": {
+    "5": {
+     "cf_goal": 0.0,
+     "goal": 0.0,
+     "static_collision": 0.0,
+     "ped_contact": 0.0,
+     "timeout": 0.0,
+     "ped_clearance": 0.008656514897440598
+    }
+   },
+   "across_seed_std_cf_goal": null,
+   "cf_goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "static_collision": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "laser_bumper": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "timeout": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "ped_clearance": {
+    "delta": 0.008656514897440593,
+    "ci95": [
+     0.001213151742206786,
+     0.019192769029612023
+    ],
+    "n": 10
+   },
+   "progress": {
+    "delta": 0.6400997363169486,
+    "ci95": [
+     0.6118001810495044,
+     0.6653332114956046
+    ],
+    "n": 10
+   }
+  },
+  {
+   "a": "ONLINE_FWD",
+   "b": "A5_FWD",
+   "ckpt": "t100000",
+   "stage": "b_moderate",
+   "seeds": [
+    5
+   ],
+   "per_seed": {
+    "5": {
+     "cf_goal": 0.08,
+     "goal": 0.08,
+     "static_collision": 0.0,
+     "ped_contact": 0.0,
+     "timeout": -0.12,
+     "ped_clearance": -0.5544823388160824
+    }
+   },
+   "across_seed_std_cf_goal": null,
+   "cf_goal": {
+    "delta": 0.08,
+    "ci95": [
+     0.0,
+     0.2
+    ],
+    "n": 25
+   },
+   "goal": {
+    "delta": 0.08,
+    "ci95": [
+     0.0,
+     0.2
+    ],
+    "n": 25
+   },
+   "static_collision": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "laser_bumper": {
+    "delta": 0.04,
+    "ci95": [
+     0.0,
+     0.12
+    ],
+    "n": 25
+   },
+   "timeout": {
+    "delta": -0.12,
+    "ci95": [
+     -0.28,
+     0.0
+    ],
+    "n": 25
+   },
+   "ped_clearance": {
+    "delta": -0.5544823388160828,
+    "ci95": [
+     -1.0506700301646867,
+     -0.05309785450520565
+    ],
+    "n": 25
+   },
+   "progress": {
+    "delta": 0.5166771992185079,
+    "ci95": [
+     0.45100906554941356,
+     0.5850883800702356
+    ],
+    "n": 25
+   }
+  },
+  {
+   "a": "ONLINE_FWD",
+   "b": "A5_FWD",
+   "ckpt": "t100000",
+   "stage": "b_static",
+   "seeds": [
+    5
+   ],
+   "per_seed": {
+    "5": {
+     "cf_goal": 0.12,
+     "goal": 0.12,
+     "static_collision": 0.08,
+     "ped_contact": 0.0,
+     "timeout": -0.24,
+     "ped_clearance": NaN
+    }
+   },
+   "across_seed_std_cf_goal": null,
+   "cf_goal": {
+    "delta": 0.12,
+    "ci95": [
+     0.0,
+     0.24
+    ],
+    "n": 25
+   },
+   "goal": {
+    "delta": 0.12,
+    "ci95": [
+     0.0,
+     0.28
+    ],
+    "n": 25
+   },
+   "static_collision": {
+    "delta": 0.08,
+    "ci95": [
+     0.0,
+     0.2
+    ],
+    "n": 25
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "laser_bumper": {
+    "delta": 0.08,
+    "ci95": [
+     0.0,
+     0.2
+    ],
+    "n": 25
+   },
+   "timeout": {
+    "delta": -0.24,
+    "ci95": [
+     -0.44,
+     -0.08
+    ],
+    "n": 25
+   },
+   "ped_clearance": null,
+   "progress": {
+    "delta": 0.5352428375493703,
+    "ci95": [
+     0.46349538090302955,
+     0.6085189335115881
+    ],
+    "n": 25
+   }
+  },
+  {
+   "a": "ONLINE_FWD",
+   "b": "A5_FWD",
+   "ckpt": "t100000",
+   "stage": "b_stress",
+   "seeds": [
+    5
+   ],
+   "per_seed": {
+    "5": {
+     "cf_goal": 0.2,
+     "goal": 0.2,
+     "static_collision": 0.08,
+     "ped_contact": 0.0,
+     "timeout": -0.28,
+     "ped_clearance": -0.2184201817767772
+    }
+   },
+   "across_seed_std_cf_goal": null,
+   "cf_goal": {
+    "delta": 0.2,
+    "ci95": [
+     0.08,
+     0.36
+    ],
+    "n": 25
+   },
+   "goal": {
+    "delta": 0.2,
+    "ci95": [
+     0.04,
+     0.36
+    ],
+    "n": 25
+   },
+   "static_collision": {
+    "delta": 0.08,
+    "ci95": [
+     0.0,
+     0.2
+    ],
+    "n": 25
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "laser_bumper": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "timeout": {
+    "delta": -0.28,
+    "ci95": [
+     -0.48,
+     -0.12
+    ],
+    "n": 25
+   },
+   "ped_clearance": {
+    "delta": -0.21842018177677722,
+    "ci95": [
+     -0.39208750101979334,
+     -0.06824214054092684
+    ],
+    "n": 25
+   },
+   "progress": {
+    "delta": 0.5210345708593156,
+    "ci95": [
+     0.43333061767850944,
+     0.6093260166208341
+    ],
+    "n": 25
+   }
+  },
+  {
+   "a": "RESIDUAL_FWD",
+   "b": "A5_FWD",
+   "ckpt": "t100000",
+   "stage": "b_crossing",
+   "seeds": [
+    5
+   ],
+   "per_seed": {
+    "5": {
+     "cf_goal": 0.0,
+     "goal": 0.0,
+     "static_collision": 0.0,
+     "ped_contact": 0.0,
+     "timeout": 0.0,
+     "ped_clearance": -3.8960746404721287
+    }
+   },
+   "across_seed_std_cf_goal": null,
+   "cf_goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "static_collision": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "laser_bumper": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "timeout": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "ped_clearance": {
+    "delta": -3.896074640472129,
+    "ci95": [
+     -4.0481385934383844,
+     -3.7829951202284247
+    ],
+    "n": 10
+   },
+   "progress": {
+    "delta": 0.471996992701055,
+    "ci95": [
+     0.466255017991022,
+     0.4777319933553862
+    ],
+    "n": 10
+   }
+  },
+  {
+   "a": "RESIDUAL_FWD",
+   "b": "A5_FWD",
+   "ckpt": "t100000",
+   "stage": "b_dense",
+   "seeds": [
+    5
+   ],
+   "per_seed": {
+    "5": {
+     "cf_goal": 0.24,
+     "goal": 0.24,
+     "static_collision": 0.0,
+     "ped_contact": 0.0,
+     "timeout": -0.4,
+     "ped_clearance": -0.22184844478112642
+    }
+   },
+   "across_seed_std_cf_goal": null,
+   "cf_goal": {
+    "delta": 0.24,
+    "ci95": [
+     0.08,
+     0.4
+    ],
+    "n": 25
+   },
+   "goal": {
+    "delta": 0.24,
+    "ci95": [
+     0.08,
+     0.4009999999999946
+    ],
+    "n": 25
+   },
+   "static_collision": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "laser_bumper": {
+    "delta": 0.16,
+    "ci95": [
+     0.04,
+     0.32
+    ],
+    "n": 25
+   },
+   "timeout": {
+    "delta": -0.4,
+    "ci95": [
+     -0.6,
+     -0.2
+    ],
+    "n": 25
+   },
+   "ped_clearance": {
+    "delta": -0.22184844478112656,
+    "ci95": [
+     -0.5892194049157182,
+     0.21822661660529272
+    ],
+    "n": 25
+   },
+   "progress": {
+    "delta": 0.5010230825737856,
+    "ci95": [
+     0.4109336666474328,
+     0.5939140862106388
+    ],
+    "n": 25
+   }
+  },
+  {
+   "a": "RESIDUAL_FWD",
+   "b": "A5_FWD",
+   "ckpt": "t100000",
+   "stage": "b_empty",
+   "seeds": [
+    5
+   ],
+   "per_seed": {
+    "5": {
+     "cf_goal": 0.16,
+     "goal": 0.16,
+     "static_collision": 0.04,
+     "ped_contact": 0.0,
+     "timeout": -0.31999999999999995,
+     "ped_clearance": NaN
+    }
+   },
+   "across_seed_std_cf_goal": null,
+   "cf_goal": {
+    "delta": 0.16,
+    "ci95": [
+     0.04,
+     0.32
+    ],
+    "n": 25
+   },
+   "goal": {
+    "delta": 0.16,
+    "ci95": [
+     0.04,
+     0.32
+    ],
+    "n": 25
+   },
+   "static_collision": {
+    "delta": 0.04,
+    "ci95": [
+     0.0,
+     0.12
+    ],
+    "n": 25
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "laser_bumper": {
+    "delta": 0.12,
+    "ci95": [
+     0.0,
+     0.28
+    ],
+    "n": 25
+   },
+   "timeout": {
+    "delta": -0.32,
+    "ci95": [
+     -0.52,
+     -0.12
+    ],
+    "n": 25
+   },
+   "ped_clearance": null,
+   "progress": {
+    "delta": 0.539682800571645,
+    "ci95": [
+     0.4502766217080542,
+     0.6334699188656784
+    ],
+    "n": 25
+   }
+  },
+  {
+   "a": "RESIDUAL_FWD",
+   "b": "A5_FWD",
+   "ckpt": "t100000",
+   "stage": "b_headon",
+   "seeds": [
+    5
+   ],
+   "per_seed": {
+    "5": {
+     "cf_goal": 0.0,
+     "goal": 0.0,
+     "static_collision": 0.0,
+     "ped_contact": 0.0,
+     "timeout": 0.0,
+     "ped_clearance": -0.0008219848463080631
+    }
+   },
+   "across_seed_std_cf_goal": null,
+   "cf_goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "static_collision": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "laser_bumper": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "timeout": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "ped_clearance": {
+    "delta": -0.0008219848463080548,
+    "ci95": [
+     -0.003138504088062402,
+     0.00197417490194554
+    ],
+    "n": 10
+   },
+   "progress": {
+    "delta": 0.480811441578758,
+    "ci95": [
+     0.4786109361221672,
+     0.4831230538082563
+    ],
+    "n": 10
+   }
+  },
+  {
+   "a": "RESIDUAL_FWD",
+   "b": "A5_FWD",
+   "ckpt": "t100000",
+   "stage": "b_moderate",
+   "seeds": [
+    5
+   ],
+   "per_seed": {
+    "5": {
+     "cf_goal": 0.12,
+     "goal": 0.12,
+     "static_collision": 0.04,
+     "ped_contact": 0.0,
+     "timeout": -0.36,
+     "ped_clearance": -0.41770765428030443
+    }
+   },
+   "across_seed_std_cf_goal": null,
+   "cf_goal": {
+    "delta": 0.12,
+    "ci95": [
+     0.0,
+     0.24
+    ],
+    "n": 25
+   },
+   "goal": {
+    "delta": 0.12,
+    "ci95": [
+     0.0,
+     0.24
+    ],
+    "n": 25
+   },
+   "static_collision": {
+    "delta": 0.04,
+    "ci95": [
+     0.0,
+     0.12
+    ],
+    "n": 25
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "laser_bumper": {
+    "delta": 0.2,
+    "ci95": [
+     0.08,
+     0.36
+    ],
+    "n": 25
+   },
+   "timeout": {
+    "delta": -0.36,
+    "ci95": [
+     -0.56,
+     -0.2
+    ],
+    "n": 25
+   },
+   "ped_clearance": {
+    "delta": -0.41770765428030443,
+    "ci95": [
+     -1.0082787495743661,
+     0.20416382350321233
+    ],
+    "n": 25
+   },
+   "progress": {
+    "delta": 0.5610803842777204,
+    "ci95": [
+     0.4893998166324297,
+     0.6408515301242707
+    ],
+    "n": 25
+   }
+  },
+  {
+   "a": "RESIDUAL_FWD",
+   "b": "A5_FWD",
+   "ckpt": "t100000",
+   "stage": "b_static",
+   "seeds": [
+    5
+   ],
+   "per_seed": {
+    "5": {
+     "cf_goal": 0.16,
+     "goal": 0.16,
+     "static_collision": 0.04,
+     "ped_contact": 0.0,
+     "timeout": -0.28,
+     "ped_clearance": NaN
+    }
+   },
+   "across_seed_std_cf_goal": null,
+   "cf_goal": {
+    "delta": 0.16,
+    "ci95": [
+     0.04,
+     0.32
+    ],
+    "n": 25
+   },
+   "goal": {
+    "delta": 0.16,
+    "ci95": [
+     0.04,
+     0.32
+    ],
+    "n": 25
+   },
+   "static_collision": {
+    "delta": 0.04,
+    "ci95": [
+     0.0,
+     0.12
+    ],
+    "n": 25
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "laser_bumper": {
+    "delta": 0.08,
+    "ci95": [
+     0.0,
+     0.2
+    ],
+    "n": 25
+   },
+   "timeout": {
+    "delta": -0.28,
+    "ci95": [
+     -0.44,
+     -0.12
+    ],
+    "n": 25
+   },
+   "ped_clearance": null,
+   "progress": {
+    "delta": 0.5063718043243274,
+    "ci95": [
+     0.4262445602761565,
+     0.5897358617253613
+    ],
+    "n": 25
+   }
+  },
+  {
+   "a": "RESIDUAL_FWD",
+   "b": "A5_FWD",
+   "ckpt": "t100000",
+   "stage": "b_stress",
+   "seeds": [
+    5
+   ],
+   "per_seed": {
+    "5": {
+     "cf_goal": 0.32,
+     "goal": 0.32,
+     "static_collision": 0.04,
+     "ped_contact": 0.0,
+     "timeout": -0.43999999999999995,
+     "ped_clearance": -0.036961067820552695
+    }
+   },
+   "across_seed_std_cf_goal": null,
+   "cf_goal": {
+    "delta": 0.32,
+    "ci95": [
+     0.16,
+     0.52
+    ],
+    "n": 25
+   },
+   "goal": {
+    "delta": 0.32,
+    "ci95": [
+     0.16,
+     0.52
+    ],
+    "n": 25
+   },
+   "static_collision": {
+    "delta": 0.04,
+    "ci95": [
+     0.0,
+     0.12
+    ],
+    "n": 25
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "laser_bumper": {
+    "delta": 0.08,
+    "ci95": [
+     0.0,
+     0.2
+    ],
+    "n": 25
+   },
+   "timeout": {
+    "delta": -0.44,
+    "ci95": [
+     -0.64,
+     -0.24
+    ],
+    "n": 25
+   },
+   "ped_clearance": {
+    "delta": -0.03696106782055274,
+    "ci95": [
+     -0.3095808924589224,
+     0.3623485660109396
+    ],
+    "n": 25
+   },
+   "progress": {
+    "delta": 0.5683964473626802,
+    "ci95": [
+     0.4846093746176653,
+     0.6561490126754456
+    ],
+    "n": 25
+   }
+  },
+  {
+   "a": "RESIDUAL_FWD",
+   "b": "ONLINE_FWD",
+   "ckpt": "t100000",
+   "stage": "b_crossing",
+   "seeds": [
+    5
+   ],
+   "per_seed": {
+    "5": {
+     "cf_goal": 0.0,
+     "goal": 0.0,
+     "static_collision": 0.0,
+     "ped_contact": 0.0,
+     "timeout": 0.0,
+     "ped_clearance": -0.19853896498667062
+    }
+   },
+   "across_seed_std_cf_goal": null,
+   "cf_goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "static_collision": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "laser_bumper": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "timeout": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "ped_clearance": {
+    "delta": -0.19853896498667062,
+    "ci95": [
+     -0.36610965964117287,
+     -0.06029943157188405
+    ],
+    "n": 10
+   },
+   "progress": {
+    "delta": -0.2855817882488318,
+    "ci95": [
+     -0.30764461876357563,
+     -0.2646487828953118
+    ],
+    "n": 10
+   }
+  },
+  {
+   "a": "RESIDUAL_FWD",
+   "b": "ONLINE_FWD",
+   "ckpt": "t100000",
+   "stage": "b_dense",
+   "seeds": [
+    5
+   ],
+   "per_seed": {
+    "5": {
+     "cf_goal": 0.03999999999999998,
+     "goal": 0.03999999999999998,
+     "static_collision": 0.0,
+     "ped_contact": 0.0,
+     "timeout": -0.20000000000000007,
+     "ped_clearance": 0.2907659433383214
+    }
+   },
+   "across_seed_std_cf_goal": null,
+   "cf_goal": {
+    "delta": 0.04,
+    "ci95": [
+     -0.08,
+     0.16
+    ],
+    "n": 25
+   },
+   "goal": {
+    "delta": 0.04,
+    "ci95": [
+     -0.08,
+     0.2
+    ],
+    "n": 25
+   },
+   "static_collision": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "laser_bumper": {
+    "delta": 0.16,
+    "ci95": [
+     0.04,
+     0.32
+    ],
+    "n": 25
+   },
+   "timeout": {
+    "delta": -0.2,
+    "ci95": [
+     -0.4,
+     0.0
+    ],
+    "n": 25
+   },
+   "ped_clearance": {
+    "delta": 0.2907659433383214,
+    "ci95": [
+     -0.07513027663319223,
+     0.7090590926278024
+    ],
+    "n": 25
+   },
+   "progress": {
+    "delta": -0.00035516355267764863,
+    "ci95": [
+     -0.05902108966147208,
+     0.0630763295101212
+    ],
+    "n": 25
+   }
+  },
+  {
+   "a": "RESIDUAL_FWD",
+   "b": "ONLINE_FWD",
+   "ckpt": "t100000",
+   "stage": "b_empty",
+   "seeds": [
+    5
+   ],
+   "per_seed": {
+    "5": {
+     "cf_goal": 0.04000000000000001,
+     "goal": 0.04000000000000001,
+     "static_collision": 0.0,
+     "ped_contact": 0.0,
+     "timeout": -0.15999999999999992,
+     "ped_clearance": NaN
+    }
+   },
+   "across_seed_std_cf_goal": null,
+   "cf_goal": {
+    "delta": 0.04,
+    "ci95": [
+     -0.08,
+     0.2
+    ],
+    "n": 25
+   },
+   "goal": {
+    "delta": 0.04,
+    "ci95": [
+     -0.08,
+     0.16
+    ],
+    "n": 25
+   },
+   "static_collision": {
+    "delta": 0.0,
+    "ci95": [
+     -0.12,
+     0.12
+    ],
+    "n": 25
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "laser_bumper": {
+    "delta": 0.12,
+    "ci95": [
+     0.0,
+     0.24
+    ],
+    "n": 25
+   },
+   "timeout": {
+    "delta": -0.16,
+    "ci95": [
+     -0.36,
+     0.0
+    ],
+    "n": 25
+   },
+   "ped_clearance": null,
+   "progress": {
+    "delta": 0.013147228842519502,
+    "ci95": [
+     -0.044385995522949605,
+     0.07608419716714865
+    ],
+    "n": 25
+   }
+  },
+  {
+   "a": "RESIDUAL_FWD",
+   "b": "ONLINE_FWD",
+   "ckpt": "t100000",
+   "stage": "b_headon",
+   "seeds": [
+    5
+   ],
+   "per_seed": {
+    "5": {
+     "cf_goal": 0.0,
+     "goal": 0.0,
+     "static_collision": 0.0,
+     "ped_contact": 0.0,
+     "timeout": 0.0,
+     "ped_clearance": -0.009478499743748661
+    }
+   },
+   "across_seed_std_cf_goal": null,
+   "cf_goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "static_collision": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "laser_bumper": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "timeout": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "ped_clearance": {
+    "delta": -0.009478499743748647,
+    "ci95": [
+     -0.02082833921301339,
+     -0.0020054345921201007
+    ],
+    "n": 10
+   },
+   "progress": {
+    "delta": -0.1592882947381907,
+    "ci95": [
+     -0.18671966031055137,
+     -0.12958326805674059
+    ],
+    "n": 10
+   }
+  },
+  {
+   "a": "RESIDUAL_FWD",
+   "b": "ONLINE_FWD",
+   "ckpt": "t100000",
+   "stage": "b_moderate",
+   "seeds": [
+    5
+   ],
+   "per_seed": {
+    "5": {
+     "cf_goal": 0.039999999999999994,
+     "goal": 0.039999999999999994,
+     "static_collision": 0.04,
+     "ped_contact": 0.0,
+     "timeout": -0.24,
+     "ped_clearance": 0.136774684535778
+    }
+   },
+   "across_seed_std_cf_goal": null,
+   "cf_goal": {
+    "delta": 0.04,
+    "ci95": [
+     0.0,
+     0.12
+    ],
+    "n": 25
+   },
+   "goal": {
+    "delta": 0.04,
+    "ci95": [
+     0.0,
+     0.12
+    ],
+    "n": 25
+   },
+   "static_collision": {
+    "delta": 0.04,
+    "ci95": [
+     0.0,
+     0.12
+    ],
+    "n": 25
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "laser_bumper": {
+    "delta": 0.16,
+    "ci95": [
+     0.04,
+     0.32
+    ],
+    "n": 25
+   },
+   "timeout": {
+    "delta": -0.24,
+    "ci95": [
+     -0.4,
+     -0.08
+    ],
+    "n": 25
+   },
+   "ped_clearance": {
+    "delta": 0.13677468453577835,
+    "ci95": [
+     -0.12643172916513956,
+     0.4002690865973122
+    ],
+    "n": 25
+   },
+   "progress": {
+    "delta": 0.04440318505921251,
+    "ci95": [
+     -0.01816507561241696,
+     0.10712397054675148
+    ],
+    "n": 25
+   }
+  },
+  {
+   "a": "RESIDUAL_FWD",
+   "b": "ONLINE_FWD",
+   "ckpt": "t100000",
+   "stage": "b_static",
+   "seeds": [
+    5
+   ],
+   "per_seed": {
+    "5": {
+     "cf_goal": 0.04000000000000001,
+     "goal": 0.04000000000000001,
+     "static_collision": -0.04,
+     "ped_contact": 0.0,
+     "timeout": -0.040000000000000036,
+     "ped_clearance": NaN
+    }
+   },
+   "across_seed_std_cf_goal": null,
+   "cf_goal": {
+    "delta": 0.04,
+    "ci95": [
+     0.0,
+     0.12
+    ],
+    "n": 25
+   },
+   "goal": {
+    "delta": 0.04,
+    "ci95": [
+     0.0,
+     0.12
+    ],
+    "n": 25
+   },
+   "static_collision": {
+    "delta": -0.04,
+    "ci95": [
+     -0.16,
+     0.08099999999999455
+    ],
+    "n": 25
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "laser_bumper": {
+    "delta": 0.0,
+    "ci95": [
+     -0.16,
+     0.16
+    ],
+    "n": 25
+   },
+   "timeout": {
+    "delta": -0.04,
+    "ci95": [
+     -0.24,
+     0.16
+    ],
+    "n": 25
+   },
+   "ped_clearance": null,
+   "progress": {
+    "delta": -0.02887103322504289,
+    "ci95": [
+     -0.08736158994858789,
+     0.028455762289115928
+    ],
+    "n": 25
+   }
+  },
+  {
+   "a": "RESIDUAL_FWD",
+   "b": "ONLINE_FWD",
+   "ckpt": "t100000",
+   "stage": "b_stress",
+   "seeds": [
+    5
+   ],
+   "per_seed": {
+    "5": {
+     "cf_goal": 0.12,
+     "goal": 0.12,
+     "static_collision": -0.04,
+     "ped_contact": 0.0,
+     "timeout": -0.15999999999999992,
+     "ped_clearance": 0.1814591139562245
+    }
+   },
+   "across_seed_std_cf_goal": null,
+   "cf_goal": {
+    "delta": 0.12,
+    "ci95": [
+     0.0,
+     0.28
+    ],
+    "n": 25
+   },
+   "goal": {
+    "delta": 0.12,
+    "ci95": [
+     0.0,
+     0.24
+    ],
+    "n": 25
+   },
+   "static_collision": {
+    "delta": -0.04,
+    "ci95": [
+     -0.12,
+     0.0
+    ],
+    "n": 25
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "laser_bumper": {
+    "delta": 0.08,
+    "ci95": [
+     0.0,
+     0.2
+    ],
+    "n": 25
+   },
+   "timeout": {
+    "delta": -0.16,
+    "ci95": [
+     -0.36,
+     0.0
+    ],
+    "n": 25
+   },
+   "ped_clearance": {
+    "delta": 0.1814591139562244,
+    "ci95": [
+     -0.04643226336017663,
+     0.5192947426890115
+    ],
+    "n": 25
+   },
+   "progress": {
+    "delta": 0.047361876503364736,
+    "ci95": [
+     0.003008373779409807,
+     0.09444206479467172
+    ],
+    "n": 25
+   }
+  }
+ ],
+ "ablation": [
+  {
+   "seed": 5,
+   "ckpt": "t100000",
+   "stage": "b_crossing",
+   "mode": "online",
+   "cf_goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "static_collision": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "laser_bumper": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "timeout": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "ped_clearance": {
+    "delta": -0.0012333688900863838,
+    "ci95": [
+     -0.004203749589889435,
+     0.001416923480431644
+    ],
+    "n": 10
+   },
+   "progress": {
+    "delta": -7.857956624944818e-05,
+    "ci95": [
+     -0.004641245371917253,
+     0.004516915533478639
+    ],
+    "n": 10
+   }
+  },
+  {
+   "seed": 5,
+   "ckpt": "t100000",
+   "stage": "b_dense",
+   "mode": "online",
+   "cf_goal": {
+    "delta": -0.04,
+    "ci95": [
+     -0.12,
+     0.0
+    ],
+    "n": 25
+   },
+   "goal": {
+    "delta": -0.04,
+    "ci95": [
+     -0.12,
+     0.0
+    ],
+    "n": 25
+   },
+   "static_collision": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "laser_bumper": {
+    "delta": 0.04,
+    "ci95": [
+     0.0,
+     0.12
+    ],
+    "n": 25
+   },
+   "timeout": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "ped_clearance": {
+    "delta": 0.05751818572093782,
+    "ci95": [
+     0.017444329137853598,
+     0.10746077328133428
+    ],
+    "n": 25
+   },
+   "progress": {
+    "delta": 0.0020640067951290687,
+    "ci95": [
+     -0.002331770719033373,
+     0.007237511971118033
+    ],
+    "n": 25
+   }
+  },
+  {
+   "seed": 5,
+   "ckpt": "t100000",
+   "stage": "b_headon",
+   "mode": "online",
+   "cf_goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "static_collision": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "laser_bumper": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "timeout": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "ped_clearance": {
+    "delta": -0.0012859209868832044,
+    "ci95": [
+     -0.0030241993967687264,
+     0.00024333096829204102
+    ],
+    "n": 10
+   },
+   "progress": {
+    "delta": -0.00047303398139960653,
+    "ci95": [
+     -0.0024635782818993555,
+     0.0019082707562013245
+    ],
+    "n": 10
+   }
+  },
+  {
+   "seed": 5,
+   "ckpt": "t100000",
+   "stage": "b_moderate",
+   "mode": "online",
+   "cf_goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "static_collision": {
+    "delta": -0.04,
+    "ci95": [
+     -0.12,
+     0.0
+    ],
+    "n": 25
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "laser_bumper": {
+    "delta": 0.04,
+    "ci95": [
+     0.0,
+     0.12
+    ],
+    "n": 25
+   },
+   "timeout": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "ped_clearance": {
+    "delta": 0.025984185427834063,
+    "ci95": [
+     -0.03157374286675522,
+     0.11269939645431047
+    ],
+    "n": 25
+   },
+   "progress": {
+    "delta": 0.0006912295581429262,
+    "ci95": [
+     -0.005702559220817794,
+     0.0070056491522074655
+    ],
+    "n": 25
+   }
+  },
+  {
+   "seed": 5,
+   "ckpt": "t100000",
+   "stage": "b_stress",
+   "mode": "online",
+   "cf_goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "static_collision": {
+    "delta": -0.04,
+    "ci95": [
+     -0.12,
+     0.0
+    ],
+    "n": 25
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "laser_bumper": {
+    "delta": 0.04,
+    "ci95": [
+     0.0,
+     0.12
+    ],
+    "n": 25
+   },
+   "timeout": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "ped_clearance": {
+    "delta": 0.001419524318063774,
+    "ci95": [
+     -0.024587212296059497,
+     0.02646751620028224
+    ],
+    "n": 25
+   },
+   "progress": {
+    "delta": 0.0014810803819325002,
+    "ci95": [
+     -0.00080484989641457,
+     0.0038977844314544135
+    ],
+    "n": 25
+   }
+  },
+  {
+   "seed": 5,
+   "ckpt": "t100000",
+   "stage": "b_crossing",
+   "mode": "zero",
+   "cf_goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "static_collision": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "laser_bumper": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "timeout": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "ped_clearance": {
+    "delta": 0.07127450523980222,
+    "ci95": [
+     0.029187275363932945,
+     0.12193249992870987
+    ],
+    "n": 10
+   },
+   "progress": {
+    "delta": 0.026149754836458466,
+    "ci95": [
+     0.020802395902909533,
+     0.03144064025216283
+    ],
+    "n": 10
+   }
+  },
+  {
+   "seed": 5,
+   "ckpt": "t100000",
+   "stage": "b_dense",
+   "mode": "zero",
+   "cf_goal": {
+    "delta": -0.04,
+    "ci95": [
+     -0.12,
+     0.0
+    ],
+    "n": 25
+   },
+   "goal": {
+    "delta": -0.04,
+    "ci95": [
+     -0.12,
+     0.0
+    ],
+    "n": 25
+   },
+   "static_collision": {
+    "delta": 0.04,
+    "ci95": [
+     0.0,
+     0.12
+    ],
+    "n": 25
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "laser_bumper": {
+    "delta": 0.04,
+    "ci95": [
+     -0.08,
+     0.16
+    ],
+    "n": 25
+   },
+   "timeout": {
+    "delta": -0.04,
+    "ci95": [
+     -0.12,
+     0.0
+    ],
+    "n": 25
+   },
+   "ped_clearance": {
+    "delta": 0.025237027720014796,
+    "ci95": [
+     -0.1719254085375108,
+     0.18833788829254913
+    ],
+    "n": 25
+   },
+   "progress": {
+    "delta": -0.007752698681881538,
+    "ci95": [
+     -0.027018790363964745,
+     0.00913770152032769
+    ],
+    "n": 25
+   }
+  },
+  {
+   "seed": 5,
+   "ckpt": "t100000",
+   "stage": "b_headon",
+   "mode": "zero",
+   "cf_goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "static_collision": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "laser_bumper": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "timeout": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 10
+   },
+   "ped_clearance": {
+    "delta": -0.0014695767691367933,
+    "ci95": [
+     -0.0035560026311396743,
+     0.0006820463988265598
+    ],
+    "n": 10
+   },
+   "progress": {
+    "delta": 0.006603758996130499,
+    "ci95": [
+     0.00472870147657555,
+     0.008465460850425852
+    ],
+    "n": 10
+   }
+  },
+  {
+   "seed": 5,
+   "ckpt": "t100000",
+   "stage": "b_moderate",
+   "mode": "zero",
+   "cf_goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "static_collision": {
+    "delta": 0.0,
+    "ci95": [
+     -0.12,
+     0.12
+    ],
+    "n": 25
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "laser_bumper": {
+    "delta": -0.08,
+    "ci95": [
+     -0.2,
+     0.0
+    ],
+    "n": 25
+   },
+   "timeout": {
+    "delta": 0.08,
+    "ci95": [
+     0.0,
+     0.2
+    ],
+    "n": 25
+   },
+   "ped_clearance": {
+    "delta": -0.010687686044691287,
+    "ci95": [
+     -0.06547963640800501,
+     0.04277007978980337
+    ],
+    "n": 25
+   },
+   "progress": {
+    "delta": -0.008160024818852515,
+    "ci95": [
+     -0.016020506859661287,
+     0.0003703122223545501
+    ],
+    "n": 25
+   }
+  },
+  {
+   "seed": 5,
+   "ckpt": "t100000",
+   "stage": "b_stress",
+   "mode": "zero",
+   "cf_goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "goal": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "static_collision": {
+    "delta": 0.04,
+    "ci95": [
+     0.0,
+     0.12
+    ],
+    "n": 25
+   },
+   "ped_contact": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "laser_bumper": {
+    "delta": -0.04,
+    "ci95": [
+     -0.12,
+     0.0
+    ],
+    "n": 25
+   },
+   "timeout": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 25
+   },
+   "ped_clearance": {
+    "delta": -0.013423240976550075,
+    "ci95": [
+     -0.04765974018057582,
+     0.019511379508769994
+    ],
+    "n": 25
+   },
+   "progress": {
+    "delta": 0.01646629359376657,
+    "ci95": [
+     0.005944041536301156,
+     0.029369170152170658
+    ],
+    "n": 25
+   }
+  }
+ ],
+ "never_solved_episode_indices": {
+  "b_crossing": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "b_dense": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   14,
+   17,
+   18,
+   19,
+   21,
+   22,
+   24
+  ],
+  "b_empty": [
+   0,
+   1,
+   2,
+   3,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   22
+  ],
+  "b_headon": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "b_moderate": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   17,
+   18,
+   19,
+   20,
+   22,
+   23,
+   24
+  ],
+  "b_static": [
+   0,
+   1,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   19,
+   20,
+   22,
+   23,
+   24
+  ],
+  "b_stress": [
+   2,
+   3,
+   4,
+   5,
+   8,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   19,
+   21,
+   22,
+   23,
+   24
+  ]
+ }
+}

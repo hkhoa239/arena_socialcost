@@ -1,0 +1,509 @@
+{
+ "definition": "Test D: indexed subset of the counterfactual pairs in test_a, test_b and test_c. Not counted again; both conditions of a pair are in the same primary split. observability 'hidden_state' pairs (queues) are controls, not evidence of visual understanding.",
+ "pairs": [
+  {
+   "pair_id": "P0002",
+   "family": "conversation",
+   "split": "test_b",
+   "observability": "visual_temporal",
+   "on": "000003",
+   "off": "000004"
+  },
+  {
+   "pair_id": "P0005",
+   "family": "conversation",
+   "split": "test_b",
+   "observability": "visual_temporal",
+   "on": "000009",
+   "off": "000010"
+  },
+  {
+   "pair_id": "P0011",
+   "family": "conversation",
+   "split": "test_b",
+   "observability": "visual_temporal",
+   "on": "000021",
+   "off": "000022"
+  },
+  {
+   "pair_id": "P0013",
+   "family": "conversation",
+   "split": "test_b",
+   "observability": "visual_temporal",
+   "on": "000025",
+   "off": "000026"
+  },
+  {
+   "pair_id": "P0021",
+   "family": "conversation",
+   "split": "test_c",
+   "observability": "visual_temporal",
+   "on": "000041",
+   "off": "000042"
+  },
+  {
+   "pair_id": "P0022",
+   "family": "conversation",
+   "split": "test_a",
+   "observability": "visual_temporal",
+   "on": "000043",
+   "off": "000044"
+  },
+  {
+   "pair_id": "P0023",
+   "family": "conversation",
+   "split": "test_a",
+   "observability": "visual_temporal",
+   "on": "000045",
+   "off": "000046"
+  },
+  {
+   "pair_id": "P0024",
+   "family": "conversation",
+   "split": "test_c",
+   "observability": "visual_temporal",
+   "on": "000047",
+   "off": "000048"
+  },
+  {
+   "pair_id": "P0027",
+   "family": "conversation",
+   "split": "test_b",
+   "observability": "visual_temporal",
+   "on": "000053",
+   "off": "000054"
+  },
+  {
+   "pair_id": "P0029",
+   "family": "conversation",
+   "split": "test_a",
+   "observability": "visual_temporal",
+   "on": "000057",
+   "off": "000058"
+  },
+  {
+   "pair_id": "P0030",
+   "family": "conversation",
+   "split": "test_c",
+   "observability": "visual_temporal",
+   "on": "000059",
+   "off": "000060"
+  },
+  {
+   "pair_id": "P0031",
+   "family": "conversation",
+   "split": "test_b",
+   "observability": "visual_temporal",
+   "on": "000061",
+   "off": "000062"
+  },
+  {
+   "pair_id": "P0037",
+   "family": "conversation",
+   "split": "test_a",
+   "observability": "visual_temporal",
+   "on": "000073",
+   "off": "000074"
+  },
+  {
+   "pair_id": "P0042",
+   "family": "conversation",
+   "split": "test_c",
+   "observability": "visual_temporal",
+   "on": "000083",
+   "off": "000084"
+  },
+  {
+   "pair_id": "P0043",
+   "family": "conversation",
+   "split": "test_c",
+   "observability": "visual_temporal",
+   "on": "000085",
+   "off": "000086"
+  },
+  {
+   "pair_id": "P0053",
+   "family": "conversation",
+   "split": "test_c",
+   "observability": "visual_temporal",
+   "on": "000105",
+   "off": "000106"
+  },
+  {
+   "pair_id": "P0055",
+   "family": "conversation",
+   "split": "test_a",
+   "observability": "visual_temporal",
+   "on": "000109",
+   "off": "000110"
+  },
+  {
+   "pair_id": "P0060",
+   "family": "conversation",
+   "split": "test_a",
+   "observability": "visual_temporal",
+   "on": "000119",
+   "off": "000120"
+  },
+  {
+   "pair_id": "P0063",
+   "family": "stop_gesture",
+   "split": "test_c",
+   "observability": "visual",
+   "on": "000125",
+   "off": "000126"
+  },
+  {
+   "pair_id": "P0065",
+   "family": "stop_gesture",
+   "split": "test_c",
+   "observability": "visual",
+   "on": "000129",
+   "off": "000130"
+  },
+  {
+   "pair_id": "P0066",
+   "family": "stop_gesture",
+   "split": "test_a",
+   "observability": "visual",
+   "on": "000131",
+   "off": "000132"
+  },
+  {
+   "pair_id": "P0075",
+   "family": "stop_gesture",
+   "split": "test_b",
+   "observability": "visual",
+   "on": "000149",
+   "off": "000150"
+  },
+  {
+   "pair_id": "P0078",
+   "family": "stop_gesture",
+   "split": "test_b",
+   "observability": "visual",
+   "on": "000155",
+   "off": "000156"
+  },
+  {
+   "pair_id": "P0079",
+   "family": "stop_gesture",
+   "split": "test_a",
+   "observability": "visual",
+   "on": "000157",
+   "off": "000158"
+  },
+  {
+   "pair_id": "P0086",
+   "family": "stop_gesture",
+   "split": "test_a",
+   "observability": "visual",
+   "on": "000171",
+   "off": "000172"
+  },
+  {
+   "pair_id": "P0094",
+   "family": "stop_gesture",
+   "split": "test_a",
+   "observability": "visual",
+   "on": "000187",
+   "off": "000188"
+  },
+  {
+   "pair_id": "P0095",
+   "family": "stop_gesture",
+   "split": "test_c",
+   "observability": "visual",
+   "on": "000189",
+   "off": "000190"
+  },
+  {
+   "pair_id": "P0098",
+   "family": "stop_gesture",
+   "split": "test_a",
+   "observability": "visual",
+   "on": "000195",
+   "off": "000196"
+  },
+  {
+   "pair_id": "P0099",
+   "family": "stop_gesture",
+   "split": "test_b",
+   "observability": "visual",
+   "on": "000197",
+   "off": "000198"
+  },
+  {
+   "pair_id": "P0102",
+   "family": "stop_gesture",
+   "split": "test_c",
+   "observability": "visual",
+   "on": "000203",
+   "off": "000204"
+  },
+  {
+   "pair_id": "P0103",
+   "family": "stop_gesture",
+   "split": "test_c",
+   "observability": "visual",
+   "on": "000205",
+   "off": "000206"
+  },
+  {
+   "pair_id": "P0104",
+   "family": "stop_gesture",
+   "split": "test_b",
+   "observability": "visual",
+   "on": "000207",
+   "off": "000208"
+  },
+  {
+   "pair_id": "P0108",
+   "family": "stop_gesture",
+   "split": "test_b",
+   "observability": "visual",
+   "on": "000215",
+   "off": "000216"
+  },
+  {
+   "pair_id": "P0112",
+   "family": "wheelchair",
+   "split": "test_c",
+   "observability": "visual_appearance",
+   "on": "000223",
+   "off": "000224"
+  },
+  {
+   "pair_id": "P0116",
+   "family": "wheelchair",
+   "split": "test_a",
+   "observability": "visual_appearance",
+   "on": "000231",
+   "off": "000232"
+  },
+  {
+   "pair_id": "P0118",
+   "family": "wheelchair",
+   "split": "test_c",
+   "observability": "visual_appearance",
+   "on": "000235",
+   "off": "000236"
+  },
+  {
+   "pair_id": "P0122",
+   "family": "wheelchair",
+   "split": "test_b",
+   "observability": "visual_appearance",
+   "on": "000243",
+   "off": "000244"
+  },
+  {
+   "pair_id": "P0127",
+   "family": "wheelchair",
+   "split": "test_c",
+   "observability": "visual_appearance",
+   "on": "000253",
+   "off": "000254"
+  },
+  {
+   "pair_id": "P0128",
+   "family": "wheelchair",
+   "split": "test_a",
+   "observability": "visual_appearance",
+   "on": "000255",
+   "off": "000256"
+  },
+  {
+   "pair_id": "P0130",
+   "family": "wheelchair",
+   "split": "test_b",
+   "observability": "visual_appearance",
+   "on": "000259",
+   "off": "000260"
+  },
+  {
+   "pair_id": "P0133",
+   "family": "wheelchair",
+   "split": "test_b",
+   "observability": "visual_appearance",
+   "on": "000265",
+   "off": "000266"
+  },
+  {
+   "pair_id": "P0136",
+   "family": "wheelchair",
+   "split": "test_a",
+   "observability": "visual_appearance",
+   "on": "000271",
+   "off": "000272"
+  },
+  {
+   "pair_id": "P0137",
+   "family": "wheelchair",
+   "split": "test_c",
+   "observability": "visual_appearance",
+   "on": "000273",
+   "off": "000274"
+  },
+  {
+   "pair_id": "P0144",
+   "family": "wheelchair",
+   "split": "test_a",
+   "observability": "visual_appearance",
+   "on": "000287",
+   "off": "000288"
+  },
+  {
+   "pair_id": "P0145",
+   "family": "wheelchair",
+   "split": "test_c",
+   "observability": "visual_appearance",
+   "on": "000289",
+   "off": "000290"
+  },
+  {
+   "pair_id": "P0150",
+   "family": "wheelchair",
+   "split": "test_a",
+   "observability": "visual_appearance",
+   "on": "000299",
+   "off": "000300"
+  },
+  {
+   "pair_id": "P0154",
+   "family": "wheelchair",
+   "split": "test_b",
+   "observability": "visual_appearance",
+   "on": "000307",
+   "off": "000308"
+  },
+  {
+   "pair_id": "P0160",
+   "family": "wheelchair",
+   "split": "test_b",
+   "observability": "visual_appearance",
+   "on": "000319",
+   "off": "000320"
+  },
+  {
+   "pair_id": "P0162",
+   "family": "queue",
+   "split": "test_a",
+   "observability": "hidden_state",
+   "on": "000323",
+   "off": "000324"
+  },
+  {
+   "pair_id": "P0164",
+   "family": "queue",
+   "split": "test_a",
+   "observability": "hidden_state",
+   "on": "000327",
+   "off": "000328"
+  },
+  {
+   "pair_id": "P0168",
+   "family": "queue",
+   "split": "test_a",
+   "observability": "hidden_state",
+   "on": "000335",
+   "off": "000336"
+  },
+  {
+   "pair_id": "P0171",
+   "family": "queue",
+   "split": "test_c",
+   "observability": "hidden_state",
+   "on": "000341",
+   "off": "000342"
+  },
+  {
+   "pair_id": "P0173",
+   "family": "queue",
+   "split": "test_c",
+   "observability": "hidden_state",
+   "on": "000345",
+   "off": "000346"
+  },
+  {
+   "pair_id": "P0176",
+   "family": "queue",
+   "split": "test_a",
+   "observability": "hidden_state",
+   "on": "000351",
+   "off": "000352"
+  },
+  {
+   "pair_id": "P0180",
+   "family": "queue",
+   "split": "test_b",
+   "observability": "hidden_state",
+   "on": "000359",
+   "off": "000360"
+  },
+  {
+   "pair_id": "P0185",
+   "family": "queue",
+   "split": "test_c",
+   "observability": "hidden_state",
+   "on": "000369",
+   "off": "000370"
+  },
+  {
+   "pair_id": "P0186",
+   "family": "queue",
+   "split": "test_c",
+   "observability": "hidden_state",
+   "on": "000371",
+   "off": "000372"
+  },
+  {
+   "pair_id": "P0189",
+   "family": "queue",
+   "split": "test_a",
+   "observability": "hidden_state",
+   "on": "000377",
+   "off": "000378"
+  },
+  {
+   "pair_id": "P0190",
+   "family": "queue",
+   "split": "test_b",
+   "observability": "hidden_state",
+   "on": "000379",
+   "off": "000380"
+  },
+  {
+   "pair_id": "P0192",
+   "family": "queue",
+   "split": "test_b",
+   "observability": "hidden_state",
+   "on": "000383",
+   "off": "000384"
+  },
+  {
+   "pair_id": "P0194",
+   "family": "queue",
+   "split": "test_c",
+   "observability": "hidden_state",
+   "on": "000387",
+   "off": "000388"
+  },
+  {
+   "pair_id": "P0197",
+   "family": "queue",
+   "split": "test_b",
+   "observability": "hidden_state",
+   "on": "000393",
+   "off": "000394"
+  },
+  {
+   "pair_id": "P0206",
+   "family": "queue",
+   "split": "test_b",
+   "observability": "hidden_state",
+   "on": "000411",
+   "off": "000412"
+  }
+ ]
+}

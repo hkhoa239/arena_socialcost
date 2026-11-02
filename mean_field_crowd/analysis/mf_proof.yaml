@@ -1,0 +1,7 @@
+projection: perspective
+reference:
+  entity: env_0/jackal/base_link
+  mode: position
+timeline:
+  - look: { eye: [-7.0, -4.5, 5.0], target: [3.0, 0.0, 0.4], fov: 1.05 }
+  - hold: { duration: 16.0 }

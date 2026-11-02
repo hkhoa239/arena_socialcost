@@ -1,0 +1,76 @@
+diff --git a/arena_training/arena_rosnav_rl/cfg/arena_cfg/task.py b/arena_training/arena_rosnav_rl/cfg/arena_cfg/task.py
+index afe5828..93d7b67 100644
+--- a/arena_training/arena_rosnav_rl/cfg/arena_cfg/task.py
++++ b/arena_training/arena_rosnav_rl/cfg/arena_cfg/task.py
+@@ -70,6 +70,11 @@ class StagedCfg(BaseModel):
+         default=None,
+         description="Control tick at which each stage starts (first 0). Set, it replaces the performance thresholds and starting_stage.",
+     )
++    mixture_weights: list[float] | None = Field(
++        default=None,
++        description="One weight per stage. Set, every env draws each episode's stage independently with these weights (EpisodeMixtureCurriculum).",
++    )
++    mixture_seed: int = Field(default=0, description="Seed of the per-env stage draws when mixture_weights is set")
+ 
+     # ROS2 parameter communication settings
+     parameter_node_template: str = Field(
+diff --git a/arena_training/arena_rosnav_rl/cfg/sb3_cfg/callbacks.py b/arena_training/arena_rosnav_rl/cfg/sb3_cfg/callbacks.py
+index 1b65bdd..7f678f6 100644
+--- a/arena_training/arena_rosnav_rl/cfg/sb3_cfg/callbacks.py
++++ b/arena_training/arena_rosnav_rl/cfg/sb3_cfg/callbacks.py
+@@ -12,3 +12,4 @@ class TrainingCurriculumCfg:
+ 
+ class ArenaCallbacksCfg(CallbacksCfg):
+     checkpoint_ticks: list[int] = Field(default_factory=list, description="Control ticks at which the model is saved as tick_<T>.zip.")
++    action_stats: bool = Field(default=False, description="Log action clip rate, executed velocity distribution, reverse fraction, GPU memory and rollout fps per rollout.")
+diff --git a/arena_training/arena_rosnav_rl/trainer/sb3_trainer.py b/arena_training/arena_rosnav_rl/trainer/sb3_trainer.py
+index 6f1a959..d96d49f 100644
+--- a/arena_training/arena_rosnav_rl/trainer/sb3_trainer.py
++++ b/arena_training/arena_rosnav_rl/trainer/sb3_trainer.py
+@@ -5,7 +5,7 @@ from functools import partial
+ 
+ from rosnav_rl.model.stable_baselines3 import StableBaselinesModel
+ from rosnav_rl.model.stable_baselines3.cfg import StableBaselinesCfg
+-from rosnav_rl.utils.stable_baselines3.tick_callbacks import TickCheckpointCallback, TickScheduledCurriculum
++from rosnav_rl.utils.stable_baselines3.tick_callbacks import ActionStatsCallback, EpisodeMixtureCurriculum, TickCheckpointCallback, TickScheduledCurriculum
+ from stable_baselines3.common.base_class import BaseAlgorithm
+ from stable_baselines3.common.callbacks import BaseCallback, CallbackList
+ from stable_baselines3.common.vec_env.base_vec_env import VecEnv
+@@ -258,6 +258,21 @@ class StableBaselines3Trainer(ArenaTrainer[SB3Environment]):
+                     tm_dict={"tm_robots": task_cfg.tm_robots, "tm_obstacles": task_cfg.tm_obstacles, "tm_modules": task_cfg.tm_modules},
+                 )
+             )
++        if "staged" in task_cfg.tm_modules and task_cfg.staged is not None and task_cfg.staged.mixture_weights is not None:
++            self.tick_callbacks.append(
++                EpisodeMixtureCurriculum(
++                    node=self._supervisor_node,
++                    train_stages=curriculum_stage_lists(task_cfg),
++                    weights=task_cfg.staged.mixture_weights,
++                    seed=task_cfg.staged.mixture_seed,
++                    num_envs=self.config.arena_cfg.general.n_envs,
++                    parameter_node_template=task_cfg.staged.parameter_node_template,
++                    timeout=task_cfg.staged.timeout,
++                    tm_dict={"tm_robots": task_cfg.tm_robots, "tm_obstacles": task_cfg.tm_obstacles, "tm_modules": task_cfg.tm_modules},
++                )
++            )
++        if arena_sb3_cfg.callbacks.action_stats:
++            self.tick_callbacks.append(ActionStatsCallback(self.config.agent_config.action_space.decode))
+         if arena_sb3_cfg.callbacks.checkpoint_ticks and not self.config.arena_cfg.general.debug_mode:
+             self.tick_callbacks.append(TickCheckpointCallback(self.paths[Paths.Agent].path, arena_sb3_cfg.callbacks.checkpoint_ticks, ticks_per_step=chunk))
+ 
+diff --git a/arena_training/environments/base_env.py b/arena_training/environments/base_env.py
+index ace7f39..fe185a2 100644
+--- a/arena_training/environments/base_env.py
++++ b/arena_training/environments/base_env.py
+@@ -595,6 +595,11 @@ class ArenaBaseEnv(ABC, gymnasium.Env):
+                     msg += f", subgoal: {subgoal}"
+                 if robot is not None:
+                     msg += f", robot: {robot}"
++            terms = info.get("reward_terms") or {}
++            if terms:
++                term_text = " ".join(f"{name}={float(value):.3f}" for name, value in terms.items())
++                episode_return = sum(float(value) for value in terms.values())
++                msg += f", return: {episode_return:.3f}, terms: {term_text}"
+             self.node.get_logger().info(msg)
+ 
+         return (

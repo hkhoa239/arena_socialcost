@@ -1,0 +1,4 @@
+projection: perspective
+timeline:
+  - look: { eye: [5.0, -1.5, 6.0], target: [15.0, 2.3, 0.4], fov: 1.0 }
+  - hold: { duration: 7.0 }

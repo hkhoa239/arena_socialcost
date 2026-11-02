@@ -1,0 +1,702 @@
+[
+ {
+  "pair_id": "P0051",
+  "family": "conversation",
+  "subtype": "static",
+  "split": "train",
+  "world": "airport",
+  "on": "000101",
+  "off": "000102",
+  "design_observability": "visual_temporal",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "participant_0",
+      "participant_1"
+     ],
+     "stationary_person_slots": 250,
+     "matched_person_slots": 250,
+     "pos_max_m": 0.0,
+     "heading_max_deg": 0.001,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_conversation_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "participant_0",
+    "participant_1"
+   ],
+   "stationary_person_slots": 250,
+   "matched_person_slots": 250,
+   "pos_max_m": 0.0,
+   "heading_max_deg": 0.001,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": true,
+  "robot": {
+   "robot_pos_max_m": 1.622792402280807,
+   "robot_pos_mean_m": 1.6059307301731653,
+   "robot_heading_p95_deg": 1.8301738859196695
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "conversation",
+   "cue": "participant >= 30 % visible",
+   "samples_active": 250,
+   "samples_cue_visible": 89,
+   "cue_visible_fraction": 0.356
+  },
+  "visual": {
+   "rgb_absdiff_mean": 19.23177066040039,
+   "rgb_person_roi_absdiff_mean": 46.667708987281436,
+   "depth_person_roi_absdiff_mean_m": 3.3974827546921986,
+   "samples_with_person_in_view": 63
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 14.0239788,
+    "l2_mean": 43.705173247376656,
+    "cells_changed_mean": 6880.616,
+    "cells_changed_max": 7366.0,
+    "region_l1_mean": 81.66589566122337
+   },
+   "social_cost_membership": {
+    "l1_mean": 14.0239788,
+    "l2_mean": 43.705173247376656,
+    "cells_changed_mean": 6880.616,
+    "cells_changed_max": 7366.0,
+    "region_l1_mean": 81.66589566122337
+   },
+   "social_cost_extended": {
+    "l1_mean": 14.0239788,
+    "l2_mean": 43.705173247376656,
+    "cells_changed_mean": 6880.616,
+    "cells_changed_max": 7366.0,
+    "region_l1_mean": 81.66589566122337
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0058",
+  "family": "conversation",
+  "subtype": "approach_and_stop",
+  "split": "train",
+  "world": "socialcost_office",
+  "on": "000115",
+  "off": "000116",
+  "design_observability": "visual_temporal",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "dynamic_pair_divergence_recorded",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "participant_0",
+      "participant_1"
+     ],
+     "stationary_person_slots": 245,
+     "matched_person_slots": 1,
+     "pos_max_m": 0.0416,
+     "heading_max_deg": 107.817,
+     "matched_fraction_of_stationary": 0.004,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_conversation_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "participant_0",
+    "participant_1"
+   ],
+   "stationary_person_slots": 245,
+   "matched_person_slots": 1,
+   "pos_max_m": 0.0416,
+   "heading_max_deg": 107.817,
+   "matched_fraction_of_stationary": 0.004,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": false,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 0.6834490265975154,
+   "robot_pos_mean_m": 0.10890163544286317,
+   "robot_heading_p95_deg": 8.323830001753416
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "conversation",
+   "cue": "participant >= 30 % visible",
+   "samples_active": 250,
+   "samples_cue_visible": 190,
+   "cue_visible_fraction": 0.76
+  },
+  "visual": {
+   "rgb_absdiff_mean": 19.90999823188782,
+   "rgb_person_roi_absdiff_mean": 48.93961975938183,
+   "depth_person_roi_absdiff_mean_m": 1.5712661972995532,
+   "samples_with_person_in_view": 118
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 5.9888236,
+    "l2_mean": 20.615704863216873,
+    "cells_changed_mean": 4924.6,
+    "cells_changed_max": 6823.0,
+    "region_l1_mean": 44.57611913278325
+   },
+   "social_cost_membership": {
+    "l1_mean": 5.9888236,
+    "l2_mean": 20.615704863216873,
+    "cells_changed_mean": 4924.6,
+    "cells_changed_max": 6823.0,
+    "region_l1_mean": 44.57611913278325
+   },
+   "social_cost_extended": {
+    "l1_mean": 5.9888236,
+    "l2_mean": 20.615704863216873,
+    "cells_changed_mean": 4924.6,
+    "cells_changed_max": 6823.0,
+    "region_l1_mean": 44.57611913278325
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0098",
+  "family": "stop_gesture",
+  "subtype": "frontal/pulse",
+  "split": "test_a",
+  "world": "hospital_1",
+  "on": "000195",
+  "off": "000196",
+  "design_observability": "visual",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "matched_geometry_2cm_2deg",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "primary_0"
+     ],
+     "stationary_person_slots": 125,
+     "matched_person_slots": 125,
+     "pos_max_m": 0.0,
+     "heading_max_deg": 0.0,
+     "matched_fraction_of_stationary": 1.0,
+     "bystander_traj_max_m": {
+      "bystander_1": 0.0
+     }
+    }
+   },
+   {
+    "check": "on_has_gesture_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "primary_0"
+   ],
+   "stationary_person_slots": 125,
+   "matched_person_slots": 125,
+   "pos_max_m": 0.0,
+   "heading_max_deg": 0.0,
+   "matched_fraction_of_stationary": 1.0,
+   "bystander_traj_max_m": {
+    "bystander_1": 0.0
+   }
+  },
+  "controlled_static_design": true,
+  "geometry_matched_whole_episode": true,
+  "robot": {
+   "robot_pos_max_m": 0.13004469899439752,
+   "robot_pos_mean_m": 0.10462235846574097,
+   "robot_heading_p95_deg": 4.572410959759558
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "stop_gesture",
+   "cue": "raised hand point visible (depth-consistent)",
+   "samples_active": 39,
+   "samples_cue_visible": 36,
+   "cue_visible_fraction": 0.923
+  },
+  "visual": {
+   "rgb_absdiff_mean": 10.804487878799439,
+   "rgb_person_roi_absdiff_mean": 36.498820552538184,
+   "depth_person_roi_absdiff_mean_m": 2.201335677953341,
+   "samples_with_person_in_view": 116
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 0.43343240000000005,
+    "l2_mean": 5.383257202691857,
+    "cells_changed_mean": 690.36,
+    "cells_changed_max": 1219.0,
+    "region_l1_mean": 20.938683488877196
+   },
+   "social_cost_membership": {
+    "l1_mean": 0.43343240000000005,
+    "l2_mean": 5.383257202691857,
+    "cells_changed_mean": 690.36,
+    "cells_changed_max": 1219.0,
+    "region_l1_mean": 20.938683488877196
+   },
+   "social_cost_extended": {
+    "l1_mean": 2.1552432,
+    "l2_mean": 12.11142760739082,
+    "cells_changed_mean": 1338.272,
+    "cells_changed_max": 3261.0,
+    "region_l1_mean": 41.370418255243294
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0154",
+  "family": "wheelchair",
+  "subtype": "slow_forward_opposite",
+  "split": "test_b",
+  "world": "reception",
+  "on": "000307",
+  "off": "000308",
+  "design_observability": "visual_appearance",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "wheelchair_variant_of_same_identity",
+    "ok": true,
+    "detail": [
+     "casual_female_caucasian_middleage_wheelchair",
+     "casual_female_caucasian_middleage"
+    ]
+   },
+   {
+    "check": "same_other_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "dynamic_pair_divergence_recorded",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "primary_0"
+     ],
+     "stationary_person_slots": 15,
+     "matched_person_slots": 0,
+     "pos_max_m": 0.1467,
+     "heading_max_deg": 53.318,
+     "matched_fraction_of_stationary": 0.0,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_wheelchair_body_off_walking_twin",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "primary_0"
+   ],
+   "stationary_person_slots": 15,
+   "matched_person_slots": 0,
+   "pos_max_m": 0.1467,
+   "heading_max_deg": 53.318,
+   "matched_fraction_of_stationary": 0.0,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": false,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 0.057033335366637745,
+   "robot_pos_mean_m": 0.037106993228288136,
+   "robot_heading_p95_deg": 0.36548407979189623
+  },
+  "observability_class": "visually_observable",
+  "cue": {
+   "family": "wheelchair",
+   "cue": "primary >= 30 % visible",
+   "samples_active": 125,
+   "samples_cue_visible": 38,
+   "cue_visible_fraction": 0.304
+  },
+  "visual": {
+   "rgb_absdiff_mean": 2.1038356642723084,
+   "rgb_person_roi_absdiff_mean": 40.877307074410574,
+   "depth_person_roi_absdiff_mean_m": 4.143916008018312,
+   "samples_with_person_in_view": 42
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 0.0812206,
+    "l2_mean": 1.866201201992237,
+    "cells_changed_mean": 315.912,
+    "cells_changed_max": 846.0,
+    "region_l1_mean": 6.7857780395855976
+   },
+   "social_cost_membership": {
+    "l1_mean": 0.0812206,
+    "l2_mean": 1.866201201992237,
+    "cells_changed_mean": 315.912,
+    "cells_changed_max": 846.0,
+    "region_l1_mean": 6.7857780395855976
+   },
+   "social_cost_extended": {
+    "l1_mean": 2.0256004,
+    "l2_mean": 10.845684582016387,
+    "cells_changed_mean": 1202.912,
+    "cells_changed_max": 2514.0,
+    "region_l1_mean": 64.36669823171994
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0173",
+  "family": "queue",
+  "subtype": "normal/perpendicular/advancing",
+  "split": "test_c",
+  "world": "hospital_1",
+  "on": "000345",
+  "off": "000346",
+  "design_observability": "hidden_state",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "dynamic_pair_divergence_recorded",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "member_0",
+      "member_1",
+      "member_2",
+      "member_3",
+      "member_4",
+      "member_5",
+      "member_6",
+      "member_7"
+     ],
+     "stationary_person_slots": 743,
+     "matched_person_slots": 42,
+     "pos_max_m": 2.8335,
+     "heading_max_deg": 178.741,
+     "matched_fraction_of_stationary": 0.057,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_queue_membership_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "member_0",
+    "member_1",
+    "member_2",
+    "member_3",
+    "member_4",
+    "member_5",
+    "member_6",
+    "member_7"
+   ],
+   "stationary_person_slots": 743,
+   "matched_person_slots": 42,
+   "pos_max_m": 2.8335,
+   "heading_max_deg": 178.741,
+   "matched_fraction_of_stationary": 0.057,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": false,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 2.9603877574510378,
+   "robot_pos_mean_m": 2.304998679040809,
+   "robot_heading_p95_deg": 33.98874894152103
+  },
+  "observability_class": "hidden_state",
+  "cue": {
+   "family": "queue",
+   "cue": "n/a",
+   "samples_active": 0,
+   "samples_cue_visible": 0,
+   "cue_visible_fraction": null
+  },
+  "visual": {
+   "rgb_absdiff_mean": 45.434720886230465,
+   "rgb_person_roi_absdiff_mean": 62.72550973510742,
+   "depth_person_roi_absdiff_mean_m": 2.565154974937439,
+   "samples_with_person_in_view": 125
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 23.146214200000006,
+    "l2_mean": 49.69331072503641,
+    "cells_changed_mean": 8708.032,
+    "cells_changed_max": 11207.0,
+    "region_l1_mean": 105.93931171239072
+   },
+   "social_cost_membership": {
+    "l1_mean": 36.820092599999995,
+    "l2_mean": 73.98800374448251,
+    "cells_changed_mean": 12250.52,
+    "cells_changed_max": 18107.0,
+    "region_l1_mean": 118.02531540096308
+   },
+   "social_cost_extended": {
+    "l1_mean": 36.820092599999995,
+    "l2_mean": 73.98800374448251,
+    "cells_changed_mean": 12250.52,
+    "cells_changed_max": 18107.0,
+    "region_l1_mean": 118.02531540096308
+   }
+  },
+  "ok": true
+ },
+ {
+  "pair_id": "P0182",
+  "family": "queue",
+  "subtype": "dense/perpendicular/advancing",
+  "split": "train",
+  "world": "socialcost_office",
+  "on": "000363",
+  "off": "000364",
+  "design_observability": "hidden_state",
+  "checks": [
+   {
+    "check": "same_robot_start_goal_world_seed",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_camera",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_world_objects",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "same_bodies",
+    "ok": true,
+    "detail": null
+   },
+   {
+    "check": "dynamic_pair_divergence_recorded",
+    "ok": true,
+    "detail": {
+     "slots": 125,
+     "controlled": [
+      "member_0",
+      "member_1",
+      "member_2",
+      "member_3",
+      "member_4",
+      "member_5"
+     ],
+     "stationary_person_slots": 418,
+     "matched_person_slots": 4,
+     "pos_max_m": 2.9881,
+     "heading_max_deg": 37.746,
+     "matched_fraction_of_stationary": 0.01,
+     "bystander_traj_max_m": {}
+    }
+   },
+   {
+    "check": "on_has_queue_membership_off_not",
+    "ok": true,
+    "detail": null
+   }
+  ],
+  "matched_window": {
+   "slots": 125,
+   "controlled": [
+    "member_0",
+    "member_1",
+    "member_2",
+    "member_3",
+    "member_4",
+    "member_5"
+   ],
+   "stationary_person_slots": 418,
+   "matched_person_slots": 4,
+   "pos_max_m": 2.9881,
+   "heading_max_deg": 37.746,
+   "matched_fraction_of_stationary": 0.01,
+   "bystander_traj_max_m": {}
+  },
+  "controlled_static_design": false,
+  "geometry_matched_whole_episode": false,
+  "robot": {
+   "robot_pos_max_m": 0.127939689974915,
+   "robot_pos_mean_m": 0.06491298544839744,
+   "robot_heading_p95_deg": 8.910347853297427
+  },
+  "observability_class": "hidden_state",
+  "cue": {
+   "family": "queue",
+   "cue": "n/a",
+   "samples_active": 0,
+   "samples_cue_visible": 0,
+   "cue_visible_fraction": null
+  },
+  "visual": {
+   "rgb_absdiff_mean": 21.361397829055786,
+   "rgb_person_roi_absdiff_mean": 57.05556401146783,
+   "depth_person_roi_absdiff_mean_m": 1.9434579484992558,
+   "samples_with_person_in_view": 90
+  },
+  "labels": {
+   "social_cost": {
+    "l1_mean": 2.9868981999999997,
+    "l2_mean": 16.422875885800647,
+    "cells_changed_mean": 2756.0,
+    "cells_changed_max": 4036.0,
+    "region_l1_mean": 28.46154496711591
+   },
+   "social_cost_membership": {
+    "l1_mean": 13.241892800000002,
+    "l2_mean": 36.341377950410134,
+    "cells_changed_mean": 8171.616,
+    "cells_changed_max": 10264.0,
+    "region_l1_mean": 63.933621610021184
+   },
+   "social_cost_extended": {
+    "l1_mean": 13.241892800000002,
+    "l2_mean": 36.341377950410134,
+    "cells_changed_mean": 8171.616,
+    "cells_changed_max": 10264.0,
+    "region_l1_mean": 63.933621610021184
+   }
+  },
+  "ok": true
+ }
+]

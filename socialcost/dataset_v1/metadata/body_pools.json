@@ -1,0 +1,136 @@
+{
+  "known_walking": [
+    "Hospital/doctor_female_african_middleage",
+    "Hospital/nurse_female_asian_young",
+    "Hospital/nurse_male_african_young",
+    "Hospital/nurse_male_asian_middleage",
+    "Hospital/patient_female_african_old",
+    "Hospital/patient_female_asian_middleage_b",
+    "Hospital/patient_male_african_middleage",
+    "Hospital/patient_male_asian_old",
+    "Office/office_female_african_old",
+    "Office/office_female_african_young",
+    "Office/office_female_asian_middleage",
+    "Office/office_female_caucasian_middleage",
+    "Office/office_male_african_young",
+    "Office/office_male_caucasian_young",
+    "Residential/resident_female_asian_old",
+    "Residential/resident_female_caucasian_middleage",
+    "Residential/resident_female_caucasian_young",
+    "Residential/resident_male_african_old",
+    "Residential/resident_male_african_young",
+    "Residential/resident_male_asian_middleage",
+    "Residential/resident_male_caucasian_middleage",
+    "Residential/resident_male_caucasian_old",
+    "Residential/resident_male_caucasian_young",
+    "arenian",
+    "casual_female_african_middleage",
+    "casual_female_african_old",
+    "casual_female_asian_old",
+    "casual_female_caucasian_middleage",
+    "casual_female_caucasian_young",
+    "casual_male_african_old",
+    "casual_male_caucasian_middleage",
+    "casual_male_caucasian_old",
+    "worker_male_african_young"
+  ],
+  "heldout_walking": [
+    "Hospital/nurse_female_caucasian_young",
+    "Hospital/patient_female_asian_old",
+    "Office/office_male_african_old",
+    "Office/office_male_asian_middleage",
+    "Office/office_male_caucasian_old",
+    "Residential/resident_female_african_middleage",
+    "Residential/resident_female_african_young",
+    "Residential/resident_female_caucasian_old",
+    "casual_female_african_young",
+    "casual_male_african_middleage",
+    "casual_male_asian_middleage"
+  ],
+  "wheelchair_known": {
+    "casual_female_caucasian_middleage": "casual_female_caucasian_middleage_wheelchair"
+  },
+  "wheelchair_heldout": {
+    "casual_male_asian_middleage": "casual_male_asian_middleage_wheelchair"
+  },
+  "heldout_fraction": 0.25,
+  "selection": {
+    "seed": 20261101,
+    "pool_size": 44,
+    "candidates_valid": 8651,
+    "balance_score": 0.0258
+  },
+  "tag_balance": {
+    "domain": {
+      "known": {
+        "Hospital": 8,
+        "Office": 6,
+        "Residential": 9,
+        "Common": 10
+      },
+      "heldout": {
+        "Hospital": 2,
+        "Office": 3,
+        "Residential": 3,
+        "Common": 3
+      }
+    },
+    "gender": {
+      "known": {
+        "female": 16,
+        "male": 16,
+        "null": 1
+      },
+      "heldout": {
+        "female": 6,
+        "male": 5
+      }
+    },
+    "age": {
+      "known": {
+        "middleage": 12,
+        "young": 10,
+        "old": 10,
+        "null": 1
+      },
+      "heldout": {
+        "young": 3,
+        "old": 4,
+        "middleage": 4
+      }
+    },
+    "ethnicity": {
+      "known": {
+        "african": 13,
+        "asian": 8,
+        "caucasian": 11,
+        "null": 1
+      },
+      "heldout": {
+        "caucasian": 3,
+        "asian": 3,
+        "african": 5
+      }
+    },
+    "role": {
+      "known": {
+        "doctor": 1,
+        "nurse": 3,
+        "patient": 4,
+        "office": 6,
+        "resident": 9,
+        "null": 1,
+        "casual": 8,
+        "worker": 1
+      },
+      "heldout": {
+        "nurse": 1,
+        "patient": 1,
+        "office": 3,
+        "resident": 3,
+        "casual": 3
+      }
+    }
+  },
+  "rule": "held-out identities (and their wheelchair variants) never appear in train, val, test_a or test_b episodes"
+}

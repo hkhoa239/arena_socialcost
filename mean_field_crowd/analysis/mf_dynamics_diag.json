@@ -1,0 +1,121 @@
+{
+  "seed": 5,
+  "horizon_steps": 10,
+  "sample_hz": 10.0,
+  "command_catalog": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.5,
+      0.0
+    ],
+    [
+      0.9,
+      0.0
+    ],
+    [
+      0.3,
+      0.7
+    ],
+    [
+      0.3,
+      -0.7
+    ],
+    [
+      0.0,
+      1.0
+    ],
+    [
+      -0.4,
+      0.0
+    ],
+    [
+      0.6,
+      -0.4
+    ]
+  ],
+  "command_order": [
+    1,
+    4,
+    2,
+    3,
+    7,
+    5,
+    6,
+    0
+  ],
+  "hold_seconds": 2.0,
+  "repeats": 3,
+  "checkpoints": {
+    "AGENT_MF": "/opt/arena_ws/data/agents/AGENT_MF_PILOT/last_model.zip",
+    "AGENT_MF_FORECAST": "/opt/arena_ws/data/agents/AGENT_MF_FORECAST_PILOT/last_model.zip"
+  },
+  "samples": 480,
+  "median_sample_dt_s": 0.10000000000002274,
+  "robot_path_length_m": 4.897385728882037,
+  "unique_commands": 8,
+  "nonempty_frame_fraction": 1.0,
+  "pair_count": 469,
+  "nonempty_pair_fraction": 1.0,
+  "moving_pair_fraction": 0.9552238805970149,
+  "target_matches_density_at_t_plus_10": true,
+  "max_abs_target_rebuild_error": 0.0,
+  "mse_if_target_were_the_next_frame": 0.0019388371147215366,
+  "mean_world_displacement_m": 0.7711803602051941,
+  "splits": {
+    "all": {
+      "pairs": 469,
+      "persistence_mse": 0.002169508021324873,
+      "agent_mf_mse": 0.01160334050655365,
+      "agent_mf_forecast_mse": 0.003799575148150325
+    },
+    "empty": {
+      "pairs": 0,
+      "persistence_mse": NaN,
+      "agent_mf_mse": NaN,
+      "agent_mf_forecast_mse": NaN
+    },
+    "stationary_crowd": {
+      "pairs": 21,
+      "persistence_mse": 0.000787380791734904,
+      "agent_mf_mse": 0.010668317787349224,
+      "agent_mf_forecast_mse": 0.0036868113093078136
+    },
+    "moving_crowd": {
+      "pairs": 448,
+      "persistence_mse": 0.002234295243397355,
+      "agent_mf_mse": 0.011647170409560204,
+      "agent_mf_forecast_mse": 0.0038048611022531986
+    }
+  },
+  "velocity_sensitivity": {
+    "network": "AGENT_MF",
+    "probes": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        -0.5,
+        0.0
+      ],
+      [
+        0.5,
+        -1.0
+      ]
+    ],
+    "nonempty_pairs": 469,
+    "mean_max_l2_vs_zero_velocity": 4.767171859741211,
+    "fraction_changed_above_1e-3": 1.0
+  }
+}

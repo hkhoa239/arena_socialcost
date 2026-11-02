@@ -1,0 +1,4800 @@
+{
+  "bodies": [
+    {
+      "body_id": "arenian",
+      "domain": "Common",
+      "name": "arenian",
+      "identity": "arenian",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.125,
+          0.377
+        ],
+        [
+          -0.566,
+          0.566
+        ],
+        [
+          -0.003,
+          1.73
+        ]
+      ],
+      "size_m": {
+        "length": 0.502,
+        "width": 1.132,
+        "height": 1.733
+      },
+      "tags": {
+        "domain": "common"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_arenian.png",
+      "locally_cached_before_dv1": true,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "casual_female_african_middleage",
+      "domain": "Common",
+      "name": "casual_female_african_middleage",
+      "identity": "casual_female_african_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.121,
+          0.347
+        ],
+        [
+          -0.533,
+          0.533
+        ],
+        [
+          -0.013,
+          1.742
+        ]
+      ],
+      "size_m": {
+        "length": 0.468,
+        "width": 1.066,
+        "height": 1.755
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "african",
+        "age": "middleage",
+        "role": "casual",
+        "domain": "common"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_casual_female_african_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "casual_female_african_old",
+      "domain": "Common",
+      "name": "casual_female_african_old",
+      "identity": "casual_female_african_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.096,
+          0.366
+        ],
+        [
+          -0.505,
+          0.505
+        ],
+        [
+          -0.01,
+          1.622
+        ]
+      ],
+      "size_m": {
+        "length": 0.462,
+        "width": 1.01,
+        "height": 1.632
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "african",
+        "age": "old",
+        "role": "casual",
+        "domain": "common"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_casual_female_african_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "casual_female_african_young",
+      "domain": "Common",
+      "name": "casual_female_african_young",
+      "identity": "casual_female_african_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.102,
+          0.321
+        ],
+        [
+          -0.531,
+          0.531
+        ],
+        [
+          -0.014,
+          1.765
+        ]
+      ],
+      "size_m": {
+        "length": 0.423,
+        "width": 1.062,
+        "height": 1.779
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "african",
+        "age": "young",
+        "role": "casual",
+        "domain": "common"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_casual_female_african_young.png",
+      "locally_cached_before_dv1": true,
+      "attribution": true,
+      "pool": "heldout"
+    },
+    {
+      "body_id": "casual_female_asian_middleage",
+      "domain": "Common",
+      "name": "casual_female_asian_middleage",
+      "identity": "casual_female_asian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.106,
+          0.31
+        ],
+        [
+          -0.475,
+          0.475
+        ],
+        [
+          -0.009,
+          1.571
+        ]
+      ],
+      "size_m": {
+        "length": 0.416,
+        "width": 0.95,
+        "height": 1.58
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "asian",
+        "age": "middleage",
+        "role": "casual",
+        "domain": "common"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_casual_female_asian_middleage.png",
+      "locally_cached_before_dv1": true,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "casual_female_asian_old",
+      "domain": "Common",
+      "name": "casual_female_asian_old",
+      "identity": "casual_female_asian_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.084,
+          0.321
+        ],
+        [
+          -0.442,
+          0.442
+        ],
+        [
+          -0.009,
+          1.46
+        ]
+      ],
+      "size_m": {
+        "length": 0.405,
+        "width": 0.884,
+        "height": 1.469
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "asian",
+        "age": "old",
+        "role": "casual",
+        "domain": "common"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_casual_female_asian_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "casual_female_asian_young",
+      "domain": "Common",
+      "name": "casual_female_asian_young",
+      "identity": "casual_female_asian_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.116,
+          0.289
+        ],
+        [
+          -0.478,
+          0.478
+        ],
+        [
+          -0.009,
+          1.575
+        ]
+      ],
+      "size_m": {
+        "length": 0.405,
+        "width": 0.956,
+        "height": 1.584
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "asian",
+        "age": "young",
+        "role": "casual",
+        "domain": "common"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_casual_female_asian_young.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "casual_female_caucasian_middleage",
+      "domain": "Common",
+      "name": "casual_female_caucasian_middleage",
+      "identity": "casual_female_caucasian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.098,
+          0.335
+        ],
+        [
+          -0.514,
+          0.514
+        ],
+        [
+          -0.012,
+          1.693
+        ]
+      ],
+      "size_m": {
+        "length": 0.433,
+        "width": 1.028,
+        "height": 1.705
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "caucasian",
+        "age": "middleage",
+        "role": "casual",
+        "domain": "common"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_casual_female_caucasian_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "casual_female_caucasian_middleage_wheelchair",
+      "domain": "Common",
+      "name": "casual_female_caucasian_middleage_wheelchair",
+      "identity": "casual_female_caucasian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.338,
+          0.709
+        ],
+        [
+          -0.345,
+          0.336
+        ],
+        [
+          0.0,
+          1.404
+        ]
+      ],
+      "size_m": {
+        "length": 1.047,
+        "width": 0.681,
+        "height": 1.404
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "caucasian",
+        "age": "middleage",
+        "role": "casual",
+        "domain": "common",
+        "mobility": "wheelchair"
+      },
+      "mobility_aid": "wheelchair",
+      "clips": [
+        "idle",
+        "neutral",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": false,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": true,
+      "thumbnail": null,
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "casual_female_caucasian_old",
+      "domain": "Common",
+      "name": "casual_female_caucasian_old",
+      "identity": "casual_female_caucasian_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.089,
+          0.354
+        ],
+        [
+          -0.489,
+          0.489
+        ],
+        [
+          -0.011,
+          1.565
+        ]
+      ],
+      "size_m": {
+        "length": 0.443,
+        "width": 0.978,
+        "height": 1.576
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "caucasian",
+        "age": "old",
+        "role": "casual",
+        "domain": "common"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_casual_female_caucasian_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "casual_female_caucasian_young",
+      "domain": "Common",
+      "name": "casual_female_caucasian_young",
+      "identity": "casual_female_caucasian_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.11,
+          0.311
+        ],
+        [
+          -0.511,
+          0.511
+        ],
+        [
+          -0.013,
+          1.687
+        ]
+      ],
+      "size_m": {
+        "length": 0.421,
+        "width": 1.022,
+        "height": 1.7
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "caucasian",
+        "age": "young",
+        "role": "casual",
+        "domain": "common"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_casual_female_caucasian_young.png",
+      "locally_cached_before_dv1": true,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "casual_male_african_middleage",
+      "domain": "Common",
+      "name": "casual_male_african_middleage",
+      "identity": "casual_male_african_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.131,
+          0.424
+        ],
+        [
+          -0.628,
+          0.628
+        ],
+        [
+          -0.005,
+          1.954
+        ]
+      ],
+      "size_m": {
+        "length": 0.555,
+        "width": 1.256,
+        "height": 1.959
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "african",
+        "age": "middleage",
+        "role": "casual",
+        "domain": "common"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_casual_male_african_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "heldout"
+    },
+    {
+      "body_id": "casual_male_african_old",
+      "domain": "Common",
+      "name": "casual_male_african_old",
+      "identity": "casual_male_african_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.126,
+          0.366
+        ],
+        [
+          -0.558,
+          0.558
+        ],
+        [
+          -0.005,
+          1.789
+        ]
+      ],
+      "size_m": {
+        "length": 0.492,
+        "width": 1.116,
+        "height": 1.794
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "african",
+        "age": "old",
+        "role": "casual",
+        "domain": "common"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_casual_male_african_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "casual_male_african_young",
+      "domain": "Common",
+      "name": "casual_male_african_young",
+      "identity": "casual_male_african_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.131,
+          0.439
+        ],
+        [
+          -0.637,
+          0.637
+        ],
+        [
+          -0.005,
+          1.963
+        ]
+      ],
+      "size_m": {
+        "length": 0.57,
+        "width": 1.274,
+        "height": 1.968
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "african",
+        "age": "young",
+        "role": "casual",
+        "domain": "common"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_casual_male_african_young.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "casual_male_asian_middleage",
+      "domain": "Common",
+      "name": "casual_male_asian_middleage",
+      "identity": "casual_male_asian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.134,
+          0.36
+        ],
+        [
+          -0.568,
+          0.568
+        ],
+        [
+          -0.005,
+          1.765
+        ]
+      ],
+      "size_m": {
+        "length": 0.494,
+        "width": 1.136,
+        "height": 1.77
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "asian",
+        "age": "middleage",
+        "role": "casual",
+        "domain": "common"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_casual_male_asian_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "heldout"
+    },
+    {
+      "body_id": "casual_male_asian_middleage_wheelchair",
+      "domain": "Common",
+      "name": "casual_male_asian_middleage_wheelchair",
+      "identity": "casual_male_asian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.335,
+          0.736
+        ],
+        [
+          -0.41,
+          0.4
+        ],
+        [
+          0.0,
+          1.433
+        ]
+      ],
+      "size_m": {
+        "length": 1.071,
+        "width": 0.81,
+        "height": 1.433
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "asian",
+        "age": "middleage",
+        "role": "casual",
+        "domain": "common",
+        "mobility": "wheelchair"
+      },
+      "mobility_aid": "wheelchair",
+      "clips": [
+        "idle",
+        "neutral",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": false,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": true,
+      "thumbnail": null,
+      "locally_cached_before_dv1": true,
+      "attribution": true,
+      "pool": "heldout"
+    },
+    {
+      "body_id": "casual_male_asian_old",
+      "domain": "Common",
+      "name": "casual_male_asian_old",
+      "identity": "casual_male_asian_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.127,
+          0.307
+        ],
+        [
+          -0.499,
+          0.499
+        ],
+        [
+          -0.006,
+          1.601
+        ]
+      ],
+      "size_m": {
+        "length": 0.434,
+        "width": 0.998,
+        "height": 1.607
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "asian",
+        "age": "old",
+        "role": "casual",
+        "domain": "common"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_casual_male_asian_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "casual_male_asian_young",
+      "domain": "Common",
+      "name": "casual_male_asian_young",
+      "identity": "casual_male_asian_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.132,
+          0.374
+        ],
+        [
+          -0.578,
+          0.578
+        ],
+        [
+          -0.004,
+          1.775
+        ]
+      ],
+      "size_m": {
+        "length": 0.506,
+        "width": 1.156,
+        "height": 1.779
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "asian",
+        "age": "young",
+        "role": "casual",
+        "domain": "common"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_casual_male_asian_young.png",
+      "locally_cached_before_dv1": true,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "casual_male_caucasian_middleage",
+      "domain": "Common",
+      "name": "casual_male_caucasian_middleage",
+      "identity": "casual_male_caucasian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.124,
+          0.394
+        ],
+        [
+          -0.596,
+          0.596
+        ],
+        [
+          -0.004,
+          1.887
+        ]
+      ],
+      "size_m": {
+        "length": 0.518,
+        "width": 1.192,
+        "height": 1.891
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "caucasian",
+        "age": "middleage",
+        "role": "casual",
+        "domain": "common"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_casual_male_caucasian_middleage.png",
+      "locally_cached_before_dv1": true,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "casual_male_caucasian_old",
+      "domain": "Common",
+      "name": "casual_male_caucasian_old",
+      "identity": "casual_male_caucasian_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.124,
+          0.34
+        ],
+        [
+          -0.529,
+          0.529
+        ],
+        [
+          -0.005,
+          1.723
+        ]
+      ],
+      "size_m": {
+        "length": 0.464,
+        "width": 1.058,
+        "height": 1.728
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "caucasian",
+        "age": "old",
+        "role": "casual",
+        "domain": "common"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_casual_male_caucasian_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "casual_male_caucasian_young",
+      "domain": "Common",
+      "name": "casual_male_caucasian_young",
+      "identity": "casual_male_caucasian_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.125,
+          0.407
+        ],
+        [
+          -0.609,
+          0.609
+        ],
+        [
+          -0.003,
+          1.896
+        ]
+      ],
+      "size_m": {
+        "length": 0.532,
+        "width": 1.218,
+        "height": 1.899
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "caucasian",
+        "age": "young",
+        "role": "casual",
+        "domain": "common"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_casual_male_caucasian_young.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "worker_male_african_middleage",
+      "domain": "Common",
+      "name": "worker_male_african_middleage",
+      "identity": "worker_male_african_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.124,
+          0.424
+        ],
+        [
+          -0.632,
+          0.632
+        ],
+        [
+          -0.005,
+          1.954
+        ]
+      ],
+      "size_m": {
+        "length": 0.548,
+        "width": 1.264,
+        "height": 1.959
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "african",
+        "age": "middleage",
+        "role": "worker",
+        "domain": "warehouse"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_worker_male_african_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "worker_male_african_young",
+      "domain": "Common",
+      "name": "worker_male_african_young",
+      "identity": "worker_male_african_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.118,
+          0.44
+        ],
+        [
+          -0.641,
+          0.641
+        ],
+        [
+          -0.004,
+          1.977
+        ]
+      ],
+      "size_m": {
+        "length": 0.558,
+        "width": 1.282,
+        "height": 1.981
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "african",
+        "age": "young",
+        "role": "worker",
+        "domain": "warehouse"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_worker_male_african_young.png",
+      "locally_cached_before_dv1": true,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "worker_male_asian_middleage",
+      "domain": "Common",
+      "name": "worker_male_asian_middleage",
+      "identity": "worker_male_asian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.123,
+          0.36
+        ],
+        [
+          -0.559,
+          0.559
+        ],
+        [
+          -0.005,
+          1.78
+        ]
+      ],
+      "size_m": {
+        "length": 0.483,
+        "width": 1.118,
+        "height": 1.785
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "asian",
+        "age": "middleage",
+        "role": "worker",
+        "domain": "warehouse"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_worker_male_asian_middleage.png",
+      "locally_cached_before_dv1": true,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "worker_male_asian_young",
+      "domain": "Common",
+      "name": "worker_male_asian_young",
+      "identity": "worker_male_asian_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.119,
+          0.374
+        ],
+        [
+          -0.58,
+          0.58
+        ],
+        [
+          -0.004,
+          1.775
+        ]
+      ],
+      "size_m": {
+        "length": 0.493,
+        "width": 1.16,
+        "height": 1.779
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "asian",
+        "age": "young",
+        "role": "worker",
+        "domain": "warehouse"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_worker_male_asian_young.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "worker_male_caucasian_middleage",
+      "domain": "Common",
+      "name": "worker_male_caucasian_middleage",
+      "identity": "worker_male_caucasian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.119,
+          0.394
+        ],
+        [
+          -0.596,
+          0.596
+        ],
+        [
+          -0.004,
+          1.901
+        ]
+      ],
+      "size_m": {
+        "length": 0.513,
+        "width": 1.192,
+        "height": 1.905
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "caucasian",
+        "age": "middleage",
+        "role": "worker",
+        "domain": "warehouse"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_worker_male_caucasian_middleage.png",
+      "locally_cached_before_dv1": true,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "worker_male_caucasian_young",
+      "domain": "Common",
+      "name": "worker_male_caucasian_young",
+      "identity": "worker_male_caucasian_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.116,
+          0.407
+        ],
+        [
+          -0.607,
+          0.607
+        ],
+        [
+          -0.003,
+          1.91
+        ]
+      ],
+      "size_m": {
+        "length": 0.523,
+        "width": 1.214,
+        "height": 1.913
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "caucasian",
+        "age": "young",
+        "role": "worker",
+        "domain": "warehouse"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Common_worker_male_caucasian_young.png",
+      "locally_cached_before_dv1": true,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/doctor_female_african_middleage",
+      "domain": "Hospital",
+      "name": "doctor_female_african_middleage",
+      "identity": "Hospital/doctor_female_african_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.159,
+          0.346
+        ],
+        [
+          -0.533,
+          0.533
+        ],
+        [
+          -0.013,
+          1.757
+        ]
+      ],
+      "size_m": {
+        "length": 0.505,
+        "width": 1.066,
+        "height": 1.77
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "african",
+        "age": "middleage",
+        "role": "doctor",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_doctor_female_african_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "Hospital/doctor_female_african_old",
+      "domain": "Hospital",
+      "name": "doctor_female_african_old",
+      "identity": "Hospital/doctor_female_african_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.159,
+          0.366
+        ],
+        [
+          -0.505,
+          0.505
+        ],
+        [
+          -0.011,
+          1.622
+        ]
+      ],
+      "size_m": {
+        "length": 0.525,
+        "width": 1.01,
+        "height": 1.633
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "african",
+        "age": "old",
+        "role": "doctor",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_doctor_female_african_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/doctor_female_asian_middleage",
+      "domain": "Hospital",
+      "name": "doctor_female_asian_middleage",
+      "identity": "Hospital/doctor_female_asian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.141,
+          0.31
+        ],
+        [
+          -0.475,
+          0.475
+        ],
+        [
+          -0.009,
+          1.583
+        ]
+      ],
+      "size_m": {
+        "length": 0.451,
+        "width": 0.95,
+        "height": 1.592
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "asian",
+        "age": "middleage",
+        "role": "doctor",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_doctor_female_asian_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/doctor_female_asian_old",
+      "domain": "Hospital",
+      "name": "doctor_female_asian_old",
+      "identity": "Hospital/doctor_female_asian_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.137,
+          0.321
+        ],
+        [
+          -0.441,
+          0.441
+        ],
+        [
+          -0.009,
+          1.457
+        ]
+      ],
+      "size_m": {
+        "length": 0.458,
+        "width": 0.882,
+        "height": 1.466
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "asian",
+        "age": "old",
+        "role": "doctor",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_doctor_female_asian_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/doctor_female_caucasian_middleage",
+      "domain": "Hospital",
+      "name": "doctor_female_caucasian_middleage",
+      "identity": "Hospital/doctor_female_caucasian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.154,
+          0.335
+        ],
+        [
+          -0.515,
+          0.515
+        ],
+        [
+          -0.012,
+          1.682
+        ]
+      ],
+      "size_m": {
+        "length": 0.489,
+        "width": 1.03,
+        "height": 1.694
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "caucasian",
+        "age": "middleage",
+        "role": "doctor",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_doctor_female_caucasian_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/doctor_female_caucasian_old",
+      "domain": "Hospital",
+      "name": "doctor_female_caucasian_old",
+      "identity": "Hospital/doctor_female_caucasian_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.149,
+          0.353
+        ],
+        [
+          -0.489,
+          0.489
+        ],
+        [
+          -0.011,
+          1.586
+        ]
+      ],
+      "size_m": {
+        "length": 0.502,
+        "width": 0.978,
+        "height": 1.597
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "caucasian",
+        "age": "old",
+        "role": "doctor",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_doctor_female_caucasian_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/doctor_male_african_middleage",
+      "domain": "Hospital",
+      "name": "doctor_male_african_middleage",
+      "identity": "Hospital/doctor_male_african_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.217,
+          0.424
+        ],
+        [
+          -0.631,
+          0.631
+        ],
+        [
+          -0.005,
+          1.968
+        ]
+      ],
+      "size_m": {
+        "length": 0.641,
+        "width": 1.262,
+        "height": 1.973
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "african",
+        "age": "middleage",
+        "role": "doctor",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_doctor_male_african_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/doctor_male_african_old",
+      "domain": "Hospital",
+      "name": "doctor_male_african_old",
+      "identity": "Hospital/doctor_male_african_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.213,
+          0.366
+        ],
+        [
+          -0.558,
+          0.558
+        ],
+        [
+          -0.005,
+          1.789
+        ]
+      ],
+      "size_m": {
+        "length": 0.579,
+        "width": 1.116,
+        "height": 1.794
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "african",
+        "age": "old",
+        "role": "doctor",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_doctor_male_african_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/doctor_male_asian_middleage",
+      "domain": "Hospital",
+      "name": "doctor_male_asian_middleage",
+      "identity": "Hospital/doctor_male_asian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.209,
+          0.36
+        ],
+        [
+          -0.562,
+          0.562
+        ],
+        [
+          -0.005,
+          1.78
+        ]
+      ],
+      "size_m": {
+        "length": 0.569,
+        "width": 1.124,
+        "height": 1.785
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "asian",
+        "age": "middleage",
+        "role": "doctor",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_doctor_male_asian_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/doctor_male_asian_old",
+      "domain": "Hospital",
+      "name": "doctor_male_asian_old",
+      "identity": "Hospital/doctor_male_asian_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.201,
+          0.306
+        ],
+        [
+          -0.493,
+          0.493
+        ],
+        [
+          -0.007,
+          1.601
+        ]
+      ],
+      "size_m": {
+        "length": 0.507,
+        "width": 0.986,
+        "height": 1.608
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "asian",
+        "age": "old",
+        "role": "doctor",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_doctor_male_asian_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/doctor_male_caucasian_middleage",
+      "domain": "Hospital",
+      "name": "doctor_male_caucasian_middleage",
+      "identity": "Hospital/doctor_male_caucasian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.208,
+          0.394
+        ],
+        [
+          -0.6,
+          0.6
+        ],
+        [
+          -0.004,
+          1.901
+        ]
+      ],
+      "size_m": {
+        "length": 0.602,
+        "width": 1.2,
+        "height": 1.905
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "caucasian",
+        "age": "middleage",
+        "role": "doctor",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_doctor_male_caucasian_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/doctor_male_caucasian_old",
+      "domain": "Hospital",
+      "name": "doctor_male_caucasian_old",
+      "identity": "Hospital/doctor_male_caucasian_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.203,
+          0.34
+        ],
+        [
+          -0.53,
+          0.53
+        ],
+        [
+          -0.005,
+          1.723
+        ]
+      ],
+      "size_m": {
+        "length": 0.543,
+        "width": 1.06,
+        "height": 1.728
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "caucasian",
+        "age": "old",
+        "role": "doctor",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_doctor_male_caucasian_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/nurse_female_african_middleage",
+      "domain": "Hospital",
+      "name": "nurse_female_african_middleage",
+      "identity": "Hospital/nurse_female_african_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.12,
+          0.346
+        ],
+        [
+          -0.533,
+          0.533
+        ],
+        [
+          -0.013,
+          1.743
+        ]
+      ],
+      "size_m": {
+        "length": 0.466,
+        "width": 1.066,
+        "height": 1.756
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "african",
+        "age": "middleage",
+        "role": "nurse",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_nurse_female_african_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/nurse_female_african_young",
+      "domain": "Hospital",
+      "name": "nurse_female_african_young",
+      "identity": "Hospital/nurse_female_african_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.114,
+          0.322
+        ],
+        [
+          -0.531,
+          0.531
+        ],
+        [
+          -0.014,
+          1.752
+        ]
+      ],
+      "size_m": {
+        "length": 0.436,
+        "width": 1.062,
+        "height": 1.766
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "african",
+        "age": "young",
+        "role": "nurse",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_nurse_female_african_young.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/nurse_female_asian_middleage",
+      "domain": "Hospital",
+      "name": "nurse_female_asian_middleage",
+      "identity": "Hospital/nurse_female_asian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.09,
+          0.309
+        ],
+        [
+          -0.476,
+          0.476
+        ],
+        [
+          -0.009,
+          1.585
+        ]
+      ],
+      "size_m": {
+        "length": 0.399,
+        "width": 0.952,
+        "height": 1.594
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "asian",
+        "age": "middleage",
+        "role": "nurse",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_nurse_female_asian_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/nurse_female_asian_young",
+      "domain": "Hospital",
+      "name": "nurse_female_asian_young",
+      "identity": "Hospital/nurse_female_asian_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.095,
+          0.289
+        ],
+        [
+          -0.477,
+          0.477
+        ],
+        [
+          -0.009,
+          1.576
+        ]
+      ],
+      "size_m": {
+        "length": 0.384,
+        "width": 0.954,
+        "height": 1.585
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "asian",
+        "age": "young",
+        "role": "nurse",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_nurse_female_asian_young.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "Hospital/nurse_female_caucasian_middleage",
+      "domain": "Hospital",
+      "name": "nurse_female_caucasian_middleage",
+      "identity": "Hospital/nurse_female_caucasian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.093,
+          0.335
+        ],
+        [
+          -0.514,
+          0.514
+        ],
+        [
+          -0.012,
+          1.681
+        ]
+      ],
+      "size_m": {
+        "length": 0.428,
+        "width": 1.028,
+        "height": 1.693
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "caucasian",
+        "age": "middleage",
+        "role": "nurse",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_nurse_female_caucasian_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/nurse_female_caucasian_young",
+      "domain": "Hospital",
+      "name": "nurse_female_caucasian_young",
+      "identity": "Hospital/nurse_female_caucasian_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.104,
+          0.311
+        ],
+        [
+          -0.511,
+          0.511
+        ],
+        [
+          -0.013,
+          1.685
+        ]
+      ],
+      "size_m": {
+        "length": 0.415,
+        "width": 1.022,
+        "height": 1.698
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "caucasian",
+        "age": "young",
+        "role": "nurse",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_nurse_female_caucasian_young.png",
+      "locally_cached_before_dv1": true,
+      "attribution": true,
+      "pool": "heldout"
+    },
+    {
+      "body_id": "Hospital/nurse_male_african_middleage",
+      "domain": "Hospital",
+      "name": "nurse_male_african_middleage",
+      "identity": "Hospital/nurse_male_african_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.115,
+          0.424
+        ],
+        [
+          -0.631,
+          0.631
+        ],
+        [
+          -0.021,
+          1.954
+        ]
+      ],
+      "size_m": {
+        "length": 0.539,
+        "width": 1.262,
+        "height": 1.975
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "african",
+        "age": "middleage",
+        "role": "nurse",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_nurse_male_african_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/nurse_male_african_young",
+      "domain": "Hospital",
+      "name": "nurse_male_african_young",
+      "identity": "Hospital/nurse_male_african_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.113,
+          0.439
+        ],
+        [
+          -0.638,
+          0.638
+        ],
+        [
+          -0.021,
+          1.963
+        ]
+      ],
+      "size_m": {
+        "length": 0.552,
+        "width": 1.276,
+        "height": 1.984
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "african",
+        "age": "young",
+        "role": "nurse",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_nurse_male_african_young.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "Hospital/nurse_male_asian_middleage",
+      "domain": "Hospital",
+      "name": "nurse_male_asian_middleage",
+      "identity": "Hospital/nurse_male_asian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.116,
+          0.36
+        ],
+        [
+          -0.564,
+          0.564
+        ],
+        [
+          -0.019,
+          1.78
+        ]
+      ],
+      "size_m": {
+        "length": 0.476,
+        "width": 1.128,
+        "height": 1.799
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "asian",
+        "age": "middleage",
+        "role": "nurse",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_nurse_male_asian_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "Hospital/nurse_male_asian_young",
+      "domain": "Hospital",
+      "name": "nurse_male_asian_young",
+      "identity": "Hospital/nurse_male_asian_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.121,
+          0.374
+        ],
+        [
+          -0.573,
+          0.573
+        ],
+        [
+          -0.018,
+          1.775
+        ]
+      ],
+      "size_m": {
+        "length": 0.495,
+        "width": 1.146,
+        "height": 1.793
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "asian",
+        "age": "young",
+        "role": "nurse",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_nurse_male_asian_young.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/nurse_male_caucasian_middleage",
+      "domain": "Hospital",
+      "name": "nurse_male_caucasian_middleage",
+      "identity": "Hospital/nurse_male_caucasian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.114,
+          0.393
+        ],
+        [
+          -0.596,
+          0.596
+        ],
+        [
+          -0.019,
+          1.887
+        ]
+      ],
+      "size_m": {
+        "length": 0.507,
+        "width": 1.192,
+        "height": 1.906
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "caucasian",
+        "age": "middleage",
+        "role": "nurse",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_nurse_male_caucasian_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/nurse_male_caucasian_young",
+      "domain": "Hospital",
+      "name": "nurse_male_caucasian_young",
+      "identity": "Hospital/nurse_male_caucasian_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.111,
+          0.407
+        ],
+        [
+          -0.608,
+          0.608
+        ],
+        [
+          -0.018,
+          1.91
+        ]
+      ],
+      "size_m": {
+        "length": 0.518,
+        "width": 1.216,
+        "height": 1.928
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "caucasian",
+        "age": "young",
+        "role": "nurse",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_nurse_male_caucasian_young.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/patient_female_african_middleage",
+      "domain": "Hospital",
+      "name": "patient_female_african_middleage",
+      "identity": "Hospital/patient_female_african_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.109,
+          0.347
+        ],
+        [
+          -0.532,
+          0.532
+        ],
+        [
+          -0.014,
+          1.744
+        ]
+      ],
+      "size_m": {
+        "length": 0.456,
+        "width": 1.064,
+        "height": 1.758
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "african",
+        "age": "middleage",
+        "role": "patient",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_patient_female_african_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/patient_female_african_middleage_b",
+      "domain": "Hospital",
+      "name": "patient_female_african_middleage_b",
+      "identity": "Hospital/patient_female_african_middleage_b",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.11,
+          0.347
+        ],
+        [
+          -0.532,
+          0.532
+        ],
+        [
+          -0.022,
+          1.756
+        ]
+      ],
+      "size_m": {
+        "length": 0.457,
+        "width": 1.064,
+        "height": 1.778
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "african",
+        "age": "middleage",
+        "role": "patient",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_patient_female_african_middleage_b.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/patient_female_african_old",
+      "domain": "Hospital",
+      "name": "patient_female_african_old",
+      "identity": "Hospital/patient_female_african_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.102,
+          0.366
+        ],
+        [
+          -0.505,
+          0.505
+        ],
+        [
+          -0.011,
+          1.622
+        ]
+      ],
+      "size_m": {
+        "length": 0.468,
+        "width": 1.01,
+        "height": 1.633
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "african",
+        "age": "old",
+        "role": "patient",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_patient_female_african_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "Hospital/patient_female_african_old_b",
+      "domain": "Hospital",
+      "name": "patient_female_african_old_b",
+      "identity": "Hospital/patient_female_african_old_b",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.108,
+          0.365
+        ],
+        [
+          -0.506,
+          0.506
+        ],
+        [
+          -0.018,
+          1.636
+        ]
+      ],
+      "size_m": {
+        "length": 0.473,
+        "width": 1.012,
+        "height": 1.654
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "african",
+        "age": "old",
+        "role": "patient",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_patient_female_african_old_b.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/patient_female_asian_middleage",
+      "domain": "Hospital",
+      "name": "patient_female_asian_middleage",
+      "identity": "Hospital/patient_female_asian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.109,
+          0.309
+        ],
+        [
+          -0.475,
+          0.475
+        ],
+        [
+          -0.009,
+          1.571
+        ]
+      ],
+      "size_m": {
+        "length": 0.418,
+        "width": 0.95,
+        "height": 1.58
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "asian",
+        "age": "middleage",
+        "role": "patient",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_patient_female_asian_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/patient_female_asian_middleage_b",
+      "domain": "Hospital",
+      "name": "patient_female_asian_middleage_b",
+      "identity": "Hospital/patient_female_asian_middleage_b",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.106,
+          0.308
+        ],
+        [
+          -0.476,
+          0.476
+        ],
+        [
+          -0.017,
+          1.573
+        ]
+      ],
+      "size_m": {
+        "length": 0.414,
+        "width": 0.952,
+        "height": 1.59
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "asian",
+        "age": "middleage",
+        "role": "patient",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_patient_female_asian_middleage_b.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "Hospital/patient_female_asian_old",
+      "domain": "Hospital",
+      "name": "patient_female_asian_old",
+      "identity": "Hospital/patient_female_asian_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.09,
+          0.322
+        ],
+        [
+          -0.441,
+          0.441
+        ],
+        [
+          -0.009,
+          1.474
+        ]
+      ],
+      "size_m": {
+        "length": 0.412,
+        "width": 0.882,
+        "height": 1.483
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "asian",
+        "age": "old",
+        "role": "patient",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_patient_female_asian_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "heldout"
+    },
+    {
+      "body_id": "Hospital/patient_female_asian_old_b",
+      "domain": "Hospital",
+      "name": "patient_female_asian_old_b",
+      "identity": "Hospital/patient_female_asian_old_b",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.09,
+          0.321
+        ],
+        [
+          -0.442,
+          0.442
+        ],
+        [
+          -0.017,
+          1.475
+        ]
+      ],
+      "size_m": {
+        "length": 0.411,
+        "width": 0.884,
+        "height": 1.492
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "asian",
+        "age": "old",
+        "role": "patient",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_patient_female_asian_old_b.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/patient_female_caucasian_middleage",
+      "domain": "Hospital",
+      "name": "patient_female_caucasian_middleage",
+      "identity": "Hospital/patient_female_caucasian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.109,
+          0.335
+        ],
+        [
+          -0.514,
+          0.514
+        ],
+        [
+          -0.012,
+          1.683
+        ]
+      ],
+      "size_m": {
+        "length": 0.444,
+        "width": 1.028,
+        "height": 1.695
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "caucasian",
+        "age": "middleage",
+        "role": "patient",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_patient_female_caucasian_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/patient_female_caucasian_middleage_b",
+      "domain": "Hospital",
+      "name": "patient_female_caucasian_middleage_b",
+      "identity": "Hospital/patient_female_caucasian_middleage_b",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.112,
+          0.335
+        ],
+        [
+          -0.514,
+          0.514
+        ],
+        [
+          -0.021,
+          1.681
+        ]
+      ],
+      "size_m": {
+        "length": 0.447,
+        "width": 1.028,
+        "height": 1.702
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "caucasian",
+        "age": "middleage",
+        "role": "patient",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_patient_female_caucasian_middleage_b.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/patient_female_caucasian_old",
+      "domain": "Hospital",
+      "name": "patient_female_caucasian_old",
+      "identity": "Hospital/patient_female_caucasian_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.099,
+          0.354
+        ],
+        [
+          -0.489,
+          0.489
+        ],
+        [
+          -0.01,
+          1.585
+        ]
+      ],
+      "size_m": {
+        "length": 0.453,
+        "width": 0.978,
+        "height": 1.595
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "caucasian",
+        "age": "old",
+        "role": "patient",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_patient_female_caucasian_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/patient_female_caucasian_old_b",
+      "domain": "Hospital",
+      "name": "patient_female_caucasian_old_b",
+      "identity": "Hospital/patient_female_caucasian_old_b",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.098,
+          0.354
+        ],
+        [
+          -0.488,
+          0.488
+        ],
+        [
+          -0.019,
+          1.566
+        ]
+      ],
+      "size_m": {
+        "length": 0.452,
+        "width": 0.976,
+        "height": 1.585
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "caucasian",
+        "age": "old",
+        "role": "patient",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_patient_female_caucasian_old_b.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/patient_male_african_middleage",
+      "domain": "Hospital",
+      "name": "patient_male_african_middleage",
+      "identity": "Hospital/patient_male_african_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.134,
+          0.423
+        ],
+        [
+          -0.624,
+          0.624
+        ],
+        [
+          -0.022,
+          1.954
+        ]
+      ],
+      "size_m": {
+        "length": 0.557,
+        "width": 1.248,
+        "height": 1.976
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "african",
+        "age": "middleage",
+        "role": "patient",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_patient_male_african_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "Hospital/patient_male_african_old",
+      "domain": "Hospital",
+      "name": "patient_male_african_old",
+      "identity": "Hospital/patient_male_african_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.155,
+          0.367
+        ],
+        [
+          -0.567,
+          0.567
+        ],
+        [
+          -0.02,
+          1.789
+        ]
+      ],
+      "size_m": {
+        "length": 0.522,
+        "width": 1.134,
+        "height": 1.809
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "african",
+        "age": "old",
+        "role": "patient",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_patient_male_african_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/patient_male_asian_middleage",
+      "domain": "Hospital",
+      "name": "patient_male_asian_middleage",
+      "identity": "Hospital/patient_male_asian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.135,
+          0.36
+        ],
+        [
+          -0.566,
+          0.566
+        ],
+        [
+          -0.019,
+          1.765
+        ]
+      ],
+      "size_m": {
+        "length": 0.495,
+        "width": 1.132,
+        "height": 1.784
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "asian",
+        "age": "middleage",
+        "role": "patient",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_patient_male_asian_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/patient_male_asian_old",
+      "domain": "Hospital",
+      "name": "patient_male_asian_old",
+      "identity": "Hospital/patient_male_asian_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.142,
+          0.306
+        ],
+        [
+          -0.492,
+          0.492
+        ],
+        [
+          -0.018,
+          1.601
+        ]
+      ],
+      "size_m": {
+        "length": 0.448,
+        "width": 0.984,
+        "height": 1.619
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "asian",
+        "age": "old",
+        "role": "patient",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_patient_male_asian_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "Hospital/patient_male_caucasian_middleage",
+      "domain": "Hospital",
+      "name": "patient_male_caucasian_middleage",
+      "identity": "Hospital/patient_male_caucasian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.132,
+          0.393
+        ],
+        [
+          -0.596,
+          0.596
+        ],
+        [
+          -0.019,
+          1.901
+        ]
+      ],
+      "size_m": {
+        "length": 0.525,
+        "width": 1.192,
+        "height": 1.92
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "caucasian",
+        "age": "middleage",
+        "role": "patient",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_patient_male_caucasian_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Hospital/patient_male_caucasian_old",
+      "domain": "Hospital",
+      "name": "patient_male_caucasian_old",
+      "identity": "Hospital/patient_male_caucasian_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.137,
+          0.34
+        ],
+        [
+          -0.534,
+          0.534
+        ],
+        [
+          -0.018,
+          1.723
+        ]
+      ],
+      "size_m": {
+        "length": 0.477,
+        "width": 1.068,
+        "height": 1.741
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "caucasian",
+        "age": "old",
+        "role": "patient",
+        "domain": "hospital"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Hospital_patient_male_caucasian_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Office/office_female_african_middleage",
+      "domain": "Office",
+      "name": "office_female_african_middleage",
+      "identity": "Office/office_female_african_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.098,
+          0.347
+        ],
+        [
+          -0.532,
+          0.532
+        ],
+        [
+          -0.013,
+          1.755
+        ]
+      ],
+      "size_m": {
+        "length": 0.445,
+        "width": 1.064,
+        "height": 1.768
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "african",
+        "age": "middleage",
+        "role": "office",
+        "domain": "office"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Office_office_female_african_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Office/office_female_african_old",
+      "domain": "Office",
+      "name": "office_female_african_old",
+      "identity": "Office/office_female_african_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.088,
+          0.366
+        ],
+        [
+          -0.505,
+          0.505
+        ],
+        [
+          -0.011,
+          1.641
+        ]
+      ],
+      "size_m": {
+        "length": 0.454,
+        "width": 1.01,
+        "height": 1.652
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "african",
+        "age": "old",
+        "role": "office",
+        "domain": "office"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Office_office_female_african_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "Office/office_female_african_young",
+      "domain": "Office",
+      "name": "office_female_african_young",
+      "identity": "Office/office_female_african_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.11,
+          0.323
+        ],
+        [
+          -0.53,
+          0.53
+        ],
+        [
+          -0.014,
+          1.75
+        ]
+      ],
+      "size_m": {
+        "length": 0.433,
+        "width": 1.06,
+        "height": 1.764
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "african",
+        "age": "young",
+        "role": "office",
+        "domain": "office"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Office_office_female_african_young.png",
+      "locally_cached_before_dv1": true,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "Office/office_female_asian_middleage",
+      "domain": "Office",
+      "name": "office_female_asian_middleage",
+      "identity": "Office/office_female_asian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.105,
+          0.309
+        ],
+        [
+          -0.476,
+          0.476
+        ],
+        [
+          -0.009,
+          1.572
+        ]
+      ],
+      "size_m": {
+        "length": 0.414,
+        "width": 0.952,
+        "height": 1.581
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "asian",
+        "age": "middleage",
+        "role": "office",
+        "domain": "office"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Office_office_female_asian_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "Office/office_female_asian_old",
+      "domain": "Office",
+      "name": "office_female_asian_old",
+      "identity": "Office/office_female_asian_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.08,
+          0.321
+        ],
+        [
+          -0.442,
+          0.442
+        ],
+        [
+          -0.009,
+          1.458
+        ]
+      ],
+      "size_m": {
+        "length": 0.401,
+        "width": 0.884,
+        "height": 1.467
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "asian",
+        "age": "old",
+        "role": "office",
+        "domain": "office"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Office_office_female_asian_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Office/office_female_asian_young",
+      "domain": "Office",
+      "name": "office_female_asian_young",
+      "identity": "Office/office_female_asian_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.116,
+          0.288
+        ],
+        [
+          -0.479,
+          0.479
+        ],
+        [
+          -0.009,
+          1.577
+        ]
+      ],
+      "size_m": {
+        "length": 0.404,
+        "width": 0.958,
+        "height": 1.586
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "asian",
+        "age": "young",
+        "role": "office",
+        "domain": "office"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Office_office_female_asian_young.png",
+      "locally_cached_before_dv1": true,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Office/office_female_caucasian_middleage",
+      "domain": "Office",
+      "name": "office_female_caucasian_middleage",
+      "identity": "Office/office_female_caucasian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.103,
+          0.334
+        ],
+        [
+          -0.515,
+          0.515
+        ],
+        [
+          -0.012,
+          1.683
+        ]
+      ],
+      "size_m": {
+        "length": 0.437,
+        "width": 1.03,
+        "height": 1.695
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "caucasian",
+        "age": "middleage",
+        "role": "office",
+        "domain": "office"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Office_office_female_caucasian_middleage.png",
+      "locally_cached_before_dv1": true,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "Office/office_female_caucasian_old",
+      "domain": "Office",
+      "name": "office_female_caucasian_old",
+      "identity": "Office/office_female_caucasian_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.086,
+          0.355
+        ],
+        [
+          -0.487,
+          0.487
+        ],
+        [
+          -0.011,
+          1.565
+        ]
+      ],
+      "size_m": {
+        "length": 0.441,
+        "width": 0.974,
+        "height": 1.576
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "caucasian",
+        "age": "old",
+        "role": "office",
+        "domain": "office"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Office_office_female_caucasian_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Office/office_female_caucasian_young",
+      "domain": "Office",
+      "name": "office_female_caucasian_young",
+      "identity": "Office/office_female_caucasian_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.102,
+          0.31
+        ],
+        [
+          -0.512,
+          0.512
+        ],
+        [
+          -0.013,
+          1.685
+        ]
+      ],
+      "size_m": {
+        "length": 0.412,
+        "width": 1.024,
+        "height": 1.698
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "caucasian",
+        "age": "young",
+        "role": "office",
+        "domain": "office"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Office_office_female_caucasian_young.png",
+      "locally_cached_before_dv1": true,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Office/office_male_african_middleage",
+      "domain": "Office",
+      "name": "office_male_african_middleage",
+      "identity": "Office/office_male_african_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.135,
+          0.424
+        ],
+        [
+          -0.63,
+          0.63
+        ],
+        [
+          -0.005,
+          1.954
+        ]
+      ],
+      "size_m": {
+        "length": 0.559,
+        "width": 1.26,
+        "height": 1.959
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "african",
+        "age": "middleage",
+        "role": "office",
+        "domain": "office"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Office_office_male_african_middleage.png",
+      "locally_cached_before_dv1": true,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Office/office_male_african_old",
+      "domain": "Office",
+      "name": "office_male_african_old",
+      "identity": "Office/office_male_african_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.138,
+          0.367
+        ],
+        [
+          -0.562,
+          0.562
+        ],
+        [
+          -0.005,
+          1.789
+        ]
+      ],
+      "size_m": {
+        "length": 0.505,
+        "width": 1.124,
+        "height": 1.794
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "african",
+        "age": "old",
+        "role": "office",
+        "domain": "office"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Office_office_male_african_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "heldout"
+    },
+    {
+      "body_id": "Office/office_male_african_young",
+      "domain": "Office",
+      "name": "office_male_african_young",
+      "identity": "Office/office_male_african_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.136,
+          0.439
+        ],
+        [
+          -0.638,
+          0.638
+        ],
+        [
+          -0.005,
+          1.963
+        ]
+      ],
+      "size_m": {
+        "length": 0.575,
+        "width": 1.276,
+        "height": 1.968
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "african",
+        "age": "young",
+        "role": "office",
+        "domain": "office"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Office_office_male_african_young.png",
+      "locally_cached_before_dv1": true,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "Office/office_male_asian_middleage",
+      "domain": "Office",
+      "name": "office_male_asian_middleage",
+      "identity": "Office/office_male_asian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.135,
+          0.36
+        ],
+        [
+          -0.56,
+          0.56
+        ],
+        [
+          -0.005,
+          1.765
+        ]
+      ],
+      "size_m": {
+        "length": 0.495,
+        "width": 1.12,
+        "height": 1.77
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "asian",
+        "age": "middleage",
+        "role": "office",
+        "domain": "office"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Office_office_male_asian_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "heldout"
+    },
+    {
+      "body_id": "Office/office_male_asian_old",
+      "domain": "Office",
+      "name": "office_male_asian_old",
+      "identity": "Office/office_male_asian_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.135,
+          0.307
+        ],
+        [
+          -0.501,
+          0.501
+        ],
+        [
+          -0.006,
+          1.601
+        ]
+      ],
+      "size_m": {
+        "length": 0.442,
+        "width": 1.002,
+        "height": 1.607
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "asian",
+        "age": "old",
+        "role": "office",
+        "domain": "office"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Office_office_male_asian_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Office/office_male_asian_young",
+      "domain": "Office",
+      "name": "office_male_asian_young",
+      "identity": "Office/office_male_asian_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.136,
+          0.374
+        ],
+        [
+          -0.575,
+          0.575
+        ],
+        [
+          -0.004,
+          1.775
+        ]
+      ],
+      "size_m": {
+        "length": 0.51,
+        "width": 1.15,
+        "height": 1.779
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "asian",
+        "age": "young",
+        "role": "office",
+        "domain": "office"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Office_office_male_asian_young.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Office/office_male_caucasian_middleage",
+      "domain": "Office",
+      "name": "office_male_caucasian_middleage",
+      "identity": "Office/office_male_caucasian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.127,
+          0.393
+        ],
+        [
+          -0.595,
+          0.595
+        ],
+        [
+          -0.004,
+          1.901
+        ]
+      ],
+      "size_m": {
+        "length": 0.52,
+        "width": 1.19,
+        "height": 1.905
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "caucasian",
+        "age": "middleage",
+        "role": "office",
+        "domain": "office"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Office_office_male_caucasian_middleage.png",
+      "locally_cached_before_dv1": true,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Office/office_male_caucasian_old",
+      "domain": "Office",
+      "name": "office_male_caucasian_old",
+      "identity": "Office/office_male_caucasian_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.13,
+          0.34
+        ],
+        [
+          -0.531,
+          0.531
+        ],
+        [
+          -0.005,
+          1.723
+        ]
+      ],
+      "size_m": {
+        "length": 0.47,
+        "width": 1.062,
+        "height": 1.728
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "caucasian",
+        "age": "old",
+        "role": "office",
+        "domain": "office"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Office_office_male_caucasian_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "heldout"
+    },
+    {
+      "body_id": "Office/office_male_caucasian_young",
+      "domain": "Office",
+      "name": "office_male_caucasian_young",
+      "identity": "Office/office_male_caucasian_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.129,
+          0.408
+        ],
+        [
+          -0.616,
+          0.616
+        ],
+        [
+          -0.002,
+          1.91
+        ]
+      ],
+      "size_m": {
+        "length": 0.537,
+        "width": 1.232,
+        "height": 1.912
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "caucasian",
+        "age": "young",
+        "role": "office",
+        "domain": "office"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Office_office_male_caucasian_young.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "Residential/resident_female_african_middleage",
+      "domain": "Residential",
+      "name": "resident_female_african_middleage",
+      "identity": "Residential/resident_female_african_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.096,
+          0.347
+        ],
+        [
+          -0.533,
+          0.533
+        ],
+        [
+          -0.013,
+          1.743
+        ]
+      ],
+      "size_m": {
+        "length": 0.443,
+        "width": 1.066,
+        "height": 1.756
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "african",
+        "age": "middleage",
+        "role": "resident",
+        "domain": "residential"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Residential_resident_female_african_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "heldout"
+    },
+    {
+      "body_id": "Residential/resident_female_african_old",
+      "domain": "Residential",
+      "name": "resident_female_african_old",
+      "identity": "Residential/resident_female_african_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.096,
+          0.366
+        ],
+        [
+          -0.506,
+          0.506
+        ],
+        [
+          -0.011,
+          1.623
+        ]
+      ],
+      "size_m": {
+        "length": 0.462,
+        "width": 1.012,
+        "height": 1.634
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "african",
+        "age": "old",
+        "role": "resident",
+        "domain": "residential"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Residential_resident_female_african_old.png",
+      "locally_cached_before_dv1": true,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Residential/resident_female_african_young",
+      "domain": "Residential",
+      "name": "resident_female_african_young",
+      "identity": "Residential/resident_female_african_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.131,
+          0.322
+        ],
+        [
+          -0.531,
+          0.531
+        ],
+        [
+          -0.014,
+          1.749
+        ]
+      ],
+      "size_m": {
+        "length": 0.453,
+        "width": 1.062,
+        "height": 1.763
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "african",
+        "age": "young",
+        "role": "resident",
+        "domain": "residential"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Residential_resident_female_african_young.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "heldout"
+    },
+    {
+      "body_id": "Residential/resident_female_asian_middleage",
+      "domain": "Residential",
+      "name": "resident_female_asian_middleage",
+      "identity": "Residential/resident_female_asian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.088,
+          0.31
+        ],
+        [
+          -0.475,
+          0.475
+        ],
+        [
+          -0.01,
+          1.583
+        ]
+      ],
+      "size_m": {
+        "length": 0.398,
+        "width": 0.95,
+        "height": 1.593
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "asian",
+        "age": "middleage",
+        "role": "resident",
+        "domain": "residential"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Residential_resident_female_asian_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Residential/resident_female_asian_old",
+      "domain": "Residential",
+      "name": "resident_female_asian_old",
+      "identity": "Residential/resident_female_asian_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.076,
+          0.321
+        ],
+        [
+          -0.442,
+          0.442
+        ],
+        [
+          -0.009,
+          1.46
+        ]
+      ],
+      "size_m": {
+        "length": 0.397,
+        "width": 0.884,
+        "height": 1.469
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "asian",
+        "age": "old",
+        "role": "resident",
+        "domain": "residential"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Residential_resident_female_asian_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "Residential/resident_female_caucasian_middleage",
+      "domain": "Residential",
+      "name": "resident_female_caucasian_middleage",
+      "identity": "Residential/resident_female_caucasian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.094,
+          0.335
+        ],
+        [
+          -0.515,
+          0.515
+        ],
+        [
+          -0.012,
+          1.694
+        ]
+      ],
+      "size_m": {
+        "length": 0.429,
+        "width": 1.03,
+        "height": 1.706
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "caucasian",
+        "age": "middleage",
+        "role": "resident",
+        "domain": "residential"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Residential_resident_female_caucasian_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "Residential/resident_female_caucasian_old",
+      "domain": "Residential",
+      "name": "resident_female_caucasian_old",
+      "identity": "Residential/resident_female_caucasian_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.083,
+          0.354
+        ],
+        [
+          -0.489,
+          0.489
+        ],
+        [
+          -0.011,
+          1.567
+        ]
+      ],
+      "size_m": {
+        "length": 0.437,
+        "width": 0.978,
+        "height": 1.578
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "caucasian",
+        "age": "old",
+        "role": "resident",
+        "domain": "residential"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Residential_resident_female_caucasian_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "heldout"
+    },
+    {
+      "body_id": "Residential/resident_female_caucasian_young",
+      "domain": "Residential",
+      "name": "resident_female_caucasian_young",
+      "identity": "Residential/resident_female_caucasian_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.098,
+          0.311
+        ],
+        [
+          -0.511,
+          0.511
+        ],
+        [
+          -0.012,
+          1.696
+        ]
+      ],
+      "size_m": {
+        "length": 0.409,
+        "width": 1.022,
+        "height": 1.708
+      },
+      "tags": {
+        "gender": "female",
+        "ethnicity": "caucasian",
+        "age": "young",
+        "role": "resident",
+        "domain": "residential"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Residential_resident_female_caucasian_young.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "Residential/resident_male_african_middleage",
+      "domain": "Residential",
+      "name": "resident_male_african_middleage",
+      "identity": "Residential/resident_male_african_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.118,
+          0.424
+        ],
+        [
+          -0.629,
+          0.629
+        ],
+        [
+          -0.006,
+          1.968
+        ]
+      ],
+      "size_m": {
+        "length": 0.542,
+        "width": 1.258,
+        "height": 1.974
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "african",
+        "age": "middleage",
+        "role": "resident",
+        "domain": "residential"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Residential_resident_male_african_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Residential/resident_male_african_old",
+      "domain": "Residential",
+      "name": "resident_male_african_old",
+      "identity": "Residential/resident_male_african_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.156,
+          0.367
+        ],
+        [
+          -0.56,
+          0.56
+        ],
+        [
+          -0.029,
+          1.789
+        ]
+      ],
+      "size_m": {
+        "length": 0.523,
+        "width": 1.12,
+        "height": 1.818
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "african",
+        "age": "old",
+        "role": "resident",
+        "domain": "residential"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Residential_resident_male_african_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "Residential/resident_male_african_young",
+      "domain": "Residential",
+      "name": "resident_male_african_young",
+      "identity": "Residential/resident_male_african_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.138,
+          0.439
+        ],
+        [
+          -0.637,
+          0.637
+        ],
+        [
+          -0.005,
+          1.963
+        ]
+      ],
+      "size_m": {
+        "length": 0.577,
+        "width": 1.274,
+        "height": 1.968
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "african",
+        "age": "young",
+        "role": "resident",
+        "domain": "residential"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Residential_resident_male_african_young.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "Residential/resident_male_asian_middleage",
+      "domain": "Residential",
+      "name": "resident_male_asian_middleage",
+      "identity": "Residential/resident_male_asian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.128,
+          0.36
+        ],
+        [
+          -0.567,
+          0.567
+        ],
+        [
+          -0.005,
+          1.78
+        ]
+      ],
+      "size_m": {
+        "length": 0.488,
+        "width": 1.134,
+        "height": 1.785
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "asian",
+        "age": "middleage",
+        "role": "resident",
+        "domain": "residential"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Residential_resident_male_asian_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "Residential/resident_male_asian_old",
+      "domain": "Residential",
+      "name": "resident_male_asian_old",
+      "identity": "Residential/resident_male_asian_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.16,
+          0.306
+        ],
+        [
+          -0.494,
+          0.494
+        ],
+        [
+          -0.027,
+          1.601
+        ]
+      ],
+      "size_m": {
+        "length": 0.466,
+        "width": 0.988,
+        "height": 1.628
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "asian",
+        "age": "old",
+        "role": "resident",
+        "domain": "residential"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Residential_resident_male_asian_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Residential/resident_male_asian_young",
+      "domain": "Residential",
+      "name": "resident_male_asian_young",
+      "identity": "Residential/resident_male_asian_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.139,
+          0.374
+        ],
+        [
+          -0.575,
+          0.575
+        ],
+        [
+          -0.003,
+          1.79
+        ]
+      ],
+      "size_m": {
+        "length": 0.513,
+        "width": 1.15,
+        "height": 1.793
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "asian",
+        "age": "young",
+        "role": "resident",
+        "domain": "residential"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Residential_resident_male_asian_young.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "unused"
+    },
+    {
+      "body_id": "Residential/resident_male_caucasian_middleage",
+      "domain": "Residential",
+      "name": "resident_male_caucasian_middleage",
+      "identity": "Residential/resident_male_caucasian_middleage",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.115,
+          0.394
+        ],
+        [
+          -0.598,
+          0.598
+        ],
+        [
+          -0.004,
+          1.901
+        ]
+      ],
+      "size_m": {
+        "length": 0.509,
+        "width": 1.196,
+        "height": 1.905
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "caucasian",
+        "age": "middleage",
+        "role": "resident",
+        "domain": "residential"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Residential_resident_male_caucasian_middleage.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "Residential/resident_male_caucasian_old",
+      "domain": "Residential",
+      "name": "resident_male_caucasian_old",
+      "identity": "Residential/resident_male_caucasian_old",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.15,
+          0.34
+        ],
+        [
+          -0.534,
+          0.534
+        ],
+        [
+          -0.027,
+          1.723
+        ]
+      ],
+      "size_m": {
+        "length": 0.49,
+        "width": 1.068,
+        "height": 1.75
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "caucasian",
+        "age": "old",
+        "role": "resident",
+        "domain": "residential"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Residential_resident_male_caucasian_old.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    },
+    {
+      "body_id": "Residential/resident_male_caucasian_young",
+      "domain": "Residential",
+      "name": "resident_male_caucasian_young",
+      "identity": "Residential/resident_male_caucasian_young",
+      "annotation": true,
+      "bounding_box": [
+        [
+          -0.133,
+          0.408
+        ],
+        [
+          -0.612,
+          0.612
+        ],
+        [
+          -0.002,
+          1.896
+        ]
+      ],
+      "size_m": {
+        "length": 0.541,
+        "width": 1.224,
+        "height": 1.898
+      },
+      "tags": {
+        "gender": "male",
+        "ethnicity": "caucasian",
+        "age": "young",
+        "role": "resident",
+        "domain": "residential"
+      },
+      "mobility_aid": null,
+      "clips": [
+        "idle",
+        "walk"
+      ],
+      "rig": "cmu_mb",
+      "walking_compatible": true,
+      "gesture_compatible": true,
+      "wheelchair_locomotion": false,
+      "thumbnail": "thumbnails/Residential_resident_male_caucasian_young.png",
+      "locally_cached_before_dv1": false,
+      "attribution": true,
+      "pool": "known"
+    }
+  ],
+  "total": 104,
+  "without_annotation": [],
+  "counts": {
+    "walking": 102,
+    "wheelchair": 2,
+    "by_domain": {
+      "Common": 27,
+      "Hospital": 42,
+      "Office": 18,
+      "Residential": 17
+    }
+  }
+}

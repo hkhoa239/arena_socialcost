@@ -1,0 +1,259 @@
+{
+  "seed": 5,
+  "scenario": "mf_headon",
+  "driver": "arena_humansim default local_planner sfm, adult agent type, waypoint goal",
+  "horizon_steps": 10,
+  "sample_hz": 10.0,
+  "episode_seconds": 8.0,
+  "offline_gradient_steps_each": 400,
+  "train_episodes": "repeat 0 of block, leave, approach",
+  "test_episodes": "repeat 1 of block, leave, approach",
+  "parameter_count": 10721,
+  "unconditioned_parameter_count": 10721,
+  "spawn_xy": {
+    "block_0": [
+      21.300000190734863,
+      7.300000190734863
+    ],
+    "block_1": [
+      21.300000190734863,
+      7.300000190734863
+    ],
+    "leave_0": [
+      21.300000190734863,
+      7.300000190734863
+    ],
+    "leave_1": [
+      21.300000190734863,
+      7.300000190734863
+    ],
+    "approach_0": [
+      21.300000190734863,
+      7.300000190734863
+    ],
+    "approach_1": [
+      21.300000190734863,
+      7.300000190734863
+    ]
+  },
+  "episode_motion": {
+    "block_0": {
+      "spawn_xy": [
+        21.300000190734863,
+        7.300000190734863
+      ],
+      "end_xy": [
+        18.070466762953025,
+        7.299951687955346
+      ],
+      "max_abs_y_from_spawn_m": 4.850277951717885e-05,
+      "min_robot_distance_m": 0.6766797443531418,
+      "robot_path_m": 6.411021107126536e-05
+    },
+    "block_1": {
+      "spawn_xy": [
+        21.300000190734863,
+        7.300000190734863
+      ],
+      "end_xy": [
+        18.226649302575314,
+        7.299971948410246
+      ],
+      "max_abs_y_from_spawn_m": 2.8242324617622216e-05,
+      "min_robot_distance_m": 0.8037938440272776,
+      "robot_path_m": 6.404319999221559e-05
+    },
+    "leave_0": {
+      "spawn_xy": [
+        21.300000190734863,
+        7.300000190734863
+      ],
+      "end_xy": [
+        17.204567085600633,
+        7.349737092844441
+      ],
+      "max_abs_y_from_spawn_m": 0.1463877636877191,
+      "min_robot_distance_m": 1.649047394067007,
+      "robot_path_m": 3.880404163151845
+    },
+    "leave_1": {
+      "spawn_xy": [
+        21.300000190734863,
+        7.300000190734863
+      ],
+      "end_xy": [
+        17.42980714613246,
+        7.319043737948247
+      ],
+      "max_abs_y_from_spawn_m": 0.036911482879134816,
+      "min_robot_distance_m": 1.5161060846010286,
+      "robot_path_m": 3.9097595958538474
+    },
+    "approach_0": {
+      "spawn_xy": [
+        21.300000190734863,
+        7.300000190734863
+      ],
+      "end_xy": [
+        19.380709430459166,
+        6.343420583351383
+      ],
+      "max_abs_y_from_spawn_m": 1.1008242980807887,
+      "min_robot_distance_m": 0.6572939634533894,
+      "robot_path_m": 5.028515044376389
+    },
+    "approach_1": {
+      "spawn_xy": [
+        21.300000190734863,
+        7.300000190734863
+      ],
+      "end_xy": [
+        23.00846477884208,
+        7.2175268506737655
+      ],
+      "max_abs_y_from_spawn_m": 0.08247334006109774,
+      "min_robot_distance_m": 0.6622719238419764,
+      "robot_path_m": 5.048672333707762
+    }
+  },
+  "robot_path_m": {
+    "block_0": 6.411021107126536e-05,
+    "block_1": 6.404319999221559e-05,
+    "leave_0": 3.880404163151845,
+    "leave_1": 3.9097595958538474,
+    "approach_0": 5.028515044376389,
+    "approach_1": 5.048672333707762
+  },
+  "paired_response_m": {
+    "block_repeat_noise": {
+      "mean_m": 0.10621003842636823,
+      "max_m": 0.18006226979931103,
+      "mean_cross_track_m": 2.7267793716090337e-06,
+      "max_cross_track_m": 2.0260454899556635e-05,
+      "mean_path_y_m": 3.6889029393361027e-07,
+      "max_path_y_m": 1.0460360466701957e-05,
+      "samples": 80
+    },
+    "leave_repeat_noise": {
+      "mean_m": 0.1261648803031801,
+      "max_m": 0.26563062078267,
+      "mean_cross_track_m": 0.031094007451729154,
+      "max_cross_track_m": 0.11270958079540261,
+      "mean_path_y_m": 0.03132899485100549,
+      "max_path_y_m": 0.14149266823834505,
+      "samples": 80
+    },
+    "approach_repeat_noise": {
+      "mean_m": 0.8108690510217481,
+      "max_m": 3.7315774994354727,
+      "mean_cross_track_m": 0.3870937581878913,
+      "max_cross_track_m": 1.081785166190814,
+      "mean_path_y_m": 0.2627232852548149,
+      "max_path_y_m": 0.961720005079119,
+      "samples": 65
+    },
+    "leave_versus_block": {
+      "mean_m": 0.607664913708357,
+      "max_m": 1.9015950609514312,
+      "mean_cross_track_m": 0.04227839776604088,
+      "max_cross_track_m": 0.1463829937617218,
+      "mean_path_y_m": 0.014616839382994785,
+      "max_path_y_m": 0.0937159171292743,
+      "samples": 80
+    },
+    "approach_versus_block": {
+      "mean_m": 1.3364885734024647,
+      "max_m": 2.9799052295889155,
+      "mean_cross_track_m": 0.39630399618602646,
+      "max_cross_track_m": 1.1008171176415678,
+      "mean_path_y_m": 0.3976950902709062,
+      "max_path_y_m": 1.0391522820519112,
+      "samples": 65
+    },
+    "stable_repeat_noise_m": 0.1261648803031801,
+    "response_threshold_m": 0.3784946409095403,
+    "approach_repeat_exceeds_threshold": true
+  },
+  "target_alignment_max_abs_error": 0.0,
+  "train_mse": {
+    "conditioned": 0.002119543496519327,
+    "unconditioned": 0.00210796226747334,
+    "persistence": 0.002410712419077754
+  },
+  "train_pairs": 192,
+  "test_pairs": 192,
+  "test_errors": {
+    "all": {
+      "pairs": 192,
+      "persistence_mse": 0.0020225599873811007,
+      "motion_extrapolation_mse": 0.0006875686231069267,
+      "conditioned_mse": 0.0022484271321445704,
+      "unconditioned_mse": 0.002236839383840561,
+      "conditioned_with_velocity_zeroed_mse": 0.0022699141409248114
+    },
+    "responsive_leave_path": {
+      "pairs": 27,
+      "persistence_mse": 0.002719625597819686,
+      "motion_extrapolation_mse": 0.00042102555744349957,
+      "conditioned_mse": 0.002241798210889101,
+      "unconditioned_mse": 0.002242116956040263,
+      "conditioned_with_velocity_zeroed_mse": 0.0022751709911972284
+    },
+    "nonresponsive_same_command_or_block": {
+      "pairs": 111,
+      "persistence_mse": 0.002064198488369584,
+      "motion_extrapolation_mse": 0.0008190743392333388,
+      "conditioned_mse": 0.002400764264166355,
+      "unconditioned_mse": 0.002380337566137314,
+      "conditioned_with_velocity_zeroed_mse": 0.0024134113918989897
+    },
+    "unstable_head_on": {
+      "pairs": 54,
+      "persistence_mse": 0.0015884367749094963,
+      "motion_extrapolation_mse": 0.000550523167476058,
+      "conditioned_mse": 0.0019386042840778828,
+      "unconditioned_mse": 0.0019392316462472081,
+      "conditioned_with_velocity_zeroed_mse": 0.0019723186269402504
+    },
+    "reference_block_episode": {
+      "pairs": 69,
+      "persistence_mse": 0.0013318579876795411,
+      "motion_extrapolation_mse": 0.00033387585426680744,
+      "conditioned_mse": 0.0027240857016295195,
+      "unconditioned_mse": 0.0026909515727311373,
+      "conditioned_with_velocity_zeroed_mse": 0.0027240857016295195
+    },
+    "distance_0_to_1.5m": {
+      "pairs": 73,
+      "persistence_mse": 0.00012062327732564881,
+      "motion_extrapolation_mse": 0.0003976094303652644,
+      "conditioned_mse": 0.0021500312723219395,
+      "unconditioned_mse": 0.002133538480848074,
+      "conditioned_with_velocity_zeroed_mse": 0.00216666329652071
+    },
+    "distance_1.5_to_3m": {
+      "pairs": 69,
+      "persistence_mse": 0.0028971987776458263,
+      "motion_extrapolation_mse": 0.00024054906680248678,
+      "conditioned_mse": 0.00215283059515059,
+      "unconditioned_mse": 0.0021459246054291725,
+      "conditioned_with_velocity_zeroed_mse": 0.002178962342441082
+    },
+    "distance_3_to_10m": {
+      "pairs": 50,
+      "persistence_mse": 0.003592385910451412,
+      "motion_extrapolation_mse": 0.001727796159684658,
+      "conditioned_mse": 0.002524008508771658,
+      "unconditioned_mse": 0.0025131204165518284,
+      "conditioned_with_velocity_zeroed_mse": 0.002546173520386219
+    },
+    "distance_beyond_10m": {
+      "pairs": 0,
+      "persistence_mse": NaN,
+      "motion_extrapolation_mse": NaN,
+      "conditioned_mse": NaN,
+      "unconditioned_mse": NaN,
+      "conditioned_with_velocity_zeroed_mse": NaN
+    }
+  }
+}

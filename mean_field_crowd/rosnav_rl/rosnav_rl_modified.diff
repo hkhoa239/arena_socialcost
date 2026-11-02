@@ -1,0 +1,653 @@
+diff --git a/rosnav_rl/rosnav_rl/cfg/action_spaces.py b/rosnav_rl/rosnav_rl/cfg/action_spaces.py
+index effce5e..4b9576e 100644
+--- a/rosnav_rl/rosnav_rl/cfg/action_spaces.py
++++ b/rosnav_rl/rosnav_rl/cfg/action_spaces.py
+@@ -206,6 +206,14 @@ class DifferentialDriveActionSpace(BaseActionSpace):
+     type: Literal["differential_drive"] = "differential_drive"
+     linear_range: tuple[float, float] = (-0.5, 1.0)
+     angular_range: tuple[float, float] = (-1.0, 1.0)
++    normalized: bool = Field(
++        False,
++        description=(
++            "Continuous only. The policy acts in [-1, 1]^2 and decode() maps each component affinely onto "
++            "linear_range / angular_range, so a forward-only range such as (0, 0.5) and the symmetric range share "
++            "one policy distribution and one clipping box."
++        ),
++    )
+     discrete_actions: list[dict[str, Any]] | None = None
+     discretization: DiscretizationCfg | None = Field(
+         None,
+@@ -223,6 +231,8 @@ class DifferentialDriveActionSpace(BaseActionSpace):
+     def get_gym_space(self) -> spaces.Space:
+         if self.is_discrete:
+             return spaces.Discrete(len(self.discrete_actions))
++        if self.normalized:
++            return spaces.Box(low=-1.0, high=1.0, shape=(2,), dtype=np.float32)
+         return spaces.Box(
+             low=np.array([self.linear_range[0], self.angular_range[0]], dtype=np.float32),
+             high=np.array([self.linear_range[1], self.angular_range[1]], dtype=np.float32),
+@@ -233,6 +243,11 @@ class DifferentialDriveActionSpace(BaseActionSpace):
+             idx = int(action[0]) if isinstance(action, Sized) else int(action)
+             a = self.discrete_actions[idx]
+             return np.array([a["linear"], 0.0, a["angular"]], dtype=np.float32)
++        if self.normalized:
++            u = np.clip(np.asarray(action, dtype=np.float32), -1.0, 1.0)
++            linear = self.linear_range[0] + (u[0] + 1.0) * 0.5 * (self.linear_range[1] - self.linear_range[0])
++            angular = self.angular_range[0] + (u[1] + 1.0) * 0.5 * (self.angular_range[1] - self.angular_range[0])
++            return np.array([linear, 0.0, angular], dtype=np.float32)
+         return np.array([action[0], 0.0, action[1]], dtype=np.float32)
+ 
+     def resolve_discretization(
+diff --git a/rosnav_rl/rosnav_rl/model/stable_baselines3/policy/constants.py b/rosnav_rl/rosnav_rl/model/stable_baselines3/policy/constants.py
+index 380b1bf..805c3e2 100644
+--- a/rosnav_rl/rosnav_rl/model/stable_baselines3/policy/constants.py
++++ b/rosnav_rl/rosnav_rl/model/stable_baselines3/policy/constants.py
+@@ -6,11 +6,14 @@ from stable_baselines3.common.base_class import BaseAlgorithm
+ from stable_baselines3.common.torch_layers import BaseFeaturesExtractor
+ from torch.nn.modules.module import Module
+ 
++from rosnav_rl.model.stable_baselines3.mean_field_ppo import MeanFieldPPO
++
+ from .recurrent import PackedRecurrentPPO
+ 
+ POLICY_TYPE: dict[type[BaseAlgorithm], Literal["MultiInputPolicy", "MultiInputLstmPolicy"]] = {
+     # On-policy
+     PPO: "MultiInputPolicy",
++    MeanFieldPPO: "MultiInputPolicy",
+     A2C: "MultiInputPolicy",
+     TRPO: "MultiInputPolicy",
+     RecurrentPPO: "MultiInputLstmPolicy",
+diff --git a/rosnav_rl/rosnav_rl/model/stable_baselines3/policy/feature_extractors/resnet/resnet.py b/rosnav_rl/rosnav_rl/model/stable_baselines3/policy/feature_extractors/resnet/resnet.py
+index a777b36..34422cb 100644
+--- a/rosnav_rl/rosnav_rl/model/stable_baselines3/policy/feature_extractors/resnet/resnet.py
++++ b/rosnav_rl/rosnav_rl/model/stable_baselines3/policy/feature_extractors/resnet/resnet.py
+@@ -132,13 +132,22 @@ class RESNET_MID_FUSION_EXTRACTOR_1(RosnavBaseExtractor):
+ 
+         self._init_layer_weights()
+ 
+-    def _get_num_pedestrian_feature_maps(self) -> int:
+-        num_pedestrian_feature_maps = 0
+-        for space in self._observation_space:
+-            if "pedestrian" in space.lower():
+-                num_pedestrian_feature_maps += 1
++    def _is_pedestrian_feature_map(self, space_name: str) -> bool:
++        """True for the 80×80 pedestrian maps, not for other pedestrian observations.
++
++        The density observation is also named with "pedestrian", but its grid is
++        16×16. Stacking it with the feature maps would break the first convolution.
++        AGENT_5's maps are all the laser resolution, so this selects the same
++        channels that extractor uses.
++        """
++        if "pedestrian" not in space_name.lower():
++            return False
++        map_size = self._observation_space[StackedLaserMapSpace.name].shape[-1]
++        shape = self._observation_space[space_name].shape
++        return len(shape) >= 2 and shape[-1] == map_size and shape[-2] == map_size
+ 
+-        return num_pedestrian_feature_maps
++    def _get_num_pedestrian_feature_maps(self) -> int:
++        return sum(self._is_pedestrian_feature_map(space) for space in self._observation_space)
+ 
+     @property
+     def num_pedestrian_feature_maps(self) -> int:
+@@ -172,7 +181,7 @@ class RESNET_MID_FUSION_EXTRACTOR_1(RosnavBaseExtractor):
+ 
+         self._ped_map_size = 0
+         for obs in self._observation_space:
+-            if "pedestrian" in obs.lower():
++            if self._is_pedestrian_feature_map(obs):
+                 self._ped_map_size += self._observation_space[obs].shape[-1]
+ 
+     def _setup_network(self, inplanes: int = 64):
+@@ -483,7 +492,7 @@ class RESNET_MID_FUSION_EXTRACTOR_1(RosnavBaseExtractor):
+         ped_map = None
+         if self.num_pedestrian_feature_maps > 0:
+             ped_map = torch.stack(
+-                [observations[space] for space in self._observation_space if "pedestrian" in space.lower()],
++                [observations[space] for space in self._observation_space if self._is_pedestrian_feature_map(space)],
+                 dim=1,
+             )  # (num_envs, num_semantic_layers, 80, 80)
+ 
+diff --git a/rosnav_rl/rosnav_rl/model/stable_baselines3/policy/sb3_policy/paper.py b/rosnav_rl/rosnav_rl/model/stable_baselines3/policy/sb3_policy/paper.py
+index ed83c6f..2b6f60c 100644
+--- a/rosnav_rl/rosnav_rl/model/stable_baselines3/policy/sb3_policy/paper.py
++++ b/rosnav_rl/rosnav_rl/model/stable_baselines3/policy/sb3_policy/paper.py
+@@ -11,7 +11,12 @@ from rosnav_rl.spaces.observation_space.spaces.base_observation_space import (
+ 
+ from ..agent_factory import AgentFactory
+ from ..base_policy import StableBaselinesPolicyDescription
++from rosnav_rl.model.stable_baselines3.mean_field_ppo import MeanFieldPPO
++
+ from ..feature_extractors.classic import EXTRACTOR_5, EXTRACTOR_10, EXTRACTOR_5_extended
++from ..feature_extractors.mean_field.extractor import MeanFieldResNetExtractor
++from ..feature_extractors.mean_field.interaction import residual_checkpoint
++from ..feature_extractors.mean_field.residual_extractor import ResidualForecastExtractor
+ from ..feature_extractors.resnet.resnet import DRL_VO_ROSNAV_EXTRACTOR, DRL_VO_ROSNAV_SCALAR_EXTRACTOR
+ from ..recurrent import PackedRecurrentPPO
+ 
+@@ -266,6 +271,78 @@ class AGENT_5(StableBaselinesPolicyDescription):
+     activation_fn = nn.ReLU
+ 
+ 
++@AgentFactory.register("AGENT_MF")
++class AGENT_MF(AGENT_5):
++    """AGENT_5 with a crowd forecast conditioned on the previous command.
++
++    The forecast is F(rho_t, rho_{t-1}, a_{t-1}), where a_{t-1} is
++    [linear.x, angular.z]. AGENT_5 itself is unchanged.
++    """
++
++    algorithm_class: type[BaseAlgorithm] = MeanFieldPPO
++    observation_spaces = [
++        *AGENT_5.observation_spaces,
++        spaces.environment.PedestrianDensitySpace,
++    ]
++    features_extractor_class = MeanFieldResNetExtractor
++    features_extractor_kwargs = {
++        "features_dim": 512,
++        "width_per_group": 64,
++        "conditioned": True,
++    }
++
++
++@AgentFactory.register("AGENT_MF_FORECAST")
++class AGENT_MF_FORECAST(AGENT_MF):
++    """Same forecast network with the velocity input set to zero.
++
++    The parameter count and the density loss weight match AGENT_MF. This arm
++    is a one-second density forecast that does not see the robot command.
++    """
++
++    features_extractor_kwargs = {
++        "features_dim": 512,
++        "width_per_group": 64,
++        "conditioned": False,
++    }
++
++
++@AgentFactory.register("AGENT_MF_ONLINE")
++class AGENT_MF_ONLINE(AGENT_5):
++    """AGENT_5 plus an online constant-velocity crowd forecast.
++
++    The forecast is one extra ResNet channel. The reward, actor, critic, and
++    AGENT_5 observation channels are unchanged. The predictor is not trained.
++    """
++
++    observation_spaces = [
++        *AGENT_5.observation_spaces,
++        spaces.environment.PedestrianKinematicsSpace,
++        spaces.environment.ForecastCommandSpace,
++    ]
++    features_extractor_class = ResidualForecastExtractor
++    features_extractor_kwargs = {
++        "features_dim": 512,
++        "width_per_group": 64,
++        "apply_correction": False,
++    }
++
++
++@AgentFactory.register("AGENT_MF_RESIDUAL")
++class AGENT_MF_RESIDUAL(AGENT_MF_ONLINE):
++    """Online extrapolation plus the frozen 211-parameter interaction residual.
++
++    This arm differs from AGENT_MF_ONLINE only by that correction.
++    """
++
++    features_extractor_kwargs = {
++        "features_dim": 512,
++        "width_per_group": 64,
++        "apply_correction": True,
++        "residual_checkpoint_path": str(residual_checkpoint()),
++    }
++
++
+ @AgentFactory.register("AGENT_5_TTC")
+ class AGENT_5_TTC(AGENT_5):
+     """AGENT_5 plus the crowd time-to-contact scalars in the head."""
+diff --git a/rosnav_rl/rosnav_rl/model/stable_baselines3/sb3_model.py b/rosnav_rl/rosnav_rl/model/stable_baselines3/sb3_model.py
+index 8081543..0b1ccfc 100644
+--- a/rosnav_rl/rosnav_rl/model/stable_baselines3/sb3_model.py
++++ b/rosnav_rl/rosnav_rl/model/stable_baselines3/sb3_model.py
+@@ -1,3 +1,4 @@
++import inspect
+ from pathlib import Path
+ from typing import TYPE_CHECKING, Any, Self
+ 
+@@ -36,6 +37,25 @@ from .policy.agent_factory import AgentFactory
+ from .policy.base_policy import StableBaselinesPolicyDescription
+ from .policy.constants import POLICY_TYPE
+ 
++
++def _constructor_names(algorithm_class: type) -> set[str]:
++    """Names a constructor accepts, including parameters inherited through ``**kwargs``."""
++    names: set[str] = set()
++    for parent in inspect.getmro(algorithm_class):
++        if parent is object:
++            continue
++        try:
++            parameters = inspect.signature(parent.__init__).parameters
++        except (TypeError, ValueError):
++            continue
++        names.update(
++            name
++            for name, parameter in parameters.items()
++            if name != "self" and parameter.kind not in (inspect.Parameter.VAR_POSITIONAL, inspect.Parameter.VAR_KEYWORD)
++        )
++    return names
++
++
+ if TYPE_CHECKING:
+     from rosnav_rl.model.stable_baselines3 import cfg as sb3_cfg
+     from rosnav_rl.rl_agent import RL_Agent
+@@ -496,8 +516,6 @@ class StableBaselinesModel(RL_Model):
+         Returns:
+             Dict[str, Any]: A dictionary containing the arguments for the SB3 algorithm.
+         """
+-        import inspect
+-
+         from rosnav_rl.model.stable_baselines3.cfg.base import OnPolicyParameters
+ 
+         parameters.learning_rate = load_lr_schedule(parameters.learning_rate)
+@@ -523,7 +541,7 @@ class StableBaselinesModel(RL_Model):
+         # we never pass an unsupported parameter (e.g. `batch_size` to A2C or
+         # `use_sde` to TD3).
+         algo_cls = self._policy_description.algorithm_class
+-        algo_init_params = set(inspect.signature(algo_cls.__init__).parameters) - {"self"}
++        algo_init_params = _constructor_names(algo_cls)
+ 
+         # Always include these non-config kwargs that come from other sources.
+         policy_kwargs = self._policy_description.get_kwargs()
+diff --git a/rosnav_rl/rosnav_rl/reward/reward_units/reward_units.py b/rosnav_rl/rosnav_rl/reward/reward_units/reward_units.py
+index 47d87e7..4568f2a 100644
+--- a/rosnav_rl/rosnav_rl/reward/reward_units/reward_units.py
++++ b/rosnav_rl/rosnav_rl/reward/reward_units/reward_units.py
+@@ -31,6 +31,8 @@ __all__ = [
+     "RewardNoMovement",
+     "RewardApproachGoal",
+     "RewardCollision",
++    "RewardPedestrianProximity",
++    "RewardPedestrianForecastProximity",
+     "RewardDistanceTravelled",
+     "RewardReverseDrive",
+     "RewardAbruptVelocityChange",
+@@ -1402,6 +1404,110 @@ class RewardActiveHeadingDirection(RewardUnit):
+         pass
+ 
+ 
++@RewardUnitFactory.register("pedestrian_proximity")
++class RewardPedestrianProximity(RewardUnit):
++    """Penalty from the nearest pedestrian's current position.
++
++    No velocity and no forecast. The charge is ``factor * (margin - distance)``
++    while the nearest person is inside ``margin``, and zero otherwise.
++    """
++
++    requires = {
++        "pedestrian_relative_locations": PedestrianRelativeLocations,
++    }
++
++    @check_params
++    def __init__(
++        self,
++        reward_function: RewardFunction,
++        margin: float = 1.0,
++        factor: float = -0.5,
++        _on_safe_dist_violation: bool = True,
++        *args: Any,
++        **kwargs: Any,
++    ) -> None:
++        super().__init__(reward_function, _on_safe_dist_violation, *args, **kwargs)
++        self._margin = margin
++        self._factor = factor
++
++    def check_parameters(self) -> None:
++        if self._margin <= 0.0:
++            self._report_error(f"margin must be positive, got {self._margin}")
++        if self._factor > 0.0:
++            self._report_warning(f"A positive factor rewards standing near a pedestrian. Current value: {self._factor}")
++
++    def __call__(
++        self,
++        pedestrian_relative_locations: PedestrianRelativeLocations,
++        *args: Any,
++        **kwargs: Any,
++    ) -> None:
++        if pedestrian_relative_locations is None or len(pedestrian_relative_locations) == 0:
++            return
++        positions = np.asarray(pedestrian_relative_locations, dtype=np.float64).reshape(-1, 2)
++        distance = float(np.linalg.norm(positions, axis=1).min())
++        intrusion = self._margin - distance
++        if intrusion > 0.0:
++            self.add_reward(self._factor * intrusion)
++
++
++@RewardUnitFactory.register("pedestrian_forecast_proximity")
++class RewardPedestrianForecastProximity(RewardUnit):
++    """Penalty on where the nearest pedestrian will be if the current velocity holds.
++
++    The predicted point is the current robot-frame position plus the current
++    robot-frame velocity times ``horizon``. No residual network and no model
++    of the robot's own future motion.
++    """
++
++    requires = {
++        "pedestrian_relative_locations": PedestrianRelativeLocations,
++        "pedestrian_relative_velocities": PedestrianRelativeVelocities,
++    }
++
++    @check_params
++    def __init__(
++        self,
++        reward_function: RewardFunction,
++        margin: float = 1.0,
++        factor: float = -0.5,
++        horizon: float = 1.0,
++        _on_safe_dist_violation: bool = True,
++        *args: Any,
++        **kwargs: Any,
++    ) -> None:
++        super().__init__(reward_function, _on_safe_dist_violation, *args, **kwargs)
++        self._margin = margin
++        self._factor = factor
++        self._horizon = horizon
++
++    def check_parameters(self) -> None:
++        if self._margin <= 0.0 or self._horizon <= 0.0:
++            self._report_error(f"margin and horizon must be positive, got {self._margin}, {self._horizon}")
++        if self._factor > 0.0:
++            self._report_warning(f"A positive factor rewards a pedestrian entering the margin. Current value: {self._factor}")
++
++    def __call__(
++        self,
++        pedestrian_relative_locations: PedestrianRelativeLocations,
++        pedestrian_relative_velocities: PedestrianRelativeVelocities,
++        *args: Any,
++        **kwargs: Any,
++    ) -> None:
++        if pedestrian_relative_locations is None or len(pedestrian_relative_locations) == 0:
++            return
++        positions = np.asarray(pedestrian_relative_locations, dtype=np.float64).reshape(-1, 2)
++        velocities = np.asarray(pedestrian_relative_velocities, dtype=np.float64).reshape(-1, 2)
++        count = min(len(positions), len(velocities))
++        if count == 0:
++            return
++        future = positions[:count] + velocities[:count] * self._horizon
++        distance = float(np.linalg.norm(future, axis=1).min())
++        intrusion = self._margin - distance
++        if intrusion > 0.0:
++            self.add_reward(self._factor * intrusion)
++
++
+ @RewardUnitFactory.register("ped_type_safety_distance")
+ class RewardPedTypeSafetyDistance(RewardUnit):
+     """Reward unit for pedestrian type-specific safety distance violation detection.
+diff --git a/rosnav_rl/rosnav_rl/spaces/observation_space/spaces/environment/__init__.py b/rosnav_rl/rosnav_rl/spaces/observation_space/spaces/environment/__init__.py
+index ef630d6..e1fd8aa 100644
+--- a/rosnav_rl/rosnav_rl/spaces/observation_space/spaces/environment/__init__.py
++++ b/rosnav_rl/rosnav_rl/spaces/observation_space/spaces/environment/__init__.py
+@@ -8,6 +8,7 @@ Production Spaces:
+     - ObstacleProximitySpace: Obstacle proximity zones
+ 
+ Feature Map Spaces:
++    - PedestrianDensitySpace: Current and previous pedestrian density
+     - PedestrianVelXSpace: Pedestrian X velocity feature map
+     - PedestrianVelYSpace: Pedestrian Y velocity feature map
+     - StackedLaserMapSpace: Stacked laser feature map
+@@ -25,6 +26,8 @@ from .advanced_environment_spaces import (
+     SpatialAwarenessSpace,
+ )
+ from .crowd_spaces import CrowdTimeToContactSpace
++from .density_space import PedestrianDensitySpace
++from .pedestrian_state_space import ForecastCommandSpace, PedestrianKinematicsSpace
+ from .feature_map_spaces import (
+     LaserCartesianMapSpace,
+     PedestrianLocationSpace,
+@@ -36,6 +39,9 @@ from .feature_map_spaces import (
+ )
+ 
+ __all__ = [
++    "PedestrianDensitySpace",
++    "PedestrianKinematicsSpace",
++    "ForecastCommandSpace",
+     "PedestrianVelXSpace",
+     "PedestrianVelYSpace",
+     "StackedLaserMapSpace",
+diff --git a/rosnav_rl/rosnav_rl/spaces/space_manager/mirror_space_manager.py b/rosnav_rl/rosnav_rl/spaces/space_manager/mirror_space_manager.py
+index ed22771..f09b380 100644
+--- a/rosnav_rl/rosnav_rl/spaces/space_manager/mirror_space_manager.py
++++ b/rosnav_rl/rosnav_rl/spaces/space_manager/mirror_space_manager.py
+@@ -11,7 +11,9 @@ from rosnav_rl.utils.type_aliases import ObservationDict
+ from ..observation_space.spaces.dynamics import LastActionSpace
+ from ..observation_space.spaces.environment import (
+     CrowdTimeToContactSpace,
++    ForecastCommandSpace,
+     LaserCartesianMapSpace,
++    PedestrianKinematicsSpace,
+     PedestrianLocationSpace,
+     PedestrianSocialStateSpace,
+     PedestrianTypeSpace,
+@@ -120,6 +122,10 @@ class MirrorSpaceManager(BaseSpaceManager):
+             return self._checked_negate(name, space, (1,))
+         if name == LastActionSpace.name:
+             return self._checked_negate(name, space, tuple(range(1, space.shape[-1])))
++        if name == ForecastCommandSpace.name:
++            return self._checked_negate(name, space, (1, 3))
++        if name == PedestrianKinematicsSpace.name:
++            return self._checked_negate_columns(name, space, (1, 3))
+         if name == CrowdTimeToContactSpace.name:
+             return _identity
+         raise ValueError(f"no reflection rule for observation space '{name}'")
+@@ -133,6 +139,17 @@ class MirrorSpaceManager(BaseSpaceManager):
+             raise ValueError(f"'{name}' bounds are not symmetric on the reflected components {indices}")
+         return _negate(indices)
+ 
++    @staticmethod
++    def _checked_negate_columns(
++        name: str, space: spaces.Space, indices: tuple[int, ...]
++    ) -> Callable[[np.ndarray], np.ndarray]:
++        if not isinstance(space, spaces.Box):
++            raise ValueError(f"'{name}' must be a Box to be reflected")
++        low, high = space.low[..., list(indices)], space.high[..., list(indices)]
++        if not np.allclose(low, -high):
++            raise ValueError(f"'{name}' bounds are not symmetric on the reflected components {indices}")
++        return _negate(indices)
++
+     @property
+     def reflected(self) -> bool:
+         return self._reflected
+diff --git a/rosnav_rl/rosnav_rl/utils/stable_baselines3/tick_callbacks.py b/rosnav_rl/rosnav_rl/utils/stable_baselines3/tick_callbacks.py
+index 03fa3a8..7e6fd34 100644
+--- a/rosnav_rl/rosnav_rl/utils/stable_baselines3/tick_callbacks.py
++++ b/rosnav_rl/rosnav_rl/utils/stable_baselines3/tick_callbacks.py
+@@ -88,3 +88,137 @@ class TickCheckpointCallback(BaseCallback):
+             self.model.save(self.save_dir / f"tick_{target}")
+             print(f"[CHECKPOINT] tick_{target} saved at tick {ticks}", flush=True)
+         return True
++
++
++class EpisodeMixtureCurriculum(CurriculumBase, BaseCallback):
++    """Samples every env's next episode from the curriculum stages with fixed weights.
++
++    When env i finishes an episode, a stage drawn from `weights` with env i's own seeded
++    generator is sent to env i's task generator only. The vec env has already reset env i
++    by then, so the drawn stage runs one episode later; every episode is still an
++    independent draw. `[MIXTURE]` lines record which stage each started episode used.
++    """
++
++    def __init__(
++        self,
++        node: Node,
++        train_stages: StageInput,
++        weights: list[float],
++        seed: int,
++        num_envs: int,
++        parameter_node_template: str,
++        timeout: float = 5.0,
++        verbose: int = 0,
++        tm_dict: dict[str, Any] | None = None,
++    ):
++        import numpy as np
++
++        CurriculumBase.__init__(
++            self,
++            node=node,
++            train_stages=train_stages,
++            threshold_type="succ",
++            upper_threshold=float("inf"),
++            lower_threshold=float("-inf"),
++            num_envs=num_envs,
++            parameter_node_template=parameter_node_template,
++            timeout=timeout,
++            starting_stage=0,
++            verbose=0,
++            tm_dict=tm_dict,
++        )
++        BaseCallback.__init__(self, verbose=verbose)
++        if len(weights) != self.max_index or any(w < 0 for w in weights) or sum(weights) <= 0:
++            raise ValueError(f"mixture_weights needs one non-negative weight per stage ({self.max_index}), got {weights}")
++        total = float(sum(weights))
++        self.weights = np.asarray([w / total for w in weights], dtype=np.float64)
++        self.rngs = [np.random.default_rng([int(seed), i]) for i in range(num_envs)]
++        self.node_names = list(self.parameter_clients.keys())
++        # Stage queued on the env's task generator, and the stage of the episode it is running.
++        self.queued: list[int] = [0] * num_envs
++        self.running: list[int] = [0] * num_envs
++        self.started = [[0] * self.max_index for _ in range(num_envs)]
++
++    def get_current_performance(self) -> float | None:
++        return None
++
++    def reset_performance_tracking(self) -> None:
++        pass
++
++    def _draw(self, env: int) -> int:
++        stage = int(self.rngs[env].choice(len(self.weights), p=self.weights))
++        params = {k: v for k, v in self._stages[stage].items() if k not in self._TASK_MODE_KEYS and k != "train_mode"}
++        if not self._set_parameters_batch(self.node_names[env], params):
++            print(f"[MIXTURE] env {env}: failed to queue stage {stage}", flush=True)
++        return stage
++
++    def _on_training_start(self) -> None:
++        # The first episodes started before training; queue a draw for each env's next episode.
++        for env in range(len(self.rngs)):
++            self.queued[env] = self._draw(env)
++        print(f"[MIXTURE] weights {self.weights.round(3).tolist()} over {self.max_index} stages", flush=True)
++
++    def _on_step(self) -> bool:
++        dones = self.locals.get("dones")
++        if dones is None:
++            return True
++        for env, done in enumerate(dones):
++            if not done:
++                continue
++            self.running[env] = self.queued[env]
++            self.started[env][self.running[env]] += 1
++            print(f"[MIXTURE] env {env} started stage {self.running[env]} at step {self.num_timesteps}", flush=True)
++            self.queued[env] = self._draw(env)
++        return True
++
++
++class ActionStatsCallback(BaseCallback):
++    """Per rollout: how often PPO's Gaussian samples were clipped by the action box, the executed
++    linear and angular commands, the reverse-driving fraction, GPU memory, and wall-clock rate.
++
++    SB3 stores the unclipped sample and its log-probability and sends the clipped copy to the
++    env, so the clip rate is the size of the sample/execution mismatch."""
++
++    def __init__(self, decode, verbose: int = 0):
++        super().__init__(verbose=verbose)
++        self.decode = decode
++        self._started = None
++
++    def _on_rollout_start(self) -> None:
++        import time
++
++        self._started = time.perf_counter()
++        self._steps_at_start = self.num_timesteps
++
++    def _on_step(self) -> bool:
++        return True
++
++    def _on_rollout_end(self) -> None:
++        import time
++
++        import numpy as np
++
++        actions = np.asarray(self.model.rollout_buffer.actions).reshape(-1, self.model.action_space.shape[0])
++        low, high = self.model.action_space.low, self.model.action_space.high
++        clipped = np.clip(actions, low, high)
++        executed = np.stack([self.decode(a) for a in clipped])
++        v, w = executed[:, 0], executed[:, -1]
++        log = self.logger.record
++        for dim in range(actions.shape[1]):
++            log(f"action/clip_rate_{dim}", float(np.mean((actions[:, dim] < low[dim]) | (actions[:, dim] > high[dim]))))
++        log("action/v_mean", float(v.mean()))
++        log("action/v_p10", float(np.percentile(v, 10)))
++        log("action/v_p90", float(np.percentile(v, 90)))
++        log("action/abs_w_mean", float(np.abs(w).mean()))
++        log("action/reverse_frac", float(np.mean(v < -0.05)))
++        log("action/stop_frac", float(np.mean(np.abs(v) <= 0.05)))
++        if self._started is not None:
++            elapsed = time.perf_counter() - self._started
++            log("time/rollout_env_fps", float((self.num_timesteps - self._steps_at_start) / max(elapsed, 1e-6)))
++        try:
++            import torch
++
++            if torch.cuda.is_available():
++                log("time/gpu_max_mem_mib", float(torch.cuda.max_memory_allocated() / 2**20))
++        except Exception:
++            pass
+diff --git a/rosnav_rl/tests/test_reward_units.py b/rosnav_rl/tests/test_reward_units.py
+index a9c94ed..b3cccb4 100644
+--- a/rosnav_rl/tests/test_reward_units.py
++++ b/rosnav_rl/tests/test_reward_units.py
+@@ -337,6 +337,49 @@ class TestRewardApproachGoal:
+         # Distance: 5.0 -> 2.0, change = 3.0, reward = 0.3 * 3.0 = 0.9
+         assert total_reward(rf) == pytest.approx(0.9)
+ 
++    def test_speed_scaled_lookahead_does_not_pay_for_closing_on_the_goal(self, make_reward_function):
++        """A constant 0.5 m/s command holds the lookahead at 0.75 m, so the subgoal distance never falls.
++
++        The same cruise reduces distance to the final goal. The pilot coefficients are pos 0.3 and neg 0.4.
++        Raising speed from 0.4 to 0.5 m/s lengthens the lookahead and is charged as a retreat, while the
++        robot has moved toward the goal.
++        """
++        from rosnav_rl.observations.utils.semantic import straight_line_subgoal
++
++        goal = (12.0, 0.0)
++        speed = 0.5
++        positions = [index * 0.05 for index in range(41)]
++
++        def in_robot_frame(x: float, point: tuple[float, float]) -> np.ndarray:
++            return np.array([point[0] - x, point[1]], dtype=np.float64)
++
++        def drive(follow_subgoal: bool, speeds: list[float]) -> float:
++            rf = make_reward_function()
++            unit = RewardApproachGoal(
++                rf,
++                pos_factor=0.3,
++                neg_factor=0.4,
++                _goal_update_threshold=0.25,
++                _follow_subgoal=follow_subgoal,
++            )
++            for x, commanded in zip(positions, speeds):
++                pose = make_pose2d(x, 0.0, 0.0)
++                subgoal = straight_line_subgoal((x, 0.0), goal, commanded, 0.5, 2.5, 1.5)
++                unit(
++                    robot_pose=pose,
++                    goal_in_robot_frame=in_robot_frame(x, goal),
++                    subgoal_in_robot_frame=in_robot_frame(x, subgoal),
++                )
++            return total_reward(rf)
++
++        cruise = [speed] * len(positions)
++        assert drive(True, cruise) == pytest.approx(0.0)
++        assert drive(False, cruise) == pytest.approx(0.3 * 2.0)
++
++        accel = [0.4] + [0.5] * (len(positions) - 1)
++        assert drive(True, accel) == pytest.approx(-0.4 * 0.15)
++        assert drive(False, accel) == pytest.approx(0.3 * 2.0)
++
+     def test_diagonal_goal_distance(self, make_reward_function):
+         rf = make_reward_function()
+         unit = RewardApproachGoal(rf, pos_factor=1.0, neg_factor=1.0)

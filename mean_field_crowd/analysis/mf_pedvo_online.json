@@ -1,0 +1,961 @@
+{
+  "kinematics": "unicycle integral of previous command [linear.x, angular.z] held for 1.0 s",
+  "pedestrians": "current world position plus current world velocity times 1.0 s",
+  "oracle": "same pedestrian forecast, rasterized in the recorded robot pose at t+1 s",
+  "splits": {
+    "train": {
+      "episodes": 96,
+      "pairs": 5606,
+      "cells": {
+        "all": {
+          "pairs": 5606,
+          "persistence": 0.0485692424390663,
+          "online_extrapolation": 0.0026076917267925147,
+          "oracle_extrapolation": 0.0006918546959991715,
+          "online_vs_persistence": {
+            "mean_delta": -0.04594275299485567,
+            "ci95": [
+              -0.05389181654184245,
+              -0.03806034278123116
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.0019233888319823023,
+            "ci95": [
+              0.0011253925132268384,
+              0.002757738509405551
+            ]
+          }
+        },
+        "anticipation": {
+          "pairs": 265,
+          "persistence": 0.03625166409051503,
+          "online_extrapolation": 0.0009439429683046393,
+          "oracle_extrapolation": 0.0008068777642761867,
+          "online_vs_persistence": {
+            "mean_delta": -0.035788695867442766,
+            "ci95": [
+              -0.04740928681997204,
+              -0.025850166231132638
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.00013753246421998808,
+            "ci95": [
+              4.418424828546215e-05,
+              0.0002727412998969431
+            ]
+          }
+        },
+        "active_avoidance": {
+          "pairs": 2120,
+          "persistence": 0.04743662947648258,
+          "online_extrapolation": 0.0014635912402981084,
+          "oracle_extrapolation": 0.000364095800669363,
+          "online_vs_persistence": {
+            "mean_delta": -0.04607835336103308,
+            "ci95": [
+              -0.05577019278736509,
+              -0.03646173325032572
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.001111217960129273,
+            "ci95": [
+              0.00021904803046728335,
+              0.0021802212606664515
+            ]
+          }
+        },
+        "non_interaction": {
+          "pairs": 850,
+          "persistence": 0.035762754463974165,
+          "online_extrapolation": 0.004783285457404231,
+          "oracle_extrapolation": 0.0007356221051959972,
+          "online_vs_persistence": {
+            "mean_delta": -0.031267735506677684,
+            "ci95": [
+              -0.04144164851570394,
+              -0.021770826751363312
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.004060760445832603,
+            "ci95": [
+              0.0014314661755778857,
+              0.007417696505488913
+            ]
+          }
+        },
+        "n1": {
+          "pairs": 1401,
+          "persistence": 0.0028923101388157305,
+          "online_extrapolation": 0.00039643501008007886,
+          "oracle_extrapolation": 0.000326870991147092,
+          "online_vs_persistence": {
+            "mean_delta": -0.0024988668447305093,
+            "ci95": [
+              -0.002732018358744951,
+              -0.002269595511489733
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 6.924965545281191e-05,
+            "ci95": [
+              2.6471554559009842e-05,
+              0.00011833369895274104
+            ]
+          }
+        },
+        "n5": {
+          "pairs": 1402,
+          "persistence": 0.02645371839425363,
+          "online_extrapolation": 0.0005773093459062204,
+          "oracle_extrapolation": 0.00022648636865484051,
+          "online_vs_persistence": {
+            "mean_delta": -0.02591233191181604,
+            "ci95": [
+              -0.027354169518624502,
+              -0.024479023161240333
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.0003497417686571771,
+            "ci95": [
+              0.00014791084894381546,
+              0.0005757526878629441
+            ]
+          }
+        },
+        "n15": {
+          "pairs": 1400,
+          "persistence": 0.1033320893560137,
+          "online_extrapolation": 0.004099205349172865,
+          "oracle_extrapolation": 0.00046093731852514405,
+          "online_vs_persistence": {
+            "mean_delta": -0.09939029191040015,
+            "ci95": [
+              -0.10756434772294249,
+              -0.09149277343131954
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.003625824882098646,
+            "ci95": [
+              0.0016792724044597544,
+              0.005678607879084441
+            ]
+          }
+        },
+        "n20": {
+          "pairs": 1403,
+          "persistence": 0.061635073643451235,
+          "online_extrapolation": 0.005356407112953753,
+          "oracle_extrapolation": 0.0017517783552280768,
+          "online_vs_persistence": {
+            "mean_delta": -0.056234884422179846,
+            "ci95": [
+              -0.06167457984640797,
+              -0.05113288229766695
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.003589638390399968,
+            "ci95": [
+              0.0017491023286518295,
+              0.005619837777770394
+            ]
+          }
+        },
+        "cmd_block": {
+          "pairs": 944,
+          "persistence": 0.03908024328934439,
+          "online_extrapolation": 0.0007779923340668743,
+          "oracle_extrapolation": 0.000777982598588944,
+          "online_vs_persistence": {
+            "mean_delta": -0.03791102977883923,
+            "ci95": [
+              -0.05272806998911033,
+              -0.023596642982146615
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 9.690287080988833e-09,
+            "ci95": [
+              5.9741778077852674e-09,
+              1.3480869603255248e-08
+            ]
+          }
+        },
+        "cmd_leave": {
+          "pairs": 944,
+          "persistence": 0.04371277321824583,
+          "online_extrapolation": 0.00673292832985773,
+          "oracle_extrapolation": 0.000583439750667914,
+          "online_vs_persistence": {
+            "mean_delta": -0.036648569250009734,
+            "ci95": [
+              -0.04937155806652854,
+              -0.023829618488612064
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.00609925523772441,
+            "ci95": [
+              0.0034839680156437684,
+              0.008841377935866564
+            ]
+          }
+        },
+        "cmd_approach": {
+          "pairs": 886,
+          "persistence": 0.059780595769462416,
+          "online_extrapolation": 0.0007703450138409439,
+          "oracle_extrapolation": 0.000766682348153123,
+          "online_vs_persistence": {
+            "mean_delta": -0.05844509319328301,
+            "ci95": [
+              -0.08072906337389024,
+              -0.03648604299292918
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 3.738163563383538e-06,
+            "ci95": [
+              -5.663117653088016e-06,
+              1.612931593774324e-05
+            ]
+          }
+        },
+        "cmd_slow": {
+          "pairs": 944,
+          "persistence": 0.04850236498513969,
+          "online_extrapolation": 0.0006900935047069344,
+          "oracle_extrapolation": 0.0006899182177622313,
+          "online_vs_persistence": {
+            "mean_delta": -0.047295621829284,
+            "ci95": [
+              -0.06595866329244326,
+              -0.029442721974228956
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 1.6977657145678372e-07,
+            "ci95": [
+              -5.543046242209997e-07,
+              9.604578026791766e-07
+            ]
+          }
+        },
+        "cmd_cruise": {
+          "pairs": 944,
+          "persistence": 0.053609275369573446,
+          "online_extrapolation": 0.00068865561220495,
+          "oracle_extrapolation": 0.0006880441066903709,
+          "online_vs_persistence": {
+            "mean_delta": -0.05239280751530945,
+            "ci95": [
+              -0.07288069151659098,
+              -0.032546396810024726
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 6.174415574898402e-07,
+            "ci95": [
+              -1.103622516739503e-06,
+              2.982579080399732e-06
+            ]
+          }
+        },
+        "cmd_yaw": {
+          "pairs": 944,
+          "persistence": 0.0474190351521691,
+          "online_extrapolation": 0.005873247738375123,
+          "oracle_extrapolation": 0.0006496586158113965,
+          "online_vs_persistence": {
+            "mean_delta": -0.0412226076765199,
+            "ci95": [
+              -0.05799359552087696,
+              -0.02529584396427293
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.00519568044961809,
+            "ci95": [
+              0.0026506191303053775,
+              0.007871235171490805
+            ]
+          }
+        }
+      },
+      "command_pose_error": {
+        "block": {
+          "pairs": 944,
+          "mean_position_error_m": 5.354732038735438e-06,
+          "mean_abs_yaw_error_rad": 6.22637530894928e-07
+        },
+        "leave": {
+          "pairs": 944,
+          "mean_position_error_m": 0.062299000497166634,
+          "mean_abs_yaw_error_rad": 0.0959766315175803
+        },
+        "approach": {
+          "pairs": 886,
+          "mean_position_error_m": 0.0015346749953150656,
+          "mean_abs_yaw_error_rad": 2.0779623514663083e-05
+        },
+        "slow": {
+          "pairs": 944,
+          "mean_position_error_m": 0.0005175593939993298,
+          "mean_abs_yaw_error_rad": 1.882953277986888e-06
+        },
+        "cruise": {
+          "pairs": 944,
+          "mean_position_error_m": 0.0007091090412234505,
+          "mean_abs_yaw_error_rad": 6.843695169239003e-06
+        },
+        "yaw": {
+          "pairs": 944,
+          "mean_position_error_m": 0.04647389768867367,
+          "mean_abs_yaw_error_rad": 0.07401224748637672
+        }
+      }
+    },
+    "validation": {
+      "episodes": 48,
+      "pairs": 2802,
+      "cells": {
+        "all": {
+          "pairs": 2802,
+          "persistence": 0.05114007961911699,
+          "online_extrapolation": 0.002601548424755076,
+          "oracle_extrapolation": 0.0006652364499340476,
+          "online_vs_persistence": {
+            "mean_delta": -0.04859975271797331,
+            "ci95": [
+              -0.05967192936255462,
+              -0.037328349280473516
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.0019463874976664818,
+            "ci95": [
+              0.0008708665133250044,
+              0.0031612220768578534
+            ]
+          }
+        },
+        "anticipation": {
+          "pairs": 133,
+          "persistence": 0.038707114908410084,
+          "online_extrapolation": 0.0011471493658651792,
+          "oracle_extrapolation": 0.0008753599876088693,
+          "online_vs_persistence": {
+            "mean_delta": -0.038476126710560055,
+            "ci95": [
+              -0.055799475330520744,
+              -0.02290905988383959
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.00027719377384730613,
+            "ci95": [
+              2.7414549221348653e-05,
+              0.0006785907516998032
+            ]
+          }
+        },
+        "active_avoidance": {
+          "pairs": 1040,
+          "persistence": 0.052292591648606154,
+          "online_extrapolation": 0.0014682143389318997,
+          "oracle_extrapolation": 0.0002799381829950457,
+          "online_vs_persistence": {
+            "mean_delta": -0.05061160165768106,
+            "ci95": [
+              -0.06460041946391236,
+              -0.03713102703685442
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.0012292335201355405,
+            "ci95": [
+              1.1461325190986374e-06,
+              0.0027962851836425876
+            ]
+          }
+        },
+        "non_interaction": {
+          "pairs": 445,
+          "persistence": 0.03530060008503078,
+          "online_extrapolation": 0.00507811192418752,
+          "oracle_extrapolation": 0.0007598037972904034,
+          "online_vs_persistence": {
+            "mean_delta": -0.0310157357226119,
+            "ci95": [
+              -0.04777549790286999,
+              -0.018060459008611012
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.0044029130386446114,
+            "ci95": [
+              0.0007309638917917501,
+              0.009182563051303319
+            ]
+          }
+        },
+        "n1": {
+          "pairs": 699,
+          "persistence": 0.0029791479288082097,
+          "online_extrapolation": 0.00038101830558374375,
+          "oracle_extrapolation": 0.00031859942649268625,
+          "online_vs_persistence": {
+            "mean_delta": -0.0026042492977134406,
+            "ci95": [
+              -0.0028551351770586737,
+              -0.0023392666228599637
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 6.353171413743103e-05,
+            "ci95": [
+              5.170956799869887e-06,
+              0.00014273851762104957
+            ]
+          }
+        },
+        "n5": {
+          "pairs": 702,
+          "persistence": 0.026430019116469597,
+          "online_extrapolation": 0.0005828726537886508,
+          "oracle_extrapolation": 0.00022510429074791422,
+          "online_vs_persistence": {
+            "mean_delta": -0.025893729760582233,
+            "ci95": [
+              -0.02791005852612153,
+              -0.0238537943987651
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.00036280175565372286,
+            "ci95": [
+              6.11901833985353e-05,
+              0.0007139666222047932
+            ]
+          }
+        },
+        "n15": {
+          "pairs": 701,
+          "persistence": 0.10338311596705808,
+          "online_extrapolation": 0.004133783834860175,
+          "oracle_extrapolation": 0.0004956654994383178,
+          "online_vs_persistence": {
+            "mean_delta": -0.09933582107416691,
+            "ci95": [
+              -0.11008740885266967,
+              -0.08848432672172885
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.0036843788077617267,
+            "ci95": [
+              0.0008213194053958871,
+              0.006875109440563772
+            ]
+          }
+        },
+        "n20": {
+          "pairs": 700,
+          "persistence": 0.07169520139694213,
+          "online_extrapolation": 0.005308925456234387,
+          "oracle_extrapolation": 0.00162258115197931,
+          "online_vs_persistence": {
+            "mean_delta": -0.06651364690547751,
+            "ci95": [
+              -0.08388470794534546,
+              -0.052001348664022
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.0037320437900571464,
+            "ci95": [
+              0.000997948878130515,
+              0.006992670397621469
+            ]
+          }
+        },
+        "cmd_block": {
+          "pairs": 472,
+          "persistence": 0.03732750179656481,
+          "online_extrapolation": 0.0007106116657161107,
+          "oracle_extrapolation": 0.0007105996492871289,
+          "online_vs_persistence": {
+            "mean_delta": -0.03652149384066273,
+            "ci95": [
+              -0.06109139191231422,
+              -0.018039006226295538
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 1.199126354087211e-08,
+            "ci95": [
+              5.925441223920785e-09,
+              1.8658613691239058e-08
+            ]
+          }
+        },
+        "cmd_leave": {
+          "pairs": 472,
+          "persistence": 0.04470117570106256,
+          "online_extrapolation": 0.0068647756825311705,
+          "oracle_extrapolation": 0.0004429617616490035,
+          "online_vs_persistence": {
+            "mean_delta": -0.03772542666268172,
+            "ci95": [
+              -0.05642302845036454,
+              -0.020044533789584065
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.006401822531566228,
+            "ci95": [
+              0.0024929638020694256,
+              0.010574580201685776
+            ]
+          }
+        },
+        "cmd_approach": {
+          "pairs": 442,
+          "persistence": 0.06385017773010072,
+          "online_extrapolation": 0.0008415364474900978,
+          "oracle_extrapolation": 0.0008417681972095869,
+          "online_vs_persistence": {
+            "mean_delta": -0.06282048255530395,
+            "ci95": [
+              -0.09725304555062507,
+              -0.03227623371816245
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": -1.1854554780600846e-07,
+            "ci95": [
+              -1.331089364491172e-05,
+              1.1439531074885454e-05
+            ]
+          }
+        },
+        "cmd_slow": {
+          "pairs": 472,
+          "persistence": 0.04873660314133612,
+          "online_extrapolation": 0.0007884739819219557,
+          "oracle_extrapolation": 0.0007888466924807783,
+          "online_vs_persistence": {
+            "mean_delta": -0.04780845294638451,
+            "ci95": [
+              -0.07822773309416628,
+              -0.02406430478332075
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": -3.7934494765191404e-07,
+            "ci95": [
+              -1.0920908021882495e-06,
+              7.436201331539099e-08
+            ]
+          }
+        },
+        "cmd_cruise": {
+          "pairs": 472,
+          "persistence": 0.06461350723974786,
+          "online_extrapolation": 0.00046552861330367753,
+          "oracle_extrapolation": 0.00046636740148256895,
+          "online_vs_persistence": {
+            "mean_delta": -0.06377460763799973,
+            "ci95": [
+              -0.09916221959974175,
+              -0.030125370497521328
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": -8.18747289131505e-07,
+            "ci95": [
+              -2.465723871679609e-06,
+              9.504827607614566e-08
+            ]
+          }
+        },
+        "cmd_yaw": {
+          "pairs": 472,
+          "persistence": 0.04841935732480833,
+          "online_extrapolation": 0.005826498989520942,
+          "oracle_extrapolation": 0.0007520952356695118,
+          "online_vs_persistence": {
+            "mean_delta": -0.04258508663963905,
+            "ci95": [
+              -0.06749252847916747,
+              -0.021739179988675833
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.005065419753239947,
+            "ci95": [
+              0.001880619451364155,
+              0.008500992480105074
+            ]
+          }
+        }
+      },
+      "command_pose_error": {
+        "block": {
+          "pairs": 472,
+          "mean_position_error_m": 5.3668398852776216e-06,
+          "mean_abs_yaw_error_rad": 6.571440889209557e-07
+        },
+        "leave": {
+          "pairs": 472,
+          "mean_position_error_m": 0.06259117692381011,
+          "mean_abs_yaw_error_rad": 0.09682335926918864
+        },
+        "approach": {
+          "pairs": 442,
+          "mean_position_error_m": 0.002210922019716069,
+          "mean_abs_yaw_error_rad": 2.1275567466790204e-05
+        },
+        "slow": {
+          "pairs": 472,
+          "mean_position_error_m": 0.00021705602646029576,
+          "mean_abs_yaw_error_rad": 1.8755690902383085e-06
+        },
+        "cruise": {
+          "pairs": 472,
+          "mean_position_error_m": 0.0006256530284721556,
+          "mean_abs_yaw_error_rad": 6.917295154141888e-06
+        },
+        "yaw": {
+          "pairs": 472,
+          "mean_position_error_m": 0.04688159143238794,
+          "mean_abs_yaw_error_rad": 0.07426876695334178
+        }
+      }
+    },
+    "test": {
+      "episodes": 144,
+      "pairs": 8420,
+      "cells": {
+        "all": {
+          "pairs": 8420,
+          "persistence": 0.04994999888726906,
+          "online_extrapolation": 0.0025104699550183257,
+          "oracle_extrapolation": 0.0006103478764203729,
+          "online_vs_persistence": {
+            "mean_delta": -0.04752339690795449,
+            "ci95": [
+              -0.054198140815349384,
+              -0.041206701555132896
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.0019105231839985435,
+            "ci95": [
+              0.0012351731464519085,
+              0.00260854823030495
+            ]
+          }
+        },
+        "anticipation": {
+          "pairs": 400,
+          "persistence": 0.03762389314244501,
+          "online_extrapolation": 0.0008867136590698866,
+          "oracle_extrapolation": 0.0007523502643337832,
+          "online_vs_persistence": {
+            "mean_delta": -0.03702824636908698,
+            "ci95": [
+              -0.046249303328092566,
+              -0.02853906724958016
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.00013528416744159794,
+            "ci95": [
+              6.168566827132648e-05,
+              0.0002273101264806925
+            ]
+          }
+        },
+        "active_avoidance": {
+          "pairs": 3330,
+          "persistence": 0.04932224439742329,
+          "online_extrapolation": 0.0011630878035453157,
+          "oracle_extrapolation": 0.00037510391047179654,
+          "online_vs_persistence": {
+            "mean_delta": -0.04826463896845326,
+            "ci95": [
+              -0.05647776772272765,
+              -0.040617471278782326
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.0008018589342254185,
+            "ci95": [
+              0.00025507966542889093,
+              0.0014605879773353903
+            ]
+          }
+        },
+        "non_interaction": {
+          "pairs": 1254,
+          "persistence": 0.036150451914438504,
+          "online_extrapolation": 0.005316280103420132,
+          "oracle_extrapolation": 0.0007836159062194246,
+          "online_vs_persistence": {
+            "mean_delta": -0.031076442030415517,
+            "ci95": [
+              -0.038983228905686465,
+              -0.02363986987279952
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.004610647031434623,
+            "ci95": [
+              0.002084547498630606,
+              0.007138462404467294
+            ]
+          }
+        },
+        "n1": {
+          "pairs": 2103,
+          "persistence": 0.0028760598399386315,
+          "online_extrapolation": 0.0003912497402172796,
+          "oracle_extrapolation": 0.00032220502161251267,
+          "online_vs_persistence": {
+            "mean_delta": -0.0024852668435490877,
+            "ci95": [
+              -0.0026638820696926174,
+              -0.0023011564281807577
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 6.882517896792795e-05,
+            "ci95": [
+              3.5024629866764217e-05,
+              0.00010696599971201364
+            ]
+          }
+        },
+        "n5": {
+          "pairs": 2104,
+          "persistence": 0.026447856834179547,
+          "online_extrapolation": 0.0005833274315681465,
+          "oracle_extrapolation": 0.00022857579399969698,
+          "online_vs_persistence": {
+            "mean_delta": -0.02588665266069603,
+            "ci95": [
+              -0.027130294888366602,
+              -0.024832595467614356
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.00035421034863718004,
+            "ci95": [
+              0.00019603352682439365,
+              0.0005322509381097284
+            ]
+          }
+        },
+        "n15": {
+          "pairs": 2109,
+          "persistence": 0.10343380639088443,
+          "online_extrapolation": 0.004096850013601491,
+          "oracle_extrapolation": 0.0004748942537145798,
+          "online_vs_persistence": {
+            "mean_delta": -0.09943350924803221,
+            "ci95": [
+              -0.1057550708539298,
+              -0.09330558457893645
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.0036165296460175956,
+            "ci95": [
+              0.0020589671509819276,
+              0.0053002103927776234
+            ]
+          }
+        },
+        "n20": {
+          "pairs": 2104,
+          "persistence": 0.06689279863589617,
+          "online_extrapolation": 0.004965675486156101,
+          "oracle_extrapolation": 0.0014159013818198737,
+          "online_vs_persistence": {
+            "mean_delta": -0.06186866339040333,
+            "ci95": [
+              -0.06931506964354828,
+              -0.055880153889952155
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.003545694696856,
+            "ci95": [
+              0.0019787305932657904,
+              0.005250518997139588
+            ]
+          }
+        },
+        "cmd_block": {
+          "pairs": 1416,
+          "persistence": 0.03964418943150569,
+          "online_extrapolation": 0.0006148943724899979,
+          "oracle_extrapolation": 0.0006148857564407553,
+          "online_vs_persistence": {
+            "mean_delta": -0.0388461991775752,
+            "ci95": [
+              -0.052045435829931284,
+              -0.02635317164493625
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 8.614450998308302e-09,
+            "ci95": [
+              5.437927399463982e-09,
+              1.1926749721155918e-08
+            ]
+          }
+        },
+        "cmd_leave": {
+          "pairs": 1416,
+          "persistence": 0.0434673768652361,
+          "online_extrapolation": 0.006706934282819261,
+          "oracle_extrapolation": 0.0006111678443743852,
+          "online_vs_persistence": {
+            "mean_delta": -0.03663065841922663,
+            "ci95": [
+              -0.04738492400801114,
+              -0.02618742538813375
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.006073165925332782,
+            "ci95": [
+              0.003881886469346266,
+              0.008304083433941449
+            ]
+          }
+        },
+        "cmd_approach": {
+          "pairs": 1340,
+          "persistence": 0.06020161997693688,
+          "online_extrapolation": 0.0005526253091755198,
+          "oracle_extrapolation": 0.0005494640848196264,
+          "online_vs_persistence": {
+            "mean_delta": -0.05945508044751479,
+            "ci95": [
+              -0.07925255283550568,
+              -0.04043568950797542
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 3.1264090997878096e-06,
+            "ci95": [
+              -3.2080188738717175e-07,
+              7.05001846914451e-06
+            ]
+          }
+        },
+        "cmd_slow": {
+          "pairs": 1416,
+          "persistence": 0.04983112699020717,
+          "online_extrapolation": 0.0005779178302714043,
+          "oracle_extrapolation": 0.0005776954855569928,
+          "online_vs_persistence": {
+            "mean_delta": -0.04909996786225642,
+            "ci95": [
+              -0.06588916433536077,
+              -0.03331093216016639
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 2.1875544785295472e-07,
+            "ci95": [
+              -1.9771251485455638e-08,
+              5.207246986328299e-07
+            ]
+          }
+        },
+        "cmd_cruise": {
+          "pairs": 1416,
+          "persistence": 0.05892513314588259,
+          "online_extrapolation": 0.0005445042283058504,
+          "oracle_extrapolation": 0.0005437801522992046,
+          "online_vs_persistence": {
+            "mean_delta": -0.05830040496875108,
+            "ci95": [
+              -0.0781084275063381,
+              -0.0387296631610801
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 7.16023204984974e-07,
+            "ci95": [
+              -5.4292751760304184e-08,
+              1.9233176003915602e-06
+            ]
+          }
+        },
+        "cmd_yaw": {
+          "pairs": 1416,
+          "persistence": 0.04818077516442133,
+          "online_extrapolation": 0.00596086164978517,
+          "oracle_extrapolation": 0.000761826160905809,
+          "online_vs_persistence": {
+            "mean_delta": -0.0420319372684929,
+            "ci95": [
+              -0.05537869346585903,
+              -0.028983916201869468
+            ]
+          },
+          "online_vs_oracle": {
+            "mean_delta": 0.005175233038618508,
+            "ci95": [
+              0.00315883663827606,
+              0.007194453012461296
+            ]
+          }
+        }
+      },
+      "command_pose_error": {
+        "block": {
+          "pairs": 1416,
+          "mean_position_error_m": 5.363117126735406e-06,
+          "mean_abs_yaw_error_rad": 7.048331438115744e-07
+        },
+        "leave": {
+          "pairs": 1416,
+          "mean_position_error_m": 0.062237213731394764,
+          "mean_abs_yaw_error_rad": 0.09662609029761608
+        },
+        "approach": {
+          "pairs": 1340,
+          "mean_position_error_m": 0.0019027938164898873,
+          "mean_abs_yaw_error_rad": 1.862762093532991e-05
+        },
+        "slow": {
+          "pairs": 1416,
+          "mean_position_error_m": 0.0004093654400561847,
+          "mean_abs_yaw_error_rad": 1.830525471459545e-06
+        },
+        "cruise": {
+          "pairs": 1416,
+          "mean_position_error_m": 0.0006148571165411101,
+          "mean_abs_yaw_error_rad": 6.899222171682229e-06
+        },
+        "yaw": {
+          "pairs": 1416,
+          "mean_position_error_m": 0.04622630716762353,
+          "mean_abs_yaw_error_rad": 0.07338713040724924
+        }
+      }
+    }
+  }
+}
